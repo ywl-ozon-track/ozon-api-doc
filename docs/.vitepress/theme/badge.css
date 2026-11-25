@@ -1,0 +1,58 @@
+/* ============================================================
+   Ozon API 徽章与标签样式增强 (badge.css)
+   ============================================================ */
+
+.method-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--vp-font-family-mono);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.method-tag-post {
+  background-color: #16a34a;
+}
+
+.method-tag-get {
+  background-color: #0284c7;
+}
+
+.method-tag-put {
+  background-color: #d97706;
+}
+
+.method-tag-delete {
+  background-color: #dc2626;
+}
+
+.method-tag-patch {
+  background-color: #7c3aed;
+}
+
+/* 响应状态码徽章 */
+.status-code-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  font-family: var(--vp-font-family-mono);
+}
+
+.status-code-200 {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-code-400, .status-code-404 {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}

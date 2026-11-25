@@ -1,0 +1,41 @@
+# ============================================================
+# GitHub Linguist 仓库语言统计精细化控制 (.gitattributes)
+# 目标：实现 Markdown、Vue、TypeScript、JavaScript、CSS、Python 的健康多语言分布
+# ============================================================
+
+# 1. 将超大上游数据源与离线产物标记为 Vendored / Generated (不占用语言比例)
+specs/** linguist-vendored=true
+docs/public/** linguist-vendored=true
+docs/.vitepress/sidebar-*.json linguist-generated=true
+package-lock.json linguist-generated=true
+
+# 2. 批量生成的数千个接口详情页标记为文档类 (防止单一 Markdown 垄断 99% 比例)
+docs/seller/** linguist-documentation=true
+docs/performance/** linguist-documentation=true
+docs/ru/seller/** linguist-documentation=true
+docs/ru/performance/** linguist-documentation=true
+docs/en/seller/** linguist-documentation=true
+docs/en/performance/** linguist-documentation=true
+
+# 3. 显式开启核心技术文档参与语言统计 (Markdown)
+README.md linguist-detectable=true
+docs/index.md linguist-detectable=true
+docs/changelog.md linguist-detectable=true
+docs/ru/index.md linguist-detectable=true
+docs/ru/changelog.md linguist-detectable=true
+docs/en/index.md linguist-detectable=true
+docs/en/changelog.md linguist-detectable=true
+docs/seller/index.md linguist-detectable=true
+docs/performance/index.md linguist-detectable=true
+docs/ru/seller/index.md linguist-detectable=true
+docs/ru/performance/index.md linguist-detectable=true
+docs/en/seller/index.md linguist-detectable=true
+docs/en/performance/index.md linguist-detectable=true
+
+# 4. 前端组件与样式全量计入统计
+*.vue linguist-detectable=true
+*.ts linguist-detectable=true
+*.mts linguist-detectable=true
+*.css linguist-detectable=true
+*.mjs linguist-detectable=true
+*.py linguist-detectable=true

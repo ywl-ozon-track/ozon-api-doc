@@ -27,3 +27,6 @@ features:
     title: Актуальность данных
     details: Ежедневная сверка и обновление спецификаций напрямую с docs.ozon.ru через GitHub Actions.
 ---
+
+<ApiStats lang="ru" />
+

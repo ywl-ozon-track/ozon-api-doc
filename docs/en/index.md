@@ -27,3 +27,6 @@ features:
     title: Automated Daily Sync
     details: Directly synced with official docs.ozon.ru through automated GitHub Actions workflows.
 ---
+
+<ApiStats lang="en" />
+

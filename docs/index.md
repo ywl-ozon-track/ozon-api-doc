@@ -30,3 +30,6 @@ features:
     title: 官方 OpenAPI 源头自动化巡检
     details: 直连 Ozon 官方文档源 (docs.ozon.ru)，依托 GitHub Actions 自动化对账与 PR 审查，保证字段定义实时同步。
 ---
+
+<ApiStats lang="zh" />
+
