@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build:specs": "node node_modules/@redocly/cli/bin/cli.js build-docs specs/ozon-seller-openapi.json --output docs/public/standalone-seller.html && node node_modules/@redocly/cli/bin/cli.js build-docs specs/ozon-performance-openapi.json --output docs/public/standalone-performance.html",
-    "docs:dev": "npm run build:specs && vitepress dev docs",
-    "docs:build": "npm run build:specs && vitepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
