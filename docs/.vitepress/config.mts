@@ -26,10 +26,14 @@ export default defineConfig({
   description: 'Ozon 官方 Seller API & Performance API 全量镜像与原生交互参考 (纯 VitePress 渲染 · 默认中文 · 多语言支持)',
   base: '/ozon-api-doc/',
   head: [
-    ['link', { rel: 'icon', href: 'https://docs.ozon.ru/favicon.ico' }],
-    ['meta', { name: 'theme-color', content: '#0284c7' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/ozon-api-doc/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/ozon-api-doc/favicon.ico' }],
+    ['link', { rel: 'shortcut icon', href: '/ozon-api-doc/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', href: '/ozon-api-doc/logo.png' }],
+    ['meta', { name: 'theme-color', content: '#005bff' }]
   ],
   themeConfig: {
+    logo: '/logo.png',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ywl-ozon-track/ozon-api-doc' }
     ],

@@ -6,37 +6,53 @@
 [![VitePress](https://img.shields.io/badge/VitePress-v1.6-646CFF?logo=vitepress)](https://vitepress.dev/)
 [![Vue 3](https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vue.js)](https://vuejs.org/)
 [![OpenAPI 3.0](https://img.shields.io/badge/OpenAPI-3.0-6BA539?logo=openapi-initiative)](https://www.openapis.org/)
-[![Redocly Engine](https://img.shields.io/badge/Engine-Redocly-red)](https://redocly.com/)
 
 > 🚀 **在线镜像访问入口**: [https://ywl-ozon-track.github.io/ozon-api-doc/](https://ywl-ozon-track.github.io/ozon-api-doc/)
 
-本项目是 **Ozon 官方开发者 API 文档（Seller API & Performance API）** 的开源规范镜像站。采用 **VitePress + Redocly 虚拟滚动混合架构**，提供无缝的国内高速访问、全量中英双语搜索、参数模型展开与代码示例演示。
+本项目是 **Ozon 官方开发者 API 文档（Seller API & Performance API）** 的现代化纯 VitePress 原生矩阵镜像站。默认中文友好，支持中/俄/英三语无缝切换，搭载 Minisearch 离线毫秒级全文检索与每日自动化巡检对账流水线。
+
+---
+
+## 📸 界面预览 (UI Preview)
+
+![Ozon API 镜像站现代化界面预览](./preview/preview.png)
 
 ---
 
 ## 🌟 核心特色
 
-1. **双规范全量收录**：
-   - **📦 Seller API (卖家全量业务)**：商品管理、类目与属性、价格计算与批量改价、FBS/FBO履约、仓库发货、退换货管理等。
-   - **🚀 Performance API (广告营销推广)**：CPC竞价、广告计划创建与管理、关键词调价、投放数据转化统计。
-2. **Redocly 三栏虚拟滚动**：
-   - 彻底突破超大规模 OpenAPI 规范（数万行 JSON / 上千个 Schema）的页面渲染卡顿瓶颈，秒开响应。
-3. **GitHub Actions 每日对账 Bot (PR 审批驱动)**：
-   - 定时巡检 Ozon 官方文档站，任何字段增删均通过 `peter-evans/create-pull-request` 自动提交变更提案，**严禁直接 commit 到主分支**，保障规范变动清晰可溯。
+1. **纯 VitePress 原生矩阵静态化 (SSG)**：
+   - 告别传统 iframe 嵌套与重型外部运行时，将 530+ 个接口端点编译为轻量独立 Markdown 页面，页面进入毫秒级秒开时代；
+   - 彻底根除滚动条穿透、移动端卡顿，完美适配深浅色主题自适应。
+
+2. **默认中文适配与多语言原生切换 (ZH / RU / EN)**：
+   - **默认中文 (zh-CN)**：面向跨境卖家优化，60+ 业务模块与高频操作精准本地化对齐；
+   - **俄语原版 (ru-RU)**：100% 忠实保留 Ozon 官方原厂定义与说明；
+   - **英语版 (en-US)**：为国际化开发者提供标准规范索引；
+   - 支持顶栏下拉菜单一键跨语言无缝穿透。
+
+3. **原生离线毫秒级全文检索 (Local Minisearch)**：
+   - 集成高性能本地搜索引擎，支持接口路径（如 `/v1/roles`、`/v1/product/import-prices`）、HTTP 方法、参数名与中文/俄文字段的即打即搜。
+
+4. **GitHub Actions 每日对账 Bot (PR 审批驱动)**：
+   - 每天自动定时比对 Ozon 官方源（docs.ozon.ru），变更自动生成 PR 审查报告，保障规范变动清晰可溯。
 
 ---
 
-## 🛠️ 本地开发与预览
+## 🛠️ 本地开发与构建
 
 ```bash
 # 1. 安装依赖
 npm install
 
-# 2. 启动本地开发服务
+# 2. 启动本地开发热更新服务
 npm run docs:dev
 
-# 3. 生产打包构建
+# 3. 生成全量多语言文档并执行生产打包
 npm run docs:build
+
+# 4. 本地预览产物
+npm run docs:preview
 ```
 
 ---
