@@ -1,0 +1,2510 @@
+{
+  "/seller/": [
+    {
+      "text": "📖 Seller API 概览",
+      "link": "/seller/"
+    },
+    {
+      "text": "🔑 API密钥与权限",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取当前 API 密钥对应的权限角色与支持方法列表",
+          "link": "/seller/apikey/post-v1-roles"
+        }
+      ]
+    },
+    {
+      "text": "🏢 卖家店铺与入驻信息",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取卖家个人中心与公司入驻档案信息",
+          "link": "/seller/sellerinfo/post-v1-seller-info"
+        },
+        {
+          "text": "查询 Ozon 官方物流（Ozon Delivery）开通与签约状态",
+          "link": "/seller/sellerinfo/post-v1-seller-ozon-logistics-info"
+        }
+      ]
+    },
+    {
+      "text": "📂 商品类目与属性字典",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取 Ozon 全量商品类目与类型树形结构",
+          "link": "/seller/categoryapi/post-v1-description-category-tree"
+        },
+        {
+          "text": "获取指定类目下商品必填与选填属性规格列表",
+          "link": "/seller/categoryapi/post-v1-description-category-attribute"
+        },
+        {
+          "text": "Справочник значений характеристики",
+          "link": "/seller/categoryapi/post-v1-description-category-attribute-values"
+        },
+        {
+          "text": "Поиск по справочным значениям характеристики",
+          "link": "/seller/categoryapi/post-v1-description-category-attribute-values-search"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/categoryapi/post-v1-product-placement-zone-info"
+        }
+      ]
+    },
+    {
+      "text": "📦 商品管理与创建更新",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建新商品或批量更新已有商品信息",
+          "link": "/seller/productapi/post-v3-product-import"
+        },
+        {
+          "text": "查询商品异步创建或批量修改任务的处理状态",
+          "link": "/seller/productapi/post-v1-product-import-info"
+        },
+        {
+          "text": "创建товар по SKU",
+          "link": "/seller/productapi/post-v1-product-import-by-sku"
+        },
+        {
+          "text": "更新商品",
+          "link": "/seller/productapi/post-v1-product-attributes-update"
+        },
+        {
+          "text": "Загрузить или обновить изображения товара",
+          "link": "/seller/productapi/post-v1-product-pictures-import"
+        },
+        {
+          "text": "Загрузить или обновить изображения товара",
+          "link": "/seller/productapi/post-v2-product-pictures-import"
+        },
+        {
+          "text": "获取商品列表",
+          "link": "/seller/productapi/post-v3-product-list"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/productapi/post-v1-product-rating-by-sku"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/productapi/post-v3-product-info-list"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/productapi/post-v4-product-info-attributes"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/productapi/post-v1-product-info-description"
+        },
+        {
+          "text": "Лимиты на ассортимент, создание и обновление товаров",
+          "link": "/seller/productapi/post-v4-product-info-limit"
+        },
+        {
+          "text": "Изменить артикулы товаров из системы продавца",
+          "link": "/seller/productapi/post-v1-product-update-offer-id"
+        },
+        {
+          "text": "Перенести товар в архив",
+          "link": "/seller/productapi/post-v1-product-archive"
+        },
+        {
+          "text": "Вернуть товар из архива",
+          "link": "/seller/productapi/post-v1-product-unarchive"
+        },
+        {
+          "text": "删除товар без SKU из архива",
+          "link": "/seller/productapi/post-v2-products-delete"
+        },
+        {
+          "text": "Количество подписавшихся на товар пользователей",
+          "link": "/seller/productapi/post-v1-product-info-subscription"
+        },
+        {
+          "text": "获取связанные SKU",
+          "link": "/seller/productapi/post-v1-product-related-sku-get"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/productapi/post-v2-product-pictures-info"
+        },
+        {
+          "text": "获取商品列表",
+          "link": "/seller/productapi/post-v1-product-info-wrong-volume"
+        },
+        {
+          "text": "获取仓库",
+          "link": "/seller/productapi/post-v1-product-info-stocks-by-warehouse-fbo"
+        }
+      ]
+    },
+    {
+      "text": "🏷️ 商品条形码管理",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Привязать штрихкод к товару",
+          "link": "/seller/barcodeapi/post-v1-barcode-add"
+        },
+        {
+          "text": "Отвязать штрихкод от товара",
+          "link": "/seller/barcodeapi/post-v1-barcode-delete"
+        },
+        {
+          "text": "创建商品",
+          "link": "/seller/barcodeapi/post-v1-barcode-generate"
+        }
+      ]
+    },
+    {
+      "text": "💰 商品价格与库存",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "批量更新指定仓库的商品可用库存数量",
+          "link": "/seller/pricesstocksapi/post-v2-products-stocks"
+        },
+        {
+          "text": "查询商品在各仓库的当前库存与在途明细",
+          "link": "/seller/pricesstocksapi/post-v4-product-info-stocks"
+        },
+        {
+          "text": "获取仓库",
+          "link": "/seller/pricesstocksapi/post-v1-product-info-warehouse-stocks"
+        },
+        {
+          "text": "Информация об остатках на складах продавца (FBS и rFBS)",
+          "link": "/seller/pricesstocksapi/post-v1-product-info-stocks-by-warehouse-fbs"
+        },
+        {
+          "text": "获取仓库",
+          "link": "/seller/pricesstocksapi/post-v2-product-info-stocks-by-warehouse-fbs"
+        },
+        {
+          "text": "更新商品价格",
+          "link": "/seller/pricesstocksapi/post-v1-product-import-prices"
+        },
+        {
+          "text": "Обновление таймера актуальности минимальной цены",
+          "link": "/seller/pricesstocksapi/post-v1-product-action-timer-update"
+        },
+        {
+          "text": "获取статус установленного таймера",
+          "link": "/seller/pricesstocksapi/post-v1-product-action-timer-status"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/pricesstocksapi/post-v5-product-info-prices"
+        },
+        {
+          "text": "Узнать информацию об уценке и основном товаре по SKU уценённого товара",
+          "link": "/seller/pricesstocksapi/post-v1-product-info-discounted"
+        },
+        {
+          "text": "Установить скидку на уценённый товар",
+          "link": "/seller/pricesstocksapi/post-v1-product-update-discount"
+        }
+      ]
+    },
+    {
+      "text": "🎁 官方促销与营销活动",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取 Ozon 平台当前生效或即将开始的官方促销活动列表",
+          "link": "/seller/promos/get-v1-actions"
+        },
+        {
+          "text": "查询可报名参加指定促销活动的候选商品列表",
+          "link": "/seller/promos/post-v1-actions-candidates"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/promos/post-v2-actions-candidates"
+        },
+        {
+          "text": "获取商品列表",
+          "link": "/seller/promos/post-v1-actions-products"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/promos/post-v2-actions-products"
+        },
+        {
+          "text": "Добавить товар в акцию",
+          "link": "/seller/promos/post-v1-actions-products-activate"
+        },
+        {
+          "text": "Добавить или обновить товар в акции",
+          "link": "/seller/promos/post-v1-actions-products-update"
+        },
+        {
+          "text": "删除товары из акции",
+          "link": "/seller/promos/post-v1-actions-products-deactivate"
+        },
+        {
+          "text": "删除товары из акции «Промокоды»",
+          "link": "/seller/promos/post-v2-actions-products-deactivate"
+        },
+        {
+          "text": "获取заявок на скидку列表",
+          "link": "/seller/promos/post-v1-actions-discounts-task-list"
+        },
+        {
+          "text": "Согласовать заявку на скидку",
+          "link": "/seller/promos/post-v1-actions-discounts-task-approve"
+        },
+        {
+          "text": "Отклонить заявку на скидку",
+          "link": "/seller/promos/post-v1-actions-discounts-task-decline"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/promos/post-v2-actions-auto-add-products-list"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/promos/post-v2-actions-auto-add-products-candidates"
+        },
+        {
+          "text": "删除товары из автодобавления в акцию",
+          "link": "/seller/promos/post-v2-actions-auto-add-products-delete"
+        },
+        {
+          "text": "Добавить или обновить товары в автодобавлении в акцию",
+          "link": "/seller/promos/post-v2-actions-auto-add-products-update"
+        }
+      ]
+    },
+    {
+      "text": "🎯 智能定价策略与竞品盯价",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取用于智能盯价对比的竞品店铺与竞争对手列表",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-competitors-list"
+        },
+        {
+          "text": "获取当前配置的商品自动定价与竞价策略列表",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-list"
+        },
+        {
+          "text": "创建стратегию",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-create"
+        },
+        {
+          "text": "查询стратегии详情",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-info"
+        },
+        {
+          "text": "更新стратегию",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-update"
+        },
+        {
+          "text": "Добавить товары в стратегию",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-products-add"
+        },
+        {
+          "text": "获取идентификаторов стратегий列表",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-strategy-ids-by-product-ids"
+        },
+        {
+          "text": "获取商品列表",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-products-list"
+        },
+        {
+          "text": "Цена товара у конкурента",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-product-info"
+        },
+        {
+          "text": "删除товары из стратегии",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-products-delete"
+        },
+        {
+          "text": "Изменить статус стратегии",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-status"
+        },
+        {
+          "text": "删除стратегию",
+          "link": "/seller/pricingstrategyapi/post-v1-pricing-strategy-delete"
+        }
+      ]
+    },
+    {
+      "text": "🎫 货车出入通行证",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取出入通行证列表",
+          "link": "/seller/pass/post-v1-pass-list"
+        },
+        {
+          "text": "创建пропуск",
+          "link": "/seller/pass/post-v1-carriage-pass-create"
+        },
+        {
+          "text": "更新пропуск",
+          "link": "/seller/pass/post-v1-carriage-pass-update"
+        },
+        {
+          "text": "删除пропуск",
+          "link": "/seller/pass/post-v1-carriage-pass-delete"
+        },
+        {
+          "text": "创建пропуск для возврата",
+          "link": "/seller/pass/post-v1-return-pass-create"
+        },
+        {
+          "text": "更新пропуск для возврата",
+          "link": "/seller/pass/post-v1-return-pass-update"
+        },
+        {
+          "text": "删除пропуск для возврата",
+          "link": "/seller/pass/post-v1-return-pass-delete"
+        }
+      ]
+    },
+    {
+      "text": "⭐ 品牌资质认证",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取品牌列表",
+          "link": "/seller/brandapi/post-v1-brand-company-certification-list"
+        }
+      ]
+    },
+    {
+      "text": "📜 商品质量合格证",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取типов соответствия требованиям (версия 1)列表",
+          "link": "/seller/certificationapi/get-v1-product-certificate-accordance-types"
+        },
+        {
+          "text": "获取типов соответствия требованиям (версия 2)列表",
+          "link": "/seller/certificationapi/get-v2-product-certificate-accordance-types-list"
+        },
+        {
+          "text": "Справочник типов документов",
+          "link": "/seller/certificationapi/get-v1-product-certificate-types"
+        },
+        {
+          "text": "获取商品类目列表",
+          "link": "/seller/certificationapi/post-v2-product-certification-list"
+        },
+        {
+          "text": "获取商品类目列表",
+          "link": "/seller/certificationapi/post-v1-product-certification-list"
+        },
+        {
+          "text": "获取параметры для создания сертификата качества",
+          "link": "/seller/certificationapi/post-v2-product-certification-options"
+        },
+        {
+          "text": "获取обязательные параметры для создания сертификата качества",
+          "link": "/seller/certificationapi/post-v2-product-certification-params"
+        },
+        {
+          "text": "Добавить сертификаты для товаров",
+          "link": "/seller/certificationapi/post-v1-product-certificate-create"
+        },
+        {
+          "text": "创建сертификат качества",
+          "link": "/seller/certificationapi/post-v2-product-certificate-create"
+        },
+        {
+          "text": "Привязать сертификат к товару",
+          "link": "/seller/certificationapi/post-v1-product-certificate-bind"
+        },
+        {
+          "text": "删除сертификат",
+          "link": "/seller/certificationapi/post-v1-product-certificate-delete"
+        },
+        {
+          "text": "查询сертификате详情",
+          "link": "/seller/certificationapi/post-v1-product-certificate-info"
+        },
+        {
+          "text": "获取认证证书列表",
+          "link": "/seller/certificationapi/post-v1-product-certificate-list"
+        },
+        {
+          "text": "获取商品列表",
+          "link": "/seller/certificationapi/post-v1-product-certificate-product-status-list"
+        },
+        {
+          "text": "获取商品列表",
+          "link": "/seller/certificationapi/post-v1-product-certificate-products-list"
+        },
+        {
+          "text": "Отвязать товар от сертификата",
+          "link": "/seller/certificationapi/post-v1-product-certificate-unbind"
+        },
+        {
+          "text": "Возможные причины отклонения сертификата",
+          "link": "/seller/certificationapi/post-v1-product-certificate-rejection-reasons-list"
+        },
+        {
+          "text": "Возможные статусы сертификатов",
+          "link": "/seller/certificationapi/post-v1-product-certificate-status-list"
+        }
+      ]
+    },
+    {
+      "text": "🏭 FBS/rFBS仓库管理",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取仓库列表",
+          "link": "/seller/warehouseapi/post-v1-warehouse-list"
+        },
+        {
+          "text": "获取методов доставки склада列表",
+          "link": "/seller/warehouseapi/post-v1-delivery-method-list"
+        },
+        {
+          "text": "获取методов доставки realFBS-склада列表",
+          "link": "/seller/warehouseapi/post-v2-delivery-method-list"
+        },
+        {
+          "text": "获取информацию по возвратным настройкам rFBS и rFBS Express",
+          "link": "/seller/warehouseapi/post-v1-delivery-method-return-settings-get"
+        },
+        {
+          "text": "获取仓库列表",
+          "link": "/seller/warehouseapi/post-v2-warehouse-list"
+        },
+        {
+          "text": "获取статус операции",
+          "link": "/seller/warehouseapi/post-v1-warehouse-operation-status"
+        },
+        {
+          "text": "Перенести склад в архив",
+          "link": "/seller/warehouseapi/post-v1-warehouse-archive"
+        },
+        {
+          "text": "Перенести склад из архива",
+          "link": "/seller/warehouseapi/post-v1-warehouse-unarchive"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/warehouseapi/post-v1-warehouse-invalid-products-get"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/warehouseapi/post-v1-warehouse-warehouses-with-invalid-products"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBOWarehouse",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取仓库",
+          "link": "/seller/fbowarehouse/post-v1-warehouse-ozon-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 PolygonAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создайте полигон доставки",
+          "link": "/seller/polygonapi/post-v1-polygon-create"
+        },
+        {
+          "text": "Свяжите метод доставки с полигоном доставки",
+          "link": "/seller/polygonapi/post-v1-polygon-bind"
+        },
+        {
+          "text": "Связать метод доставки с полигоном",
+          "link": "/seller/polygonapi/post-v2-polygon-bind"
+        },
+        {
+          "text": "删除полигон из области доставки",
+          "link": "/seller/polygonapi/post-v1-polygon-delete"
+        },
+        {
+          "text": "获取список установленных полигонов на метод доставки",
+          "link": "/seller/polygonapi/post-v1-polygon-list"
+        },
+        {
+          "text": "更新координаты полигона доставки",
+          "link": "/seller/polygonapi/post-v1-polygon-time-coordinates-update"
+        },
+        {
+          "text": "Установить новое время доставки в полигоне",
+          "link": "/seller/polygonapi/post-v1-polygon-time-set"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBO",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取发货包裹列表",
+          "link": "/seller/fbo/post-v2-posting-fbo-list"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/fbo/post-v3-posting-fbo-list"
+        },
+        {
+          "text": "Информация об отправлении",
+          "link": "/seller/fbo/post-v2-posting-fbo-get"
+        },
+        {
+          "text": "Причины отмены отправлений по схеме FBO",
+          "link": "/seller/fbo/post-v1-posting-fbo-cancel-reason-list"
+        },
+        {
+          "text": "Количество заявок по статусам",
+          "link": "/seller/fbo/post-v1-supply-order-status-counter"
+        },
+        {
+          "text": "Состав поставки или заявки на поставку",
+          "link": "/seller/fbo/post-v1-supply-order-bundle"
+        },
+        {
+          "text": "获取заявок на поставку на склад Ozon列表",
+          "link": "/seller/fbo/post-v3-supply-order-list"
+        },
+        {
+          "text": "查询заявке на поставку详情",
+          "link": "/seller/fbo/post-v3-supply-order-get"
+        },
+        {
+          "text": "Интервалы поставки",
+          "link": "/seller/fbo/post-v1-supply-order-timeslot-get"
+        },
+        {
+          "text": "获取список доступных интервалов поставки",
+          "link": "/seller/fbo/post-v2-supply-order-timeslot-list"
+        },
+        {
+          "text": "更新интервал поставки",
+          "link": "/seller/fbo/post-v1-supply-order-timeslot-update"
+        },
+        {
+          "text": "Статус интервала поставки",
+          "link": "/seller/fbo/post-v1-supply-order-timeslot-status"
+        },
+        {
+          "text": "Указать данные о водителе и автомобиле",
+          "link": "/seller/fbo/post-v1-supply-order-pass-create"
+        },
+        {
+          "text": "Статус ввода данных о водителе и автомобиле",
+          "link": "/seller/fbo/post-v1-supply-order-pass-status"
+        },
+        {
+          "text": "获取подробную информацию о заявке на поставку",
+          "link": "/seller/fbo/post-v1-supply-order-details"
+        },
+        {
+          "text": "Загруженность складов Ozon",
+          "link": "/seller/fbo/get-v1-supplier-available-warehouses"
+        }
+      ]
+    },
+    {
+      "text": "📌 FboSupplyRequest",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "查询仓库详情",
+          "link": "/seller/fbosupplyrequest/post-v1-cluster-list"
+        },
+        {
+          "text": "获取информацию о макролокальных кластерах",
+          "link": "/seller/fbosupplyrequest/post-v2-cluster-list"
+        },
+        {
+          "text": "Поиск точек для отгрузки поставки",
+          "link": "/seller/fbosupplyrequest/post-v1-warehouse-fbo-list"
+        },
+        {
+          "text": "创建черновик заявки на поставку кросс-докингом",
+          "link": "/seller/fbosupplyrequest/post-v1-draft-crossdock-create"
+        },
+        {
+          "text": "创建черновик заявки на прямую поставку",
+          "link": "/seller/fbosupplyrequest/post-v1-draft-direct-create"
+        },
+        {
+          "text": "创建черновик заявки на поставку для нескольких кластеров",
+          "link": "/seller/fbosupplyrequest/post-v1-draft-multi-cluster-create"
+        },
+        {
+          "text": "获取информацию о черновике заявки на поставку",
+          "link": "/seller/fbosupplyrequest/post-v2-draft-create-info"
+        },
+        {
+          "text": "获取список доступных таймслотов",
+          "link": "/seller/fbosupplyrequest/post-v2-draft-timeslot-info"
+        },
+        {
+          "text": "Установка грузомест",
+          "link": "/seller/fbosupplyrequest/post-v1-cargoes-create"
+        },
+        {
+          "text": "获取информацию по установке грузомест",
+          "link": "/seller/fbosupplyrequest/post-v2-cargoes-create-info"
+        },
+        {
+          "text": "获取информацию о грузоместах",
+          "link": "/seller/fbosupplyrequest/post-v1-cargoes-get"
+        },
+        {
+          "text": "删除грузоместо в заявке на поставку",
+          "link": "/seller/fbosupplyrequest/post-v1-cargoes-delete"
+        },
+        {
+          "text": "查询статусе удаления грузоместа详情",
+          "link": "/seller/fbosupplyrequest/post-v1-cargoes-delete-status"
+        },
+        {
+          "text": "Чек-лист по установке грузомест FBO",
+          "link": "/seller/fbosupplyrequest/post-v1-cargoes-rules-get"
+        },
+        {
+          "text": "Сгенерировать этикетки для грузомест",
+          "link": "/seller/fbosupplyrequest/post-v1-cargoes-label-create"
+        },
+        {
+          "text": "获取идентификатор этикетки для грузомест",
+          "link": "/seller/fbosupplyrequest/post-v1-cargoes-label-get"
+        },
+        {
+          "text": "获取PDF с этикетками грузовых мест",
+          "link": "/seller/fbosupplyrequest/get-v1-cargoes-label-file-file-guid"
+        },
+        {
+          "text": "取消заявку на поставку",
+          "link": "/seller/fbosupplyrequest/post-v1-supply-order-cancel"
+        },
+        {
+          "text": "获取статус отмены заявки на поставку",
+          "link": "/seller/fbosupplyrequest/post-v1-supply-order-cancel-status"
+        },
+        {
+          "text": "Редактирование товарного состава",
+          "link": "/seller/fbosupplyrequest/post-v1-supply-order-content-update"
+        },
+        {
+          "text": "查询статусе редактирования товарного состава详情",
+          "link": "/seller/fbosupplyrequest/post-v1-supply-order-content-update-status"
+        },
+        {
+          "text": "检查与验证новый товарный состав",
+          "link": "/seller/fbosupplyrequest/post-v1-supply-order-content-update-validation"
+        },
+        {
+          "text": "创建заявку на поставку по черновику",
+          "link": "/seller/fbosupplyrequest/post-v2-draft-supply-create"
+        },
+        {
+          "text": "获取информацию о создании заявки на поставку",
+          "link": "/seller/fbosupplyrequest/post-v2-draft-supply-create-status"
+        },
+        {
+          "text": "获取仓库",
+          "link": "/seller/fbosupplyrequest/post-v1-warehouse-fbo-seller-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBS&rFBSMarks",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Собрать заказ (версия 4)",
+          "link": "/seller/fbsrfbsmarks/post-v4-posting-fbs-ship"
+        },
+        {
+          "text": "Частичная сборка отправления (версия 4)",
+          "link": "/seller/fbsrfbsmarks/post-v4-posting-fbs-ship-package"
+        },
+        {
+          "text": "检查与验证и сохранить данные экземпляров",
+          "link": "/seller/fbsrfbsmarks/post-v6-fbs-posting-product-exemplar-set"
+        },
+        {
+          "text": "获取данные созданных экземпляров",
+          "link": "/seller/fbsrfbsmarks/post-v6-fbs-posting-product-exemplar-create-or-get"
+        },
+        {
+          "text": "获取статус добавления экземпляров",
+          "link": "/seller/fbsrfbsmarks/post-v5-fbs-posting-product-exemplar-status"
+        },
+        {
+          "text": "Валидация кодов маркировки",
+          "link": "/seller/fbsrfbsmarks/post-v5-fbs-posting-product-exemplar-validate"
+        },
+        {
+          "text": "更新данные экземпляров",
+          "link": "/seller/fbsrfbsmarks/post-v1-fbs-posting-product-exemplar-update"
+        }
+      ]
+    },
+    {
+      "text": "📌 DeliveryFBS",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создание отгрузки",
+          "link": "/seller/deliveryfbs/post-v1-carriage-create"
+        },
+        {
+          "text": "Подтверждение отгрузки",
+          "link": "/seller/deliveryfbs/post-v1-carriage-approve"
+        },
+        {
+          "text": "Изменение состава отгрузки",
+          "link": "/seller/deliveryfbs/post-v1-carriage-set-postings"
+        },
+        {
+          "text": "Удаление отгрузки",
+          "link": "/seller/deliveryfbs/post-v1-carriage-cancel"
+        },
+        {
+          "text": "获取методов доставки и отгрузок列表",
+          "link": "/seller/deliveryfbs/post-v1-carriage-delivery-list"
+        },
+        {
+          "text": "获取методов доставки и отгрузок列表",
+          "link": "/seller/deliveryfbs/post-v2-carriage-delivery-list"
+        },
+        {
+          "text": "Подтвердить отгрузку и создать документы",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-act-create"
+        },
+        {
+          "text": "获取доступных перевозок列表",
+          "link": "/seller/deliveryfbs/post-v1-posting-carriage-available-list"
+        },
+        {
+          "text": "查询перевозке详情",
+          "link": "/seller/deliveryfbs/post-v1-carriage-get"
+        },
+        {
+          "text": "Добавить или обновить контактные данные продавца для курьера",
+          "link": "/seller/deliveryfbs/post-v1-carriage-courier-contact-set"
+        },
+        {
+          "text": "获取контактные данные продавца для курьера",
+          "link": "/seller/deliveryfbs/post-v1-carriage-courier-contact-get"
+        },
+        {
+          "text": "Разделить заказ на отправления без сборки",
+          "link": "/seller/deliveryfbs/post-v1-posting-fbs-split"
+        },
+        {
+          "text": "获取发货包裹列表",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-act-get-postings"
+        },
+        {
+          "text": "Этикетки для грузового места",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-act-get-container-labels"
+        },
+        {
+          "text": "Штрихкод для отгрузки отправления",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-act-get-barcode"
+        },
+        {
+          "text": "Значение штрихкода для отгрузки отправления",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-act-get-barcode-text"
+        },
+        {
+          "text": "Статус формирования накладной",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-digital-act-check-status"
+        },
+        {
+          "text": "获取PDF c документами",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-act-get-pdf"
+        },
+        {
+          "text": "获取акт о расхождениях по отгрузке FBS",
+          "link": "/seller/deliveryfbs/post-v1-carriage-act-discrepancy-pdf"
+        },
+        {
+          "text": "获取актов по отгрузкам列表",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-act-list"
+        },
+        {
+          "text": "获取лист отгрузки по перевозке",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-digital-act-get-pdf"
+        },
+        {
+          "text": "Статус отгрузки и документов",
+          "link": "/seller/deliveryfbs/post-v2-posting-fbs-act-check-status"
+        },
+        {
+          "text": "Разделить отправление с прослеживаемыми товарами",
+          "link": "/seller/deliveryfbs/post-v1-posting-fbs-traceable-split"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/deliveryfbs/post-v1-posting-fbs-product-traceable-attribute"
+        },
+        {
+          "text": "获取статус проверки электронной ТТН на прослеживаемой перевозке FBS",
+          "link": "/seller/deliveryfbs/post-v1-carriage-ettn-status"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/deliveryfbs/post-v1-assembly-carriage-posting-list"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/deliveryfbs/post-v1-assembly-carriage-product-list"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/deliveryfbs/post-v1-assembly-fbs-posting-list"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/deliveryfbs/post-v1-assembly-fbs-product-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 DeliveryrFBS",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Добавить трек-номера",
+          "link": "/seller/deliveryrfbs/post-v2-fbs-posting-tracking-number-set"
+        },
+        {
+          "text": "Изменить статус на «Доставляется»",
+          "link": "/seller/deliveryrfbs/post-v2-fbs-posting-delivering"
+        },
+        {
+          "text": "Изменить статус на «Последняя миля»",
+          "link": "/seller/deliveryrfbs/post-v2-fbs-posting-last-mile"
+        },
+        {
+          "text": "Изменить статус на «Доставлено»",
+          "link": "/seller/deliveryrfbs/post-v2-fbs-posting-delivered"
+        },
+        {
+          "text": "Доступные даты для переноса доставки",
+          "link": "/seller/deliveryrfbs/post-v1-posting-fbs-timeslot-change-restrictions"
+        },
+        {
+          "text": "Перенести дату доставки",
+          "link": "/seller/deliveryrfbs/post-v1-posting-fbs-timeslot-set"
+        },
+        {
+          "text": "Уточнить дату отгрузки отправления",
+          "link": "/seller/deliveryrfbs/post-v1-posting-cutoff-set"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBS",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取发货包裹列表",
+          "link": "/seller/fbs/post-v3-posting-fbs-unfulfilled-list"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/fbs/post-v4-posting-fbs-unfulfilled-list"
+        },
+        {
+          "text": "获取发货包裹列表",
+          "link": "/seller/fbs/post-v3-posting-fbs-list"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/fbs/post-v4-posting-fbs-list"
+        },
+        {
+          "text": "获取информацию об отправлении по идентификатору",
+          "link": "/seller/fbs/post-v3-posting-fbs-get"
+        },
+        {
+          "text": "获取информацию об отправлении по штрихкоду",
+          "link": "/seller/fbs/post-v2-posting-fbs-get-by-barcode"
+        },
+        {
+          "text": "Указать количество коробок для многокоробочных отправлений",
+          "link": "/seller/fbs/post-v3-posting-multiboxqty-set"
+        },
+        {
+          "text": "获取доступных стран-изготовителей列表",
+          "link": "/seller/fbs/post-v2-posting-fbs-product-country-list"
+        },
+        {
+          "text": "Добавить информацию о стране-изготовителе товара",
+          "link": "/seller/fbs/post-v2-posting-fbs-product-country-set"
+        },
+        {
+          "text": "获取ограничения пункта приёма",
+          "link": "/seller/fbs/post-v1-posting-fbs-restrictions"
+        },
+        {
+          "text": "Напечатать этикетку",
+          "link": "/seller/fbs/post-v2-posting-fbs-package-label"
+        },
+        {
+          "text": "创建задание на выгрузку этикеток",
+          "link": "/seller/fbs/post-v1-posting-fbs-package-label-create"
+        },
+        {
+          "text": "创建задание на формирование этикеток",
+          "link": "/seller/fbs/post-v2-posting-fbs-package-label-create"
+        },
+        {
+          "text": "创建задание на формирование этикеток",
+          "link": "/seller/fbs/post-v3-posting-fbs-package-label-create"
+        },
+        {
+          "text": "获取файл с этикетками",
+          "link": "/seller/fbs/post-v1-posting-fbs-package-label-get"
+        },
+        {
+          "text": "获取файл с этикетками",
+          "link": "/seller/fbs/post-v2-posting-fbs-package-label-get"
+        },
+        {
+          "text": "Причины отмены отправления",
+          "link": "/seller/fbs/post-v1-posting-fbs-cancel-reason"
+        },
+        {
+          "text": "Причины отмены отправлений",
+          "link": "/seller/fbs/post-v2-posting-fbs-cancel-reason-list"
+        },
+        {
+          "text": "取消商品",
+          "link": "/seller/fbs/post-v2-posting-fbs-product-cancel"
+        },
+        {
+          "text": "取消отправление",
+          "link": "/seller/fbs/post-v2-posting-fbs-cancel"
+        },
+        {
+          "text": "Открыть спор по отправлению",
+          "link": "/seller/fbs/post-v2-posting-fbs-arbitration"
+        },
+        {
+          "text": "Передать отправление к отгрузке",
+          "link": "/seller/fbs/post-v2-posting-fbs-awaiting-delivery"
+        },
+        {
+          "text": "检查与验证код курьера",
+          "link": "/seller/fbs/post-v1-posting-fbs-pick-up-code-verify"
+        },
+        {
+          "text": "Таможенные декларации ETGB",
+          "link": "/seller/fbs/post-v1-posting-global-etgb"
+        },
+        {
+          "text": "获取订单列表",
+          "link": "/seller/fbs/post-v1-posting-unpaid-legal-product-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 RFBSReturnsAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取заявок на возврат列表",
+          "link": "/seller/rfbsreturnsapi/post-v2-returns-rfbs-list"
+        },
+        {
+          "text": "查询заявке на возврат详情",
+          "link": "/seller/rfbsreturnsapi/post-v2-returns-rfbs-get"
+        },
+        {
+          "text": "Передать доступные действия для rFBS возвратов",
+          "link": "/seller/rfbsreturnsapi/post-v1-returns-rfbs-action-set"
+        }
+      ]
+    },
+    {
+      "text": "📌 CancellationAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取список заявок на отмену rFBS",
+          "link": "/seller/cancellationapi/post-v2-conditional-cancellation-list"
+        },
+        {
+          "text": "Подтвердить заявку на отмену rFBS",
+          "link": "/seller/cancellationapi/post-v2-conditional-cancellation-approve"
+        },
+        {
+          "text": "Отклонить заявку на отмену rFBS",
+          "link": "/seller/cancellationapi/post-v2-conditional-cancellation-reject"
+        }
+      ]
+    },
+    {
+      "text": "↩️ 买家退货与逆向售后",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "查询возвратах FBO и FBS详情",
+          "link": "/seller/returnsapi/post-v1-returns-list"
+        },
+        {
+          "text": "获取историю изменений автоутилизации",
+          "link": "/seller/returnsapi/post-v1-returns-settings-utilization-history"
+        },
+        {
+          "text": "获取настройки автоутилизации",
+          "link": "/seller/returnsapi/post-v1-returns-settings-utilization-info"
+        },
+        {
+          "text": "更新настройки автоутилизации",
+          "link": "/seller/returnsapi/post-v1-returns-settings-utilization-update"
+        }
+      ]
+    },
+    {
+      "text": "📌 ReturnAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Количество возвратов FBS",
+          "link": "/seller/returnapi/post-v1-returns-company-fbs-info"
+        },
+        {
+          "text": "检查与验证возможность получения возвратных отгрузок по штрихкоду",
+          "link": "/seller/returnapi/post-v1-return-giveout-is-enabled"
+        },
+        {
+          "text": "获取возвратных отгрузок列表",
+          "link": "/seller/returnapi/post-v1-return-giveout-list"
+        },
+        {
+          "text": "查询возвратной отгрузке详情",
+          "link": "/seller/returnapi/post-v1-return-giveout-info"
+        },
+        {
+          "text": "Значение штрихкода для возвратных отгрузок",
+          "link": "/seller/returnapi/post-v1-return-giveout-barcode"
+        },
+        {
+          "text": "Штрихкод для получения возвратной отгрузки в формате PDF",
+          "link": "/seller/returnapi/post-v1-return-giveout-get-pdf"
+        },
+        {
+          "text": "Штрихкод для получения возвратной отгрузки в формате PNG",
+          "link": "/seller/returnapi/post-v1-return-giveout-get-png"
+        },
+        {
+          "text": "Сгенерировать новый штрихкод",
+          "link": "/seller/returnapi/post-v1-return-giveout-barcode-reset"
+        }
+      ]
+    },
+    {
+      "text": "🗨️ 买家客服消息会话",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отправить файл",
+          "link": "/seller/chatapi/post-v1-chat-send-file"
+        },
+        {
+          "text": "获取客服聊天列表",
+          "link": "/seller/chatapi/post-v3-chat-list"
+        },
+        {
+          "text": "История чата",
+          "link": "/seller/chatapi/post-v3-chat-history"
+        }
+      ]
+    },
+    {
+      "text": "📌 SupplierAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建или изменить счёт-фактуру",
+          "link": "/seller/supplierapi/post-v2-invoice-create-or-update"
+        },
+        {
+          "text": "Загрузка счёта-фактуры",
+          "link": "/seller/supplierapi/post-v1-invoice-file-upload"
+        },
+        {
+          "text": "获取информацию о счёте-фактуре",
+          "link": "/seller/supplierapi/post-v2-invoice-get"
+        },
+        {
+          "text": "删除ссылку на счёт-фактуру",
+          "link": "/seller/supplierapi/post-v1-invoice-delete"
+        }
+      ]
+    },
+    {
+      "text": "📌 ReportAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Информация об отчёте",
+          "link": "/seller/reportapi/post-v1-report-info"
+        },
+        {
+          "text": "获取数据报表列表",
+          "link": "/seller/reportapi/post-v1-report-list"
+        },
+        {
+          "text": "Отчёт по товарам",
+          "link": "/seller/reportapi/post-v1-report-products-create"
+        },
+        {
+          "text": "Отчёт о возвратах",
+          "link": "/seller/reportapi/post-v2-report-returns-create"
+        },
+        {
+          "text": "Отчёт об отправлениях",
+          "link": "/seller/reportapi/post-v1-report-postings-create"
+        },
+        {
+          "text": "Финансовый отчёт",
+          "link": "/seller/reportapi/post-v1-finance-cash-flow-statement-list"
+        },
+        {
+          "text": "Отчёт об уценённых товарах",
+          "link": "/seller/reportapi/post-v1-report-discounted-create"
+        },
+        {
+          "text": "Отчёт об остатках на FBS-складе",
+          "link": "/seller/reportapi/post-v1-report-warehouse-stock"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/reportapi/post-v1-report-placement-by-products-create"
+        },
+        {
+          "text": "获取отчёт о стоимости размещения по поставкам",
+          "link": "/seller/reportapi/post-v1-report-placement-by-supplies-create"
+        },
+        {
+          "text": "Сгенерировать отчёт по продажам товаров с маркировкой",
+          "link": "/seller/reportapi/post-v1-report-marked-products-sales-create"
+        }
+      ]
+    },
+    {
+      "text": "📈 店铺经营数据分析",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отчёт по остаткам и товарам",
+          "link": "/seller/analyticsapi/post-v2-analytics-stock-on-warehouses"
+        },
+        {
+          "text": "Оборачиваемость товара",
+          "link": "/seller/analyticsapi/post-v1-analytics-turnover-stocks"
+        },
+        {
+          "text": "获取аналитику по остаткам",
+          "link": "/seller/analyticsapi/post-v1-analytics-stocks"
+        }
+      ]
+    },
+    {
+      "text": "📊 财务流水与结算报表",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отчёт о реализации товаров (версия 2)",
+          "link": "/seller/financeapi/post-v2-finance-realization"
+        },
+        {
+          "text": "Позаказный отчёт о реализации товаров",
+          "link": "/seller/financeapi/post-v1-finance-realization-posting"
+        },
+        {
+          "text": "获取促销活动列表",
+          "link": "/seller/financeapi/post-v3-finance-transaction-list"
+        },
+        {
+          "text": "Суммы транзакций",
+          "link": "/seller/financeapi/post-v3-finance-transaction-totals"
+        },
+        {
+          "text": "Реестр продаж юридическим лицам",
+          "link": "/seller/financeapi/post-v1-finance-document-b2b-sales"
+        },
+        {
+          "text": "Реестр продаж юридическим лицам в JSON-формате",
+          "link": "/seller/financeapi/post-v1-finance-document-b2b-sales-json"
+        },
+        {
+          "text": "Отчёт о взаиморасчётах",
+          "link": "/seller/financeapi/post-v1-finance-mutual-settlement"
+        },
+        {
+          "text": "Отчёт о выкупленных товарах",
+          "link": "/seller/financeapi/post-v1-finance-products-buyout"
+        },
+        {
+          "text": "Отчёт о компенсациях",
+          "link": "/seller/financeapi/post-v1-finance-compensation"
+        },
+        {
+          "text": "Отчёт о декомпенсациях",
+          "link": "/seller/financeapi/post-v1-finance-decompensation"
+        }
+      ]
+    },
+    {
+      "text": "📌 Receipt",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取чек в формате PDF",
+          "link": "/seller/receipt/post-v1-receipts-get"
+        },
+        {
+          "text": "获取список чеков продавца",
+          "link": "/seller/receipt/post-v1-receipts-seller-list"
+        },
+        {
+          "text": "Загрузить чек",
+          "link": "/seller/receipt/post-v1-receipts-upload"
+        }
+      ]
+    },
+    {
+      "text": "📌 SellerRating",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取информацию о текущих рейтингах продавца",
+          "link": "/seller/sellerrating/post-v1-rating-summary"
+        },
+        {
+          "text": "获取информацию о рейтингах продавца за период",
+          "link": "/seller/sellerrating/post-v1-rating-history"
+        },
+        {
+          "text": "获取индекс ошибок FBS и rFBS",
+          "link": "/seller/sellerrating/post-v1-rating-index-fbs-info"
+        },
+        {
+          "text": "获取发货包裹列表",
+          "link": "/seller/sellerrating/post-v1-rating-index-fbs-posting-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 Digital",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Загрузить коды цифровых товаров для отправления",
+          "link": "/seller/digital/post-v1-posting-digital-codes-upload"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/digital/post-v1-posting-digital-list"
+        },
+        {
+          "text": "更新商品",
+          "link": "/seller/digital/post-v1-product-digital-stocks-import"
+        }
+      ]
+    },
+    {
+      "text": "💬 商品买家评价与问答",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Оставить комментарий на отзыв",
+          "link": "/seller/reviewapi/post-v1-review-comment-create"
+        },
+        {
+          "text": "删除комментарий на отзыв",
+          "link": "/seller/reviewapi/post-v1-review-comment-delete"
+        },
+        {
+          "text": "删除комментарий на отзыв",
+          "link": "/seller/reviewapi/post-v2-review-comment-delete"
+        },
+        {
+          "text": "获取список комментариев на отзыв",
+          "link": "/seller/reviewapi/post-v1-review-comment-list"
+        },
+        {
+          "text": "Изменить статус отзывов",
+          "link": "/seller/reviewapi/post-v1-review-change-status"
+        },
+        {
+          "text": "Изменить статус отзывов",
+          "link": "/seller/reviewapi/post-v2-review-change-status"
+        },
+        {
+          "text": "Количество отзывов по статусам",
+          "link": "/seller/reviewapi/post-v1-review-count"
+        },
+        {
+          "text": "获取количество отзывов по статусам",
+          "link": "/seller/reviewapi/post-v2-review-count"
+        },
+        {
+          "text": "获取информацию об отзыве",
+          "link": "/seller/reviewapi/post-v1-review-info"
+        },
+        {
+          "text": "获取информацию по отзыву",
+          "link": "/seller/reviewapi/post-v2-review-info"
+        },
+        {
+          "text": "获取список отзывов",
+          "link": "/seller/reviewapi/post-v1-review-list"
+        },
+        {
+          "text": "获取список отзывов",
+          "link": "/seller/reviewapi/post-v2-review-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 Questions&Answers",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建ответ на вопрос",
+          "link": "/seller/questionsanswers/post-v1-question-answer-create"
+        },
+        {
+          "text": "删除ответ на вопрос",
+          "link": "/seller/questionsanswers/post-v1-question-answer-delete"
+        },
+        {
+          "text": "获取ответов на вопрос列表",
+          "link": "/seller/questionsanswers/post-v1-question-answer-list"
+        },
+        {
+          "text": "Изменить статус вопросов",
+          "link": "/seller/questionsanswers/post-v1-question-change-status"
+        },
+        {
+          "text": "Количество вопросов по статусам",
+          "link": "/seller/questionsanswers/post-v1-question-count"
+        },
+        {
+          "text": "查询вопросе详情",
+          "link": "/seller/questionsanswers/post-v1-question-info"
+        },
+        {
+          "text": "获取вопросов列表",
+          "link": "/seller/questionsanswers/post-v1-question-list"
+        },
+        {
+          "text": "Товары с наибольшим количеством вопросов",
+          "link": "/seller/questionsanswers/post-v1-question-top-sku"
+        }
+      ]
+    },
+    {
+      "text": "📌 BetaMethod",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Управление остатками",
+          "link": "/seller/betamethod/post-v1-analytics-manage-stocks"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/betamethod/post-v1-analytics-decommissioned-goods"
+        },
+        {
+          "text": "获取商品类目",
+          "link": "/seller/betamethod/post-v1-analytics-category-comparison"
+        },
+        {
+          "text": "Отчёт по вывозу и утилизации с поставки FBO",
+          "link": "/seller/betamethod/post-v1-removal-from-supply-list"
+        },
+        {
+          "text": "Отчёт по вывозу и утилизации со стока FBO",
+          "link": "/seller/betamethod/post-v1-removal-from-stock-list"
+        },
+        {
+          "text": "Управлять скидкой от количества",
+          "link": "/seller/betamethod/post-v1-product-stairway-discount-by-quantity-set"
+        },
+        {
+          "text": "获取информацию о скидке от количества",
+          "link": "/seller/betamethod/post-v1-product-stairway-discount-by-quantity-get"
+        },
+        {
+          "text": "获取отчёт о балансе",
+          "link": "/seller/betamethod/post-v1-finance-balance"
+        },
+        {
+          "text": "获取список заявок на скидку",
+          "link": "/seller/betamethod/post-v2-actions-discounts-task-list"
+        },
+        {
+          "text": "Настроить видимость товара на витрине Ozon и Ozon Селект",
+          "link": "/seller/betamethod/post-v1-product-visibility-set"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/betamethod/post-v2-posting-digital-list"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/betamethod/post-v1-finance-accrual-postings"
+        },
+        {
+          "text": "获取справочник начислений",
+          "link": "/seller/betamethod/post-v1-finance-accrual-types"
+        },
+        {
+          "text": "获取начисления за день",
+          "link": "/seller/betamethod/post-v1-finance-accrual-by-day"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/betamethod/post-v1-product-visibility-info"
+        },
+        {
+          "text": "获取информацию об отправлении по идентификатору",
+          "link": "/seller/betamethod/post-v1-posting-fbp-get"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/betamethod/post-v1-report-realization-posting-create"
+        },
+        {
+          "text": "获取属性规格",
+          "link": "/seller/betamethod/post-v1-description-category-dependent-attributes"
+        },
+        {
+          "text": "获取属性规格",
+          "link": "/seller/betamethod/post-v1-description-category-dependent-attributes-values"
+        },
+        {
+          "text": "获取общую информацию о локальности продаж",
+          "link": "/seller/betamethod/post-v1-analytics-local-sale-total"
+        },
+        {
+          "text": "获取информацию о локальности продаж по кластерам",
+          "link": "/seller/betamethod/post-v1-analytics-local-sale-clusters-items-info"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/betamethod/post-v1-analytics-local-sale-items-clusters-info"
+        },
+        {
+          "text": "获取список пунктов возврата для склада rFBS",
+          "link": "/seller/betamethod/post-v1-warehouse-rfbs-return-point-list"
+        },
+        {
+          "text": "获取информацию о выполнении плана отгрузок",
+          "link": "/seller/betamethod/post-v1-supply-order-shipment-plan-compliance-get"
+        }
+      ]
+    },
+    {
+      "text": "📌 SupplyOrderAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取информацию об акте",
+          "link": "/seller/supplyorderapi/post-v1-supply-order-act-summary-get"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/supplyorderapi/post-v1-supply-order-act-product-get"
+        },
+        {
+          "text": "Согласовать акт",
+          "link": "/seller/supplyorderapi/post-v1-supply-order-act-accept"
+        },
+        {
+          "text": "获取статус согласования акта",
+          "link": "/seller/supplyorderapi/post-v1-supply-order-act-accept-status"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBSWarehouseSetup",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取список drop-off пунктов для создания склада",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-create-drop-off-list"
+        },
+        {
+          "text": "获取список drop-off пунктов для изменения информации склада",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-update-drop-off-list"
+        },
+        {
+          "text": "获取список таймслотов для создания склада с отгрузкой drop-off",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-create-drop-off-timeslot-list"
+        },
+        {
+          "text": "获取список таймслотов для обновления склада с отгрузкой drop-off",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-update-drop-off-timeslot-list"
+        },
+        {
+          "text": "获取список таймслотов для создания склада с отгрузкой pick-up",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-create-pick-up-timeslot-list"
+        },
+        {
+          "text": "获取список таймслотов для обновления склада с отгрузкой pick-up",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-update-pick-up-timeslot-list"
+        },
+        {
+          "text": "创建склад",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-create"
+        },
+        {
+          "text": "更新склад",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-update"
+        },
+        {
+          "text": "更新первую милю",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-first-mile-update"
+        },
+        {
+          "text": "获取список пунктов возврата для создания склада",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-create-return-point-list"
+        },
+        {
+          "text": "获取список пунктов возврата для обновления склада",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-update-return-point-list"
+        },
+        {
+          "text": "获取информацию о возвратной миле",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-return-mile-info"
+        },
+        {
+          "text": "检查与验证необходимость установки возвратной мили на склад",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-return-mile-check"
+        },
+        {
+          "text": "创建вызов курьера на забор отгрузки pick-up",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-pickup-courier-create"
+        },
+        {
+          "text": "取消вызов курьера на забор отгрузки pick-up",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-pickup-courier-cancel"
+        },
+        {
+          "text": "获取историю отгрузок курьерам",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-pickup-history-list"
+        },
+        {
+          "text": "获取仓库",
+          "link": "/seller/fbswarehousesetup/post-v1-warehouse-fbs-pickup-planning-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 rFBSWarehouseSetup",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建склад с методом доставки «Партнёры Ozon»",
+          "link": "/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-aggregator-create"
+        },
+        {
+          "text": "更新склад",
+          "link": "/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-update"
+        },
+        {
+          "text": "更新метод доставки «Партнёры Ozon»",
+          "link": "/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-aggregator-delivery-method-update"
+        },
+        {
+          "text": "创建склад с методом доставки «Вы или сторонняя служба»",
+          "link": "/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-non-integrated-create"
+        },
+        {
+          "text": "更新метод доставки «Вы или сторонняя служба»",
+          "link": "/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-non-integrated-delivery-method-update"
+        },
+        {
+          "text": "Поставить rFBS-склад на паузу",
+          "link": "/seller/rfbswarehousesetup/post-v1-warehouse-rfbs-pause"
+        },
+        {
+          "text": "Снять rFBS-склад с паузы",
+          "link": "/seller/rfbswarehousesetup/post-v1-warehouse-rfbs-unpause"
+        }
+      ]
+    },
+    {
+      "text": "📌 SellerActions",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建акцию с механикой «Скидка»",
+          "link": "/seller/selleractions/post-v1-seller-actions-create-discount"
+        },
+        {
+          "text": "创建订单",
+          "link": "/seller/selleractions/post-v1-seller-actions-create-discount-with-condition"
+        },
+        {
+          "text": "创建商品价格",
+          "link": "/seller/selleractions/post-v1-seller-actions-create-installment"
+        },
+        {
+          "text": "创建акцию с механикой «Многоуровневая скидка от суммы»",
+          "link": "/seller/selleractions/post-v1-seller-actions-create-multi-level-discount"
+        },
+        {
+          "text": "创建акцию с механикой «Скидка по промокоду»",
+          "link": "/seller/selleractions/post-v1-seller-actions-create-voucher"
+        },
+        {
+          "text": "更新акцию с механикой «Скидка»",
+          "link": "/seller/selleractions/post-v1-seller-actions-update-discount"
+        },
+        {
+          "text": "更新订单",
+          "link": "/seller/selleractions/post-v1-seller-actions-update-discount-with-condition"
+        },
+        {
+          "text": "更新商品价格",
+          "link": "/seller/selleractions/post-v1-seller-actions-update-installment"
+        },
+        {
+          "text": "更新акцию с механикой «Многоуровневая скидка от суммы»",
+          "link": "/seller/selleractions/post-v1-seller-actions-update-multi-level-discount"
+        },
+        {
+          "text": "更新акцию с механикой «Скидка по промокоду»",
+          "link": "/seller/selleractions/post-v1-seller-actions-update-voucher"
+        },
+        {
+          "text": "Добавить товары в акцию",
+          "link": "/seller/selleractions/post-v1-seller-actions-products-add"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/selleractions/post-v1-seller-actions-products-candidates"
+        },
+        {
+          "text": "删除товары из акции",
+          "link": "/seller/selleractions/post-v1-seller-actions-products-delete"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/selleractions/post-v1-seller-actions-products-list"
+        },
+        {
+          "text": "Перенести акцию в архив",
+          "link": "/seller/selleractions/post-v1-seller-actions-archive"
+        },
+        {
+          "text": "Включить или выключить акцию",
+          "link": "/seller/selleractions/post-v1-seller-actions-change-activity"
+        },
+        {
+          "text": "获取促销活动",
+          "link": "/seller/selleractions/post-v1-seller-actions-list"
+        },
+        {
+          "text": "获取файл с промокодами в формате CSV",
+          "link": "/seller/selleractions/post-v1-seller-actions-voucher-get"
+        }
+      ]
+    },
+    {
+      "text": "📌 PromosBeta",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取商品",
+          "link": "/seller/promosbeta/post-v1-actions-auto-add-products-list"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/promosbeta/post-v1-actions-auto-add-products-candidates"
+        },
+        {
+          "text": "删除товары из автодобавления в акцию",
+          "link": "/seller/promosbeta/post-v1-actions-auto-add-products-delete"
+        },
+        {
+          "text": "Добавить или обновить товары в автодобавлении в акцию",
+          "link": "/seller/promosbeta/post-v1-actions-auto-add-products-update"
+        }
+      ]
+    },
+    {
+      "text": "📌 Notification",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Подключить URL-адрес для уведомлений",
+          "link": "/seller/notification/post-v1-notification-set"
+        },
+        {
+          "text": "Изменить URL-адрес для уведомлений",
+          "link": "/seller/notification/post-v1-notification-update"
+        },
+        {
+          "text": "删除URL-адрес для уведомлений",
+          "link": "/seller/notification/post-v1-notification-delete"
+        },
+        {
+          "text": "检查与验证URL-адрес для уведомлений",
+          "link": "/seller/notification/post-v1-notification-check"
+        },
+        {
+          "text": "Включить или выключить уведомления на URL-адрес",
+          "link": "/seller/notification/post-v1-notification-enable"
+        },
+        {
+          "text": "获取информацию по подключённым URL-адресам",
+          "link": "/seller/notification/post-v1-notification-list"
+        },
+        {
+          "text": "获取типы пуш-уведомлений",
+          "link": "/seller/notification/post-v1-notification-push-type-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBOTransport",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取информацию о грузоместах",
+          "link": "/seller/fbotransport/post-v2-cargoes-get"
+        },
+        {
+          "text": "删除грузоместа и транспортные грузоместа в заявке на поставку",
+          "link": "/seller/fbotransport/post-v2-cargoes-delete"
+        },
+        {
+          "text": "获取информацию о статусе удаления грузомест и транспортных грузомест",
+          "link": "/seller/fbotransport/post-v2-cargoes-delete-status"
+        },
+        {
+          "text": "Включить или отключить транспортные грузоместа в поставке",
+          "link": "/seller/fbotransport/post-v1-cargoes-transport-activate"
+        },
+        {
+          "text": "获取статус включения или отключения транспортных грузомест",
+          "link": "/seller/fbotransport/post-v1-cargoes-transport-activate-status"
+        },
+        {
+          "text": "创建транспортное грузоместо",
+          "link": "/seller/fbotransport/post-v1-cargoes-transport-create"
+        },
+        {
+          "text": "获取статус создания транспортного грузоместа",
+          "link": "/seller/fbotransport/post-v1-cargoes-transport-create-status"
+        },
+        {
+          "text": "Связать или отвязать грузоместа и транспортные грузоместа",
+          "link": "/seller/fbotransport/post-v1-cargoes-transport-bind"
+        },
+        {
+          "text": "获取статус связывания или отвязывания грузомест и транспортных грузомест",
+          "link": "/seller/fbotransport/post-v1-cargoes-transport-bind-status"
+        },
+        {
+          "text": "获取информацию о грузоместах в поставках",
+          "link": "/seller/fbotransport/post-v1-cargoes-supplies-get"
+        },
+        {
+          "text": "Сгенерировать этикетки для транспортных грузомест по идентификатору поставки",
+          "link": "/seller/fbotransport/post-v1-cargoes-label-transport-by-order-create"
+        },
+        {
+          "text": "获取статус генерации этикеток для транспортных грузомеcт по идентификатору поставки",
+          "link": "/seller/fbotransport/post-v1-cargoes-label-transport-by-order-status"
+        },
+        {
+          "text": "Сгенерировать этикетки транспортных грузомест по идентификатору грузоместа",
+          "link": "/seller/fbotransport/post-v1-cargoes-label-transport-create"
+        },
+        {
+          "text": "获取статус генерации этикеток транспортных грузомест по идентификатору грузоместа",
+          "link": "/seller/fbotransport/post-v1-cargoes-label-transport-status"
+        }
+      ]
+    },
+    {
+      "text": "📌 DraftDirectFBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建черновик с доставкой силами продавца",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-seller-dlv-create"
+        },
+        {
+          "text": "更新информацию о доставке силами продавца в черновике",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-seller-dlv-edit"
+        },
+        {
+          "text": "Отредактировать таймслот в черновике",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-timeslot-edit"
+        },
+        {
+          "text": "获取список таймслотов для прямой поставки",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-timeslot-get"
+        },
+        {
+          "text": "创建черновик заявки на поставку без указания способа доставки",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-create"
+        },
+        {
+          "text": "删除черновик заявки на поставку",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-delete"
+        },
+        {
+          "text": "检查与验证商品",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-product-validate"
+        },
+        {
+          "text": "Перевести черновик в действующую поставку",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-registrate"
+        },
+        {
+          "text": "创建черновик заявки на доставку сторонней транспортной компанией",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-tpl-dlv-create"
+        },
+        {
+          "text": "Редактировать черновик поставки со способом доставки сторонней транспортной компанией",
+          "link": "/seller/draftdirectfbp/post-v1-fbp-draft-direct-tpl-dlv-edit"
+        }
+      ]
+    },
+    {
+      "text": "📌 DraftDropOffFBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建черновик для доставки в drop-off пункт",
+          "link": "/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-create"
+        },
+        {
+          "text": "删除черновик для доставки в drop-off пункт",
+          "link": "/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-delete"
+        },
+        {
+          "text": "Отредактировать детали доставки для drop-off черновика",
+          "link": "/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-dlv-edit"
+        },
+        {
+          "text": "Перевести черновик в действующую поставку",
+          "link": "/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-registrate"
+        },
+        {
+          "text": "获取список провинций",
+          "link": "/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-province-list"
+        },
+        {
+          "text": "获取список drop-off пунктов в провинции",
+          "link": "/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-point-list"
+        },
+        {
+          "text": "获取расписание работы drop-off пункта",
+          "link": "/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-point-timetable"
+        },
+        {
+          "text": "检查与验证商品",
+          "link": "/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-product-validate"
+        }
+      ]
+    },
+    {
+      "text": "📌 OrderDirectFBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "取消поставку",
+          "link": "/seller/orderdirectfbp/post-v1-fbp-order-direct-cancel"
+        },
+        {
+          "text": "更新информацию о доставке силами продавца",
+          "link": "/seller/orderdirectfbp/post-v1-fbp-order-direct-seller-dlv-edit"
+        },
+        {
+          "text": "更新информацию о доставке сторонней транспортной компанией",
+          "link": "/seller/orderdirectfbp/post-v1-fbp-order-direct-tpl-dlv-edit"
+        },
+        {
+          "text": "Отредактировать таймслот в заявке на поставку",
+          "link": "/seller/orderdirectfbp/post-v1-fbp-order-direct-timeslot-edit"
+        },
+        {
+          "text": "获取список таймслотов для поставки",
+          "link": "/seller/orderdirectfbp/post-v1-fbp-order-direct-timeslot-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 DeliveryFBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "生成仓库入库交接验收单（Act of Acceptance）",
+          "link": "/seller/deliveryfbp/post-v1-fbp-act-from-create"
+        },
+        {
+          "text": "查询交接验收单生成进度与下载地址",
+          "link": "/seller/deliveryfbp/post-v1-fbp-act-from-get"
+        },
+        {
+          "text": "Сгенерировать транспортную накладную",
+          "link": "/seller/deliveryfbp/post-v1-fbp-act-to-create"
+        },
+        {
+          "text": "获取статус генерации транспортной накладной",
+          "link": "/seller/deliveryfbp/post-v1-fbp-act-to-get"
+        },
+        {
+          "text": "获取информацию о завершённой поставке",
+          "link": "/seller/deliveryfbp/post-v1-fbp-archive-get"
+        },
+        {
+          "text": "获取список завершённых поставок",
+          "link": "/seller/deliveryfbp/post-v1-fbp-archive-list"
+        },
+        {
+          "text": "Cоздать задание на генерацию этикеток",
+          "link": "/seller/deliveryfbp/post-v1-fbp-label-create"
+        },
+        {
+          "text": "获取статус задания на генерацию этикеток",
+          "link": "/seller/deliveryfbp/post-v1-fbp-label-get"
+        },
+        {
+          "text": "获取информацию о конкретной поставке",
+          "link": "/seller/deliveryfbp/post-v1-fbp-order-get"
+        },
+        {
+          "text": "获取список поставок",
+          "link": "/seller/deliveryfbp/post-v1-fbp-order-list"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/deliveryfbp/post-v1-posting-fbp-list"
+        }
+      ]
+    },
+    {
+      "text": "📝 FBP揽收单草稿",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建черновик заявки на pick-up поставку",
+          "link": "/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-create"
+        },
+        {
+          "text": "取消черновик заявки на pick-up поставку",
+          "link": "/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-delete"
+        },
+        {
+          "text": "Изменить черновик заявки на pick-up поставку",
+          "link": "/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-dlv-edit"
+        },
+        {
+          "text": "Провалидировать список товаров для pick-up поставки",
+          "link": "/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-product-validate"
+        },
+        {
+          "text": "Перевести черновик в действующую поставку",
+          "link": "/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-registrate"
+        }
+      ]
+    },
+    {
+      "text": "📄 FBP备货草稿",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取仓库",
+          "link": "/seller/deliveryfbpdraft/post-v1-fbp-warehouse-list"
+        },
+        {
+          "text": "获取информацию о черновике поставки",
+          "link": "/seller/deliveryfbpdraft/post-v1-fbp-draft-get"
+        },
+        {
+          "text": "获取черновиков поставки列表",
+          "link": "/seller/deliveryfbpdraft/post-v1-fbp-draft-list"
+        }
+      ]
+    },
+    {
+      "text": "🏬 FBP自送点备货单",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "取消поставку drop-off",
+          "link": "/seller/orderdropofffbp/post-v1-fbp-order-drop-off-cancel"
+        },
+        {
+          "text": "Отредактировать информацию о поставке на drop-off пункт",
+          "link": "/seller/orderdropofffbp/post-v1-fbp-order-drop-off-dlv-edit"
+        },
+        {
+          "text": "获取график работы drop-off пункта",
+          "link": "/seller/orderdropofffbp/post-v1-fbp-order-drop-off-timetable"
+        }
+      ]
+    },
+    {
+      "text": "📦 FBP揽收备货单",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "取消pick-up поставку",
+          "link": "/seller/orderpickupfbp/post-v1-fbp-order-pick-up-cancel"
+        },
+        {
+          "text": "Изменить данные о точке забора",
+          "link": "/seller/orderpickupfbp/post-v1-fbp-order-pick-up-dlv-edit"
+        }
+      ]
+    },
+    {
+      "text": "🚛 FBS货包与容器运送",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建 FBS 出货集装箱/托盘/货包（Carriage Container）",
+          "link": "/seller/carriageapi/post-v1-carriage-container-create"
+        },
+        {
+          "text": "将已配货订单包裹添加至指定 FBS 货包容器中",
+          "link": "/seller/carriageapi/post-v1-carriage-container-fill"
+        },
+        {
+          "text": "Подтвердить состав грузоместа",
+          "link": "/seller/carriageapi/post-v1-carriage-container-approve"
+        },
+        {
+          "text": "Разместить коробки на палете",
+          "link": "/seller/carriageapi/post-v1-carriage-container-place-into"
+        },
+        {
+          "text": "Убрать отправления из грузоместа",
+          "link": "/seller/carriageapi/post-v1-carriage-container-remove-postings"
+        },
+        {
+          "text": "Убрать коробки с палеты",
+          "link": "/seller/carriageapi/post-v1-carriage-container-remove-from"
+        },
+        {
+          "text": "取消грузоместо",
+          "link": "/seller/carriageapi/post-v1-carriage-container-cancel"
+        },
+        {
+          "text": "获取список грузомест",
+          "link": "/seller/carriageapi/post-v1-carriage-container-list"
+        },
+        {
+          "text": "获取информацию о грузоместах",
+          "link": "/seller/carriageapi/post-v1-carriage-container-get"
+        },
+        {
+          "text": "获取статус грузомест FBS",
+          "link": "/seller/carriageapi/post-v1-carriage-container-status-get"
+        },
+        {
+          "text": "获取статус задачи грузового места",
+          "link": "/seller/carriageapi/post-v1-carriage-container-task-info"
+        },
+        {
+          "text": "获取документы по грузоместам — ТрН и лист отгрузки",
+          "link": "/seller/carriageapi/post-v1-carriage-container-document-get"
+        },
+        {
+          "text": "获取этикетку по грузоместам",
+          "link": "/seller/carriageapi/post-v1-carriage-container-label-get"
+        }
+      ]
+    },
+    {
+      "text": "💎 Premium买家高级客服",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отправить сообщение",
+          "link": "/seller/premium/post-v1-chat-send-message"
+        },
+        {
+          "text": "创建новый чат",
+          "link": "/seller/premium/post-v1-chat-start"
+        },
+        {
+          "text": "Отметить сообщения как прочитанные",
+          "link": "/seller/premium/post-v2-chat-read"
+        },
+        {
+          "text": "Данные аналитики",
+          "link": "/seller/premium/post-v1-analytics-data"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/premium/post-v1-analytics-product-queries"
+        },
+        {
+          "text": "获取детализацию запросов по товару",
+          "link": "/seller/premium/post-v1-analytics-product-queries-details"
+        },
+        {
+          "text": "Отчёт о реализации товаров за день",
+          "link": "/seller/premium/post-v1-finance-realization-by-day"
+        },
+        {
+          "text": "获取список поисковых запросов по тексту",
+          "link": "/seller/premium/post-v1-search-queries-text"
+        },
+        {
+          "text": "获取список популярных поисковых запросов",
+          "link": "/seller/premium/post-v1-search-queries-top"
+        },
+        {
+          "text": "获取商品",
+          "link": "/seller/premium/post-v1-product-prices-details"
+        }
+      ]
+    },
+    {
+      "text": "❌ 订单取消原因枚举",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Причины отмены отправлений",
+          "link": "/seller/cancelreasonapi/post-v1-cancel-reason-list"
+        },
+        {
+          "text": "Причины отмены заказа",
+          "link": "/seller/cancelreasonapi/post-v1-cancel-reason-list-by-order"
+        },
+        {
+          "text": "Причины отмены отправления",
+          "link": "/seller/cancelreasonapi/post-v1-cancel-reason-list-by-posting"
+        }
+      ]
+    },
+    {
+      "text": "🛣️ 物流服务与配送规则",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "检查与验证доступность доставки для покупателя",
+          "link": "/seller/deliveryapi/post-v1-delivery-check"
+        },
+        {
+          "text": "获取доступные варианты доставки",
+          "link": "/seller/deliveryapi/post-v2-delivery-checkout"
+        },
+        {
+          "text": "Отрисовать точки на карте",
+          "link": "/seller/deliveryapi/post-v1-delivery-map"
+        },
+        {
+          "text": "获取информацию о точке самовывоза",
+          "link": "/seller/deliveryapi/post-v1-delivery-point-info"
+        },
+        {
+          "text": "获取список точек самовывоза",
+          "link": "/seller/deliveryapi/post-v1-delivery-point-list"
+        }
+      ]
+    },
+    {
+      "text": "📋 通用订单管理",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "取消заказ",
+          "link": "/seller/orderapi/post-v1-order-cancel"
+        },
+        {
+          "text": "检查与验证订单",
+          "link": "/seller/orderapi/post-v1-order-cancel-check"
+        },
+        {
+          "text": "获取订单",
+          "link": "/seller/orderapi/post-v1-order-cancel-status"
+        },
+        {
+          "text": "创建заказ",
+          "link": "/seller/orderapi/post-v2-order-create"
+        }
+      ]
+    },
+    {
+      "text": "📦 FBO官方仓订单与发货",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "取消订单",
+          "link": "/seller/fbopostingapi/post-v1-posting-cancel"
+        },
+        {
+          "text": "检查与验证发货包裹",
+          "link": "/seller/fbopostingapi/post-v1-posting-cancel-status"
+        },
+        {
+          "text": "获取发货包裹",
+          "link": "/seller/fbopostingapi/post-v1-posting-marks"
+        }
+      ]
+    }
+  ],
+  "/performance/": [
+    {
+      "text": "📖 Performance API 概览",
+      "link": "/performance/"
+    },
+    {
+      "text": "📢 广告推广计划与对象",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取广告推广营销活动列表",
+          "link": "/performance/campaign/get-api-client-campaign"
+        },
+        {
+          "text": "获取продвигаемых объектов в кампании列表",
+          "link": "/performance/campaign/get-api-client-campaign-campaignid-objects"
+        },
+        {
+          "text": "Лимиты ставок для инструментов продвижения",
+          "link": "/performance/campaign/get-api-client-limits-list"
+        },
+        {
+          "text": "Минимальная ставка для товаров по SKU",
+          "link": "/performance/campaign/post-api-client-min-sku"
+        },
+        {
+          "text": "获取商品列表",
+          "link": "/performance/campaign/get-api-client-products-with-bonuses"
+        }
+      ]
+    },
+    {
+      "text": "📊 广告效果与转化统计",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "查询指定广告营销计划的曝光、点击与花费报表",
+          "link": "/performance/statistics/post-api-client-statistics"
+        },
+        {
+          "text": "Статистика по показам видеобаннера",
+          "link": "/performance/statistics/post-api-client-statistics-video"
+        },
+        {
+          "text": "Отчёт по заказам",
+          "link": "/performance/statistics/post-api-client-statistics-attribution"
+        },
+        {
+          "text": "Cтатус отчёта",
+          "link": "/performance/statistics/get-api-client-statistics-uuid"
+        },
+        {
+          "text": "获取数据报表列表",
+          "link": "/performance/statistics/get-api-client-statistics-list"
+        },
+        {
+          "text": "获取数据报表列表",
+          "link": "/performance/statistics/get-api-client-statistics-externallist"
+        },
+        {
+          "text": "获取отчёты",
+          "link": "/performance/statistics/get-api-client-statistics-report"
+        },
+        {
+          "text": "Статистика по медийным кампаниям",
+          "link": "/performance/statistics/get-api-client-statistics-campaign-media"
+        },
+        {
+          "text": "查询指定广告营销计划的曝光、点击与花费报表",
+          "link": "/performance/statistics/get-api-client-statistics-campaign-product"
+        },
+        {
+          "text": "Статистика по расходу кампаний",
+          "link": "/performance/statistics/get-api-client-statistics-expense"
+        },
+        {
+          "text": "Дневная статистика по кампаниям",
+          "link": "/performance/statistics/get-api-client-statistics-daily"
+        },
+        {
+          "text": "获取订单",
+          "link": "/performance/statistics/post-api-client-statistic-orders-generate"
+        },
+        {
+          "text": "获取商品",
+          "link": "/performance/statistics/post-api-client-statistic-products-generate"
+        },
+        {
+          "text": "获取订单",
+          "link": "/performance/statistics/get-api-client-statistics-all-sku-promo-orders-generate"
+        },
+        {
+          "text": "获取商品",
+          "link": "/performance/statistics/get-api-client-statistics-all-sku-promo-products-generate"
+        },
+        {
+          "text": "Отчёт по поисковым запросам",
+          "link": "/performance/statistics/post-api-client-statistics-phrases"
+        },
+        {
+          "text": "获取商品",
+          "link": "/performance/statistics/post-api-client-statistics-products-sku"
+        }
+      ]
+    },
+    {
+      "text": "🖱️ CPC按点击付费推广",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "创建 CPC 按点击计费的商品推广计划",
+          "link": "/performance/ad/post-api-client-campaign-cpc-v2-product"
+        },
+        {
+          "text": "智能测算广告推广计划所需的最低日预算与出价推荐",
+          "link": "/performance/ad/post-external-api-dynamic-budget"
+        },
+        {
+          "text": "Активировать кампанию",
+          "link": "/performance/ad/post-api-client-campaign-campaignid-activate"
+        },
+        {
+          "text": "Выключить кампанию",
+          "link": "/performance/ad/post-api-client-campaign-campaignid-deactivate"
+        },
+        {
+          "text": "Параметры кампании",
+          "link": "/performance/ad/patch-api-client-campaign-campaignid"
+        }
+      ]
+    },
+    {
+      "text": "🛒 CPC推广商品出价管理",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "向指定广告推广计划中添加参与推广的商品",
+          "link": "/performance/product/post-api-client-campaign-campaignid-products"
+        },
+        {
+          "text": "批量修改广告计划中各商品的竞价出价（Bids）",
+          "link": "/performance/product/put-api-client-campaign-campaignid-products"
+        },
+        {
+          "text": "获取商品列表",
+          "link": "/performance/product/get-api-client-campaign-campaignid-v2-products"
+        },
+        {
+          "text": "删除товары из кампании",
+          "link": "/performance/product/post-api-client-campaign-campaignid-products-delete"
+        },
+        {
+          "text": "Конкурентные ставки для товара",
+          "link": "/performance/product/get-api-client-campaign-campaignid-products-bids-competitive"
+        }
+      ]
+    },
+    {
+      "text": "🔍 按成效订单付费广告 (CPO)",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "获取按成交付费（CPO）广告中正在推广的商品清单",
+          "link": "/performance/search-promo/post-api-client-campaign-search-promo-v2-products"
+        },
+        {
+          "text": "获取系统基于实时大盘竞价推荐的优质出价参考",
+          "link": "/performance/search-promo/post-api-client-search-promo-bids-recommendation"
+        },
+        {
+          "text": "Установить ставку на товар",
+          "link": "/performance/search-promo/post-api-client-campaign-search-promo-v2-bids-set"
+        },
+        {
+          "text": "获取商品",
+          "link": "/performance/search-promo/post-api-client-search-promo-get-cpo-min-bids"
+        },
+        {
+          "text": "Включить продвижение товара в оплате за заказ",
+          "link": "/performance/search-promo/post-api-client-search-promo-product-enable"
+        },
+        {
+          "text": "Отключить продвижение товара в оплате за заказ",
+          "link": "/performance/search-promo/post-api-client-search-promo-product-disable"
+        },
+        {
+          "text": "删除товар из продвижения в оплате за заказ",
+          "link": "/performance/search-promo/post-api-client-campaign-search-promo-v2-bids-delete"
+        },
+        {
+          "text": "Включить продвижение в оплате за заказ — все товары",
+          "link": "/performance/search-promo/get-api-client-campaign-all-sku-promo-activate"
+        },
+        {
+          "text": "Выключить продвижение в оплате за заказ — все товары",
+          "link": "/performance/search-promo/get-api-client-campaign-all-sku-promo-deactivate"
+        },
+        {
+          "text": "Установить ставку для продвижения в Оплате за заказ — все товары",
+          "link": "/performance/search-promo/get-api-client-campaign-all-sku-promo-set-bid"
+        },
+        {
+          "text": "Включить продвижение товаров в акции «Морковск»",
+          "link": "/performance/search-promo/post-api-client-campaign-search-promo-carrots-enable"
+        },
+        {
+          "text": "Отключить продвижение товаров в акции «Морковск»",
+          "link": "/performance/search-promo/post-api-client-campaign-search-promo-carrots-disable"
+        }
+      ]
+    },
+    {
+      "text": "🌐 外部流量与品牌方分析",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "申请导出外部渠道导流投放分析数据报告",
+          "link": "/performance/vendor/post-api-client-vendors-statistics"
+        },
+        {
+          "text": "获取数据报表列表",
+          "link": "/performance/vendor/get-api-client-vendors-statistics-list"
+        },
+        {
+          "text": "Информация об отчёте по UUID",
+          "link": "/performance/vendor/get-api-client-vendors-statistics-uuid"
+        },
+        {
+          "text": "Метка организации для внешних рекламных кампаний",
+          "link": "/performance/vendor/get-api-client-organisation-vendor-tag"
+        }
+      ]
+    }
+  ]
+}

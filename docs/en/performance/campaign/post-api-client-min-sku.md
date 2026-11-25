@@ -1,0 +1,87 @@
+---
+title: "Минимальная ставка для товаров по SKU"
+description: "Минимальная ставка для товаров по SKU"
+---
+
+# Минимальная ставка для товаров по SKU
+
+<Badge type="tip" text="POST" /> `/api/client/min/sku`
+
+## 接口概览
+
+- **所属模块**：📢 Campaigns & Objects
+- **请求方法**：`POST`
+- **接口地址**：`https://api-performance.ozon.ru/api/client/min/sku`
+- **详细说明**：
+
+> Используйте метод, чтобы узнать минимальную ставку для одного или нескольких товаров по SKU.
+
+
+## 鉴权请求头 (Headers)
+
+| 参数名 | 必填 | 示例 / 说明 |
+| :--- | :--- | :--- |
+| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+
+## 请求体 (Request Body)
+
+Content-Type: `application/json`
+
+## 返回响应 (Responses)
+
+### HTTP 200 - Размер минимальной ставки
+
+::: details 查看 Response Schema 定义
+```json
+{
+  "$ref": "#/components/schemas/extcampaignBidBySKUResponse"
+}
+```
+:::
+
+### HTTP default - Ошибка
+
+::: details 查看 Response Schema 定义
+```json
+{
+  "$ref": "#/components/schemas/rpcStatus"
+}
+```
+:::
+
+## 调用示例代码
+
+::: code-group
+```bash [cURL]
+curl -X POST "https://api-performance.ozon.ru/api/client/min/sku" \
+  -H "Authorization: Bearer YOUR_OAUTH_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{}'
+```
+
+```python [Python]
+import requests
+
+url = "https://api-performance.ozon.ru/api/client/min/sku"
+headers = {
+    "Authorization": "Bearer YOUR_OAUTH_TOKEN",
+    "Content-Type": "application/json"
+}
+
+response = requests.post(url, headers=headers, json={})
+print(response.status_code, response.json())
+```
+
+```javascript [Node.js]
+const response = await fetch("https://api-performance.ozon.ru/api/client/min/sku", {
+  method: "POST",
+  headers: {
+    "Authorization": "Bearer YOUR_OAUTH_TOKEN",
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({})
+});
+const data = await response.json();
+console.log(data);
+```
+:::

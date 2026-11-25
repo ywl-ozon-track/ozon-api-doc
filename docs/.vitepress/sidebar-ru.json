@@ -1,0 +1,2510 @@
+{
+  "/ru/seller/": [
+    {
+      "text": "📖 Обзор Seller API",
+      "link": "/ru/seller/"
+    },
+    {
+      "text": "🔑 Информация по API-ключу",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить список ролей и методов по API-ключу",
+          "link": "/ru/seller/apikey/post-v1-roles"
+        }
+      ]
+    },
+    {
+      "text": "🏢 Информация по кабинету продавца",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Информация о кабинете продавца",
+          "link": "/ru/seller/sellerinfo/post-v1-seller-info"
+        },
+        {
+          "text": "Информация о подключении Ozon Доставки",
+          "link": "/ru/seller/sellerinfo/post-v1-seller-ozon-logistics-info"
+        }
+      ]
+    },
+    {
+      "text": "📂 Атрибуты и характеристики Ozon",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Дерево категорий и типов товаров",
+          "link": "/ru/seller/categoryapi/post-v1-description-category-tree"
+        },
+        {
+          "text": "Список характеристик категории",
+          "link": "/ru/seller/categoryapi/post-v1-description-category-attribute"
+        },
+        {
+          "text": "Справочник значений характеристики",
+          "link": "/ru/seller/categoryapi/post-v1-description-category-attribute-values"
+        },
+        {
+          "text": "Поиск по справочным значениям характеристики",
+          "link": "/ru/seller/categoryapi/post-v1-description-category-attribute-values-search"
+        },
+        {
+          "text": "Получить зоны размещения товаров по SKU перед поставкой",
+          "link": "/ru/seller/categoryapi/post-v1-product-placement-zone-info"
+        }
+      ]
+    },
+    {
+      "text": "📦 Загрузка и обновление товаров",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать или обновить товар",
+          "link": "/ru/seller/productapi/post-v3-product-import"
+        },
+        {
+          "text": "Узнать статус добавления или обновления товара",
+          "link": "/ru/seller/productapi/post-v1-product-import-info"
+        },
+        {
+          "text": "Создать товар по SKU",
+          "link": "/ru/seller/productapi/post-v1-product-import-by-sku"
+        },
+        {
+          "text": "Обновить характеристики товара",
+          "link": "/ru/seller/productapi/post-v1-product-attributes-update"
+        },
+        {
+          "text": "Загрузить или обновить изображения товара",
+          "link": "/ru/seller/productapi/post-v1-product-pictures-import"
+        },
+        {
+          "text": "Загрузить или обновить изображения товара",
+          "link": "/ru/seller/productapi/post-v2-product-pictures-import"
+        },
+        {
+          "text": "Список товаров",
+          "link": "/ru/seller/productapi/post-v3-product-list"
+        },
+        {
+          "text": "Получить контент-рейтинг товаров по SKU",
+          "link": "/ru/seller/productapi/post-v1-product-rating-by-sku"
+        },
+        {
+          "text": "Получить информацию о товарах по идентификаторам",
+          "link": "/ru/seller/productapi/post-v3-product-info-list"
+        },
+        {
+          "text": "Получить описание характеристик товара",
+          "link": "/ru/seller/productapi/post-v4-product-info-attributes"
+        },
+        {
+          "text": "Получить описание товара",
+          "link": "/ru/seller/productapi/post-v1-product-info-description"
+        },
+        {
+          "text": "Лимиты на ассортимент, создание и обновление товаров",
+          "link": "/ru/seller/productapi/post-v4-product-info-limit"
+        },
+        {
+          "text": "Изменить артикулы товаров из системы продавца",
+          "link": "/ru/seller/productapi/post-v1-product-update-offer-id"
+        },
+        {
+          "text": "Перенести товар в архив",
+          "link": "/ru/seller/productapi/post-v1-product-archive"
+        },
+        {
+          "text": "Вернуть товар из архива",
+          "link": "/ru/seller/productapi/post-v1-product-unarchive"
+        },
+        {
+          "text": "Удалить товар без SKU из архива",
+          "link": "/ru/seller/productapi/post-v2-products-delete"
+        },
+        {
+          "text": "Количество подписавшихся на товар пользователей",
+          "link": "/ru/seller/productapi/post-v1-product-info-subscription"
+        },
+        {
+          "text": "Получить связанные SKU",
+          "link": "/ru/seller/productapi/post-v1-product-related-sku-get"
+        },
+        {
+          "text": "Получить изображения товаров",
+          "link": "/ru/seller/productapi/post-v2-product-pictures-info"
+        },
+        {
+          "text": "Список товаров с некорректными ОВХ",
+          "link": "/ru/seller/productapi/post-v1-product-info-wrong-volume"
+        },
+        {
+          "text": "Получить информацию о стоках на складах FBO",
+          "link": "/ru/seller/productapi/post-v1-product-info-stocks-by-warehouse-fbo"
+        }
+      ]
+    },
+    {
+      "text": "🏷️ Штрихкоды товаров",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Привязать штрихкод к товару",
+          "link": "/ru/seller/barcodeapi/post-v1-barcode-add"
+        },
+        {
+          "text": "Отвязать штрихкод от товара",
+          "link": "/ru/seller/barcodeapi/post-v1-barcode-delete"
+        },
+        {
+          "text": "Создать штрихкод для товара",
+          "link": "/ru/seller/barcodeapi/post-v1-barcode-generate"
+        }
+      ]
+    },
+    {
+      "text": "💰 Цены и остатки товаров",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Обновить количество товаров на складах",
+          "link": "/ru/seller/pricesstocksapi/post-v2-products-stocks"
+        },
+        {
+          "text": "Информация о количестве товаров",
+          "link": "/ru/seller/pricesstocksapi/post-v4-product-info-stocks"
+        },
+        {
+          "text": "Получить информацию по остаткам на складе FBS и rFBS",
+          "link": "/ru/seller/pricesstocksapi/post-v1-product-info-warehouse-stocks"
+        },
+        {
+          "text": "Информация об остатках на складах продавца (FBS и rFBS)",
+          "link": "/ru/seller/pricesstocksapi/post-v1-product-info-stocks-by-warehouse-fbs"
+        },
+        {
+          "text": "Получить информацию об остатках на складах продавца",
+          "link": "/ru/seller/pricesstocksapi/post-v2-product-info-stocks-by-warehouse-fbs"
+        },
+        {
+          "text": "Обновить цену",
+          "link": "/ru/seller/pricesstocksapi/post-v1-product-import-prices"
+        },
+        {
+          "text": "Обновление таймера актуальности минимальной цены",
+          "link": "/ru/seller/pricesstocksapi/post-v1-product-action-timer-update"
+        },
+        {
+          "text": "Получить статус установленного таймера",
+          "link": "/ru/seller/pricesstocksapi/post-v1-product-action-timer-status"
+        },
+        {
+          "text": "Получить информацию о цене товара",
+          "link": "/ru/seller/pricesstocksapi/post-v5-product-info-prices"
+        },
+        {
+          "text": "Узнать информацию об уценке и основном товаре по SKU уценённого товара",
+          "link": "/ru/seller/pricesstocksapi/post-v1-product-info-discounted"
+        },
+        {
+          "text": "Установить скидку на уценённый товар",
+          "link": "/ru/seller/pricesstocksapi/post-v1-product-update-discount"
+        }
+      ]
+    },
+    {
+      "text": "🎁 Акции Ozon",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список акций",
+          "link": "/ru/seller/promos/get-v1-actions"
+        },
+        {
+          "text": "Список доступных для акции товаров",
+          "link": "/ru/seller/promos/post-v1-actions-candidates"
+        },
+        {
+          "text": "Получить список товаров, которые могут участвовать в акции",
+          "link": "/ru/seller/promos/post-v2-actions-candidates"
+        },
+        {
+          "text": "Список участвующих в акции товаров",
+          "link": "/ru/seller/promos/post-v1-actions-products"
+        },
+        {
+          "text": "Получить список товаров, которые участвуют в акции",
+          "link": "/ru/seller/promos/post-v2-actions-products"
+        },
+        {
+          "text": "Добавить товар в акцию",
+          "link": "/ru/seller/promos/post-v1-actions-products-activate"
+        },
+        {
+          "text": "Добавить или обновить товар в акции",
+          "link": "/ru/seller/promos/post-v1-actions-products-update"
+        },
+        {
+          "text": "Удалить товары из акции",
+          "link": "/ru/seller/promos/post-v1-actions-products-deactivate"
+        },
+        {
+          "text": "Удалить товары из акции «Промокоды»",
+          "link": "/ru/seller/promos/post-v2-actions-products-deactivate"
+        },
+        {
+          "text": "Список заявок на скидку",
+          "link": "/ru/seller/promos/post-v1-actions-discounts-task-list"
+        },
+        {
+          "text": "Согласовать заявку на скидку",
+          "link": "/ru/seller/promos/post-v1-actions-discounts-task-approve"
+        },
+        {
+          "text": "Отклонить заявку на скидку",
+          "link": "/ru/seller/promos/post-v1-actions-discounts-task-decline"
+        },
+        {
+          "text": "Получить список товаров из автодобавления в акцию",
+          "link": "/ru/seller/promos/post-v2-actions-auto-add-products-list"
+        },
+        {
+          "text": "Получить список доступных товаров для автодобавления в акцию",
+          "link": "/ru/seller/promos/post-v2-actions-auto-add-products-candidates"
+        },
+        {
+          "text": "Удалить товары из автодобавления в акцию",
+          "link": "/ru/seller/promos/post-v2-actions-auto-add-products-delete"
+        },
+        {
+          "text": "Добавить или обновить товары в автодобавлении в акцию",
+          "link": "/ru/seller/promos/post-v2-actions-auto-add-products-update"
+        }
+      ]
+    },
+    {
+      "text": "🎯 Стратегии ценообразования",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список конкурентов",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-competitors-list"
+        },
+        {
+          "text": "Список стратегий",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-list"
+        },
+        {
+          "text": "Создать стратегию",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-create"
+        },
+        {
+          "text": "Информация о стратегии",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-info"
+        },
+        {
+          "text": "Обновить стратегию",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-update"
+        },
+        {
+          "text": "Добавить товары в стратегию",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-products-add"
+        },
+        {
+          "text": "Список идентификаторов стратегий",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-strategy-ids-by-product-ids"
+        },
+        {
+          "text": "Список товаров в стратегии",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-products-list"
+        },
+        {
+          "text": "Цена товара у конкурента",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-product-info"
+        },
+        {
+          "text": "Удалить товары из стратегии",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-products-delete"
+        },
+        {
+          "text": "Изменить статус стратегии",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-status"
+        },
+        {
+          "text": "Удалить стратегию",
+          "link": "/ru/seller/pricingstrategyapi/post-v1-pricing-strategy-delete"
+        }
+      ]
+    },
+    {
+      "text": "🎫 Пропуски на склад",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список пропусков",
+          "link": "/ru/seller/pass/post-v1-pass-list"
+        },
+        {
+          "text": "Создать пропуск",
+          "link": "/ru/seller/pass/post-v1-carriage-pass-create"
+        },
+        {
+          "text": "Обновить пропуск",
+          "link": "/ru/seller/pass/post-v1-carriage-pass-update"
+        },
+        {
+          "text": "Удалить пропуск",
+          "link": "/ru/seller/pass/post-v1-carriage-pass-delete"
+        },
+        {
+          "text": "Создать пропуск для возврата",
+          "link": "/ru/seller/pass/post-v1-return-pass-create"
+        },
+        {
+          "text": "Обновить пропуск для возврата",
+          "link": "/ru/seller/pass/post-v1-return-pass-update"
+        },
+        {
+          "text": "Удалить пропуск для возврата",
+          "link": "/ru/seller/pass/post-v1-return-pass-delete"
+        }
+      ]
+    },
+    {
+      "text": "⭐ Сертификаты брендов",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список сертифицируемых брендов",
+          "link": "/ru/seller/brandapi/post-v1-brand-company-certification-list"
+        }
+      ]
+    },
+    {
+      "text": "📜 Сертификаты качества",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список типов соответствия требованиям (версия 1)",
+          "link": "/ru/seller/certificationapi/get-v1-product-certificate-accordance-types"
+        },
+        {
+          "text": "Список типов соответствия требованиям (версия 2)",
+          "link": "/ru/seller/certificationapi/get-v2-product-certificate-accordance-types-list"
+        },
+        {
+          "text": "Справочник типов документов",
+          "link": "/ru/seller/certificationapi/get-v1-product-certificate-types"
+        },
+        {
+          "text": "Список сертифицируемых категорий",
+          "link": "/ru/seller/certificationapi/post-v2-product-certification-list"
+        },
+        {
+          "text": "Список сертифицируемых категорий",
+          "link": "/ru/seller/certificationapi/post-v1-product-certification-list"
+        },
+        {
+          "text": "Получить параметры для создания сертификата качества",
+          "link": "/ru/seller/certificationapi/post-v2-product-certification-options"
+        },
+        {
+          "text": "Получить обязательные параметры для создания сертификата качества",
+          "link": "/ru/seller/certificationapi/post-v2-product-certification-params"
+        },
+        {
+          "text": "Добавить сертификаты для товаров",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-create"
+        },
+        {
+          "text": "Создать сертификат качества",
+          "link": "/ru/seller/certificationapi/post-v2-product-certificate-create"
+        },
+        {
+          "text": "Привязать сертификат к товару",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-bind"
+        },
+        {
+          "text": "Удалить сертификат",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-delete"
+        },
+        {
+          "text": "Информация о сертификате",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-info"
+        },
+        {
+          "text": "Список сертификатов",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-list"
+        },
+        {
+          "text": "Список возможных статусов товаров",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-product-status-list"
+        },
+        {
+          "text": "Список товаров, привязанных к сертификату",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-products-list"
+        },
+        {
+          "text": "Отвязать товар от сертификата",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-unbind"
+        },
+        {
+          "text": "Возможные причины отклонения сертификата",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-rejection-reasons-list"
+        },
+        {
+          "text": "Возможные статусы сертификатов",
+          "link": "/ru/seller/certificationapi/post-v1-product-certificate-status-list"
+        }
+      ]
+    },
+    {
+      "text": "🏭 Работа со складами FBS и rFBS",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список складов",
+          "link": "/ru/seller/warehouseapi/post-v1-warehouse-list"
+        },
+        {
+          "text": "Список методов доставки склада",
+          "link": "/ru/seller/warehouseapi/post-v1-delivery-method-list"
+        },
+        {
+          "text": "Список методов доставки realFBS-склада",
+          "link": "/ru/seller/warehouseapi/post-v2-delivery-method-list"
+        },
+        {
+          "text": "Получить информацию по возвратным настройкам rFBS и rFBS Express",
+          "link": "/ru/seller/warehouseapi/post-v1-delivery-method-return-settings-get"
+        },
+        {
+          "text": "Список складов",
+          "link": "/ru/seller/warehouseapi/post-v2-warehouse-list"
+        },
+        {
+          "text": "Получить статус операции",
+          "link": "/ru/seller/warehouseapi/post-v1-warehouse-operation-status"
+        },
+        {
+          "text": "Перенести склад в архив",
+          "link": "/ru/seller/warehouseapi/post-v1-warehouse-archive"
+        },
+        {
+          "text": "Перенести склад из архива",
+          "link": "/ru/seller/warehouseapi/post-v1-warehouse-unarchive"
+        },
+        {
+          "text": "Получить список товаров с ограничениями по доставке",
+          "link": "/ru/seller/warehouseapi/post-v1-warehouse-invalid-products-get"
+        },
+        {
+          "text": "Получить список складов с ограниченными для доставки товарами",
+          "link": "/ru/seller/warehouseapi/post-v1-warehouse-warehouses-with-invalid-products"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBOWarehouse",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить список складов Ozon",
+          "link": "/ru/seller/fbowarehouse/post-v1-warehouse-ozon-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 PolygonAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создайте полигон доставки",
+          "link": "/ru/seller/polygonapi/post-v1-polygon-create"
+        },
+        {
+          "text": "Свяжите метод доставки с полигоном доставки",
+          "link": "/ru/seller/polygonapi/post-v1-polygon-bind"
+        },
+        {
+          "text": "Связать метод доставки с полигоном",
+          "link": "/ru/seller/polygonapi/post-v2-polygon-bind"
+        },
+        {
+          "text": "Удалить полигон из области доставки",
+          "link": "/ru/seller/polygonapi/post-v1-polygon-delete"
+        },
+        {
+          "text": "Получить список установленных полигонов на метод доставки",
+          "link": "/ru/seller/polygonapi/post-v1-polygon-list"
+        },
+        {
+          "text": "Обновить координаты полигона доставки",
+          "link": "/ru/seller/polygonapi/post-v1-polygon-time-coordinates-update"
+        },
+        {
+          "text": "Установить новое время доставки в полигоне",
+          "link": "/ru/seller/polygonapi/post-v1-polygon-time-set"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBO",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список отправлений",
+          "link": "/ru/seller/fbo/post-v2-posting-fbo-list"
+        },
+        {
+          "text": "Получить список отправлений",
+          "link": "/ru/seller/fbo/post-v3-posting-fbo-list"
+        },
+        {
+          "text": "Информация об отправлении",
+          "link": "/ru/seller/fbo/post-v2-posting-fbo-get"
+        },
+        {
+          "text": "Причины отмены отправлений по схеме FBO",
+          "link": "/ru/seller/fbo/post-v1-posting-fbo-cancel-reason-list"
+        },
+        {
+          "text": "Количество заявок по статусам",
+          "link": "/ru/seller/fbo/post-v1-supply-order-status-counter"
+        },
+        {
+          "text": "Состав поставки или заявки на поставку",
+          "link": "/ru/seller/fbo/post-v1-supply-order-bundle"
+        },
+        {
+          "text": "Список заявок на поставку на склад Ozon",
+          "link": "/ru/seller/fbo/post-v3-supply-order-list"
+        },
+        {
+          "text": "Информация о заявке на поставку",
+          "link": "/ru/seller/fbo/post-v3-supply-order-get"
+        },
+        {
+          "text": "Интервалы поставки",
+          "link": "/ru/seller/fbo/post-v1-supply-order-timeslot-get"
+        },
+        {
+          "text": "Получить список доступных интервалов поставки",
+          "link": "/ru/seller/fbo/post-v2-supply-order-timeslot-list"
+        },
+        {
+          "text": "Обновить интервал поставки",
+          "link": "/ru/seller/fbo/post-v1-supply-order-timeslot-update"
+        },
+        {
+          "text": "Статус интервала поставки",
+          "link": "/ru/seller/fbo/post-v1-supply-order-timeslot-status"
+        },
+        {
+          "text": "Указать данные о водителе и автомобиле",
+          "link": "/ru/seller/fbo/post-v1-supply-order-pass-create"
+        },
+        {
+          "text": "Статус ввода данных о водителе и автомобиле",
+          "link": "/ru/seller/fbo/post-v1-supply-order-pass-status"
+        },
+        {
+          "text": "Получить подробную информацию о заявке на поставку",
+          "link": "/ru/seller/fbo/post-v1-supply-order-details"
+        },
+        {
+          "text": "Загруженность складов Ozon",
+          "link": "/ru/seller/fbo/get-v1-supplier-available-warehouses"
+        }
+      ]
+    },
+    {
+      "text": "📌 FboSupplyRequest",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Информация о кластерах и их складах",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-cluster-list"
+        },
+        {
+          "text": "Получить информацию о макролокальных кластерах",
+          "link": "/ru/seller/fbosupplyrequest/post-v2-cluster-list"
+        },
+        {
+          "text": "Поиск точек для отгрузки поставки",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-warehouse-fbo-list"
+        },
+        {
+          "text": "Создать черновик заявки на поставку кросс-докингом",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-draft-crossdock-create"
+        },
+        {
+          "text": "Создать черновик заявки на прямую поставку",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-draft-direct-create"
+        },
+        {
+          "text": "Создать черновик заявки на поставку для нескольких кластеров",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-draft-multi-cluster-create"
+        },
+        {
+          "text": "Получить информацию о черновике заявки на поставку",
+          "link": "/ru/seller/fbosupplyrequest/post-v2-draft-create-info"
+        },
+        {
+          "text": "Получить список доступных таймслотов",
+          "link": "/ru/seller/fbosupplyrequest/post-v2-draft-timeslot-info"
+        },
+        {
+          "text": "Установка грузомест",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-cargoes-create"
+        },
+        {
+          "text": "Получить информацию по установке грузомест",
+          "link": "/ru/seller/fbosupplyrequest/post-v2-cargoes-create-info"
+        },
+        {
+          "text": "Получить информацию о грузоместах",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-cargoes-get"
+        },
+        {
+          "text": "Удалить грузоместо в заявке на поставку",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-cargoes-delete"
+        },
+        {
+          "text": "Информация о статусе удаления грузоместа",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-cargoes-delete-status"
+        },
+        {
+          "text": "Чек-лист по установке грузомест FBO",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-cargoes-rules-get"
+        },
+        {
+          "text": "Сгенерировать этикетки для грузомест",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-cargoes-label-create"
+        },
+        {
+          "text": "Получить идентификатор этикетки для грузомест",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-cargoes-label-get"
+        },
+        {
+          "text": "Получить PDF с этикетками грузовых мест",
+          "link": "/ru/seller/fbosupplyrequest/get-v1-cargoes-label-file-file-guid"
+        },
+        {
+          "text": "Отменить заявку на поставку",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-supply-order-cancel"
+        },
+        {
+          "text": "Получить статус отмены заявки на поставку",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-supply-order-cancel-status"
+        },
+        {
+          "text": "Редактирование товарного состава",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-supply-order-content-update"
+        },
+        {
+          "text": "Информация о статусе редактирования товарного состава",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-supply-order-content-update-status"
+        },
+        {
+          "text": "Проверить новый товарный состав",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-supply-order-content-update-validation"
+        },
+        {
+          "text": "Создать заявку на поставку по черновику",
+          "link": "/ru/seller/fbosupplyrequest/post-v2-draft-supply-create"
+        },
+        {
+          "text": "Получить информацию о создании заявки на поставку",
+          "link": "/ru/seller/fbosupplyrequest/post-v2-draft-supply-create-status"
+        },
+        {
+          "text": "Получить список складов продавца",
+          "link": "/ru/seller/fbosupplyrequest/post-v1-warehouse-fbo-seller-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBS&rFBSMarks",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Собрать заказ (версия 4)",
+          "link": "/ru/seller/fbsrfbsmarks/post-v4-posting-fbs-ship"
+        },
+        {
+          "text": "Частичная сборка отправления (версия 4)",
+          "link": "/ru/seller/fbsrfbsmarks/post-v4-posting-fbs-ship-package"
+        },
+        {
+          "text": "Проверить и сохранить данные экземпляров",
+          "link": "/ru/seller/fbsrfbsmarks/post-v6-fbs-posting-product-exemplar-set"
+        },
+        {
+          "text": "Получить данные созданных экземпляров",
+          "link": "/ru/seller/fbsrfbsmarks/post-v6-fbs-posting-product-exemplar-create-or-get"
+        },
+        {
+          "text": "Получить статус добавления экземпляров",
+          "link": "/ru/seller/fbsrfbsmarks/post-v5-fbs-posting-product-exemplar-status"
+        },
+        {
+          "text": "Валидация кодов маркировки",
+          "link": "/ru/seller/fbsrfbsmarks/post-v5-fbs-posting-product-exemplar-validate"
+        },
+        {
+          "text": "Обновить данные экземпляров",
+          "link": "/ru/seller/fbsrfbsmarks/post-v1-fbs-posting-product-exemplar-update"
+        }
+      ]
+    },
+    {
+      "text": "📌 DeliveryFBS",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создание отгрузки",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-create"
+        },
+        {
+          "text": "Подтверждение отгрузки",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-approve"
+        },
+        {
+          "text": "Изменение состава отгрузки",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-set-postings"
+        },
+        {
+          "text": "Удаление отгрузки",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-cancel"
+        },
+        {
+          "text": "Список методов доставки и отгрузок",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-delivery-list"
+        },
+        {
+          "text": "Список методов доставки и отгрузок",
+          "link": "/ru/seller/deliveryfbs/post-v2-carriage-delivery-list"
+        },
+        {
+          "text": "Подтвердить отгрузку и создать документы",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-act-create"
+        },
+        {
+          "text": "Список доступных перевозок",
+          "link": "/ru/seller/deliveryfbs/post-v1-posting-carriage-available-list"
+        },
+        {
+          "text": "Информация о перевозке",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-get"
+        },
+        {
+          "text": "Добавить или обновить контактные данные продавца для курьера",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-courier-contact-set"
+        },
+        {
+          "text": "Получить контактные данные продавца для курьера",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-courier-contact-get"
+        },
+        {
+          "text": "Разделить заказ на отправления без сборки",
+          "link": "/ru/seller/deliveryfbs/post-v1-posting-fbs-split"
+        },
+        {
+          "text": "Список отправлений в акте",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-act-get-postings"
+        },
+        {
+          "text": "Этикетки для грузового места",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-act-get-container-labels"
+        },
+        {
+          "text": "Штрихкод для отгрузки отправления",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-act-get-barcode"
+        },
+        {
+          "text": "Значение штрихкода для отгрузки отправления",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-act-get-barcode-text"
+        },
+        {
+          "text": "Статус формирования накладной",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-digital-act-check-status"
+        },
+        {
+          "text": "Получить PDF c документами",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-act-get-pdf"
+        },
+        {
+          "text": "Получить акт о расхождениях по отгрузке FBS",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-act-discrepancy-pdf"
+        },
+        {
+          "text": "Список актов по отгрузкам",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-act-list"
+        },
+        {
+          "text": "Получить лист отгрузки по перевозке",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-digital-act-get-pdf"
+        },
+        {
+          "text": "Статус отгрузки и документов",
+          "link": "/ru/seller/deliveryfbs/post-v2-posting-fbs-act-check-status"
+        },
+        {
+          "text": "Разделить отправление с прослеживаемыми товарами",
+          "link": "/ru/seller/deliveryfbs/post-v1-posting-fbs-traceable-split"
+        },
+        {
+          "text": "Получить список незаполненных атрибутов для прослеживаемых товаров",
+          "link": "/ru/seller/deliveryfbs/post-v1-posting-fbs-product-traceable-attribute"
+        },
+        {
+          "text": "Получить статус проверки электронной ТТН на прослеживаемой перевозке FBS",
+          "link": "/ru/seller/deliveryfbs/post-v1-carriage-ettn-status"
+        },
+        {
+          "text": "Получить список отправлений в отгрузке",
+          "link": "/ru/seller/deliveryfbs/post-v1-assembly-carriage-posting-list"
+        },
+        {
+          "text": "Получить список товаров в отгрузке",
+          "link": "/ru/seller/deliveryfbs/post-v1-assembly-carriage-product-list"
+        },
+        {
+          "text": "Получить список отправлений",
+          "link": "/ru/seller/deliveryfbs/post-v1-assembly-fbs-posting-list"
+        },
+        {
+          "text": "Получить список товаров в отправлениях",
+          "link": "/ru/seller/deliveryfbs/post-v1-assembly-fbs-product-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 DeliveryrFBS",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Добавить трек-номера",
+          "link": "/ru/seller/deliveryrfbs/post-v2-fbs-posting-tracking-number-set"
+        },
+        {
+          "text": "Изменить статус на «Доставляется»",
+          "link": "/ru/seller/deliveryrfbs/post-v2-fbs-posting-delivering"
+        },
+        {
+          "text": "Изменить статус на «Последняя миля»",
+          "link": "/ru/seller/deliveryrfbs/post-v2-fbs-posting-last-mile"
+        },
+        {
+          "text": "Изменить статус на «Доставлено»",
+          "link": "/ru/seller/deliveryrfbs/post-v2-fbs-posting-delivered"
+        },
+        {
+          "text": "Доступные даты для переноса доставки",
+          "link": "/ru/seller/deliveryrfbs/post-v1-posting-fbs-timeslot-change-restrictions"
+        },
+        {
+          "text": "Перенести дату доставки",
+          "link": "/ru/seller/deliveryrfbs/post-v1-posting-fbs-timeslot-set"
+        },
+        {
+          "text": "Уточнить дату отгрузки отправления",
+          "link": "/ru/seller/deliveryrfbs/post-v1-posting-cutoff-set"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBS",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список необработанных отправлений",
+          "link": "/ru/seller/fbs/post-v3-posting-fbs-unfulfilled-list"
+        },
+        {
+          "text": "Получить список необработанных отправлений",
+          "link": "/ru/seller/fbs/post-v4-posting-fbs-unfulfilled-list"
+        },
+        {
+          "text": "Список отправлений",
+          "link": "/ru/seller/fbs/post-v3-posting-fbs-list"
+        },
+        {
+          "text": "Получить список отправлений",
+          "link": "/ru/seller/fbs/post-v4-posting-fbs-list"
+        },
+        {
+          "text": "Получить информацию об отправлении по идентификатору",
+          "link": "/ru/seller/fbs/post-v3-posting-fbs-get"
+        },
+        {
+          "text": "Получить информацию об отправлении по штрихкоду",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-get-by-barcode"
+        },
+        {
+          "text": "Указать количество коробок для многокоробочных отправлений",
+          "link": "/ru/seller/fbs/post-v3-posting-multiboxqty-set"
+        },
+        {
+          "text": "Список доступных стран-изготовителей",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-product-country-list"
+        },
+        {
+          "text": "Добавить информацию о стране-изготовителе товара",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-product-country-set"
+        },
+        {
+          "text": "Получить ограничения пункта приёма",
+          "link": "/ru/seller/fbs/post-v1-posting-fbs-restrictions"
+        },
+        {
+          "text": "Напечатать этикетку",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-package-label"
+        },
+        {
+          "text": "Создать задание на выгрузку этикеток",
+          "link": "/ru/seller/fbs/post-v1-posting-fbs-package-label-create"
+        },
+        {
+          "text": "Создать задание на формирование этикеток",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-package-label-create"
+        },
+        {
+          "text": "Создать задание на формирование этикеток",
+          "link": "/ru/seller/fbs/post-v3-posting-fbs-package-label-create"
+        },
+        {
+          "text": "Получить файл с этикетками",
+          "link": "/ru/seller/fbs/post-v1-posting-fbs-package-label-get"
+        },
+        {
+          "text": "Получить файл с этикетками",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-package-label-get"
+        },
+        {
+          "text": "Причины отмены отправления",
+          "link": "/ru/seller/fbs/post-v1-posting-fbs-cancel-reason"
+        },
+        {
+          "text": "Причины отмены отправлений",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-cancel-reason-list"
+        },
+        {
+          "text": "Отменить отправку некоторых товаров в отправлении",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-product-cancel"
+        },
+        {
+          "text": "Отменить отправление",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-cancel"
+        },
+        {
+          "text": "Открыть спор по отправлению",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-arbitration"
+        },
+        {
+          "text": "Передать отправление к отгрузке",
+          "link": "/ru/seller/fbs/post-v2-posting-fbs-awaiting-delivery"
+        },
+        {
+          "text": "Проверить код курьера",
+          "link": "/ru/seller/fbs/post-v1-posting-fbs-pick-up-code-verify"
+        },
+        {
+          "text": "Таможенные декларации ETGB",
+          "link": "/ru/seller/fbs/post-v1-posting-global-etgb"
+        },
+        {
+          "text": "Список неоплаченных товаров, заказанных юридическими лицами",
+          "link": "/ru/seller/fbs/post-v1-posting-unpaid-legal-product-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 RFBSReturnsAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список заявок на возврат",
+          "link": "/ru/seller/rfbsreturnsapi/post-v2-returns-rfbs-list"
+        },
+        {
+          "text": "Информация о заявке на возврат",
+          "link": "/ru/seller/rfbsreturnsapi/post-v2-returns-rfbs-get"
+        },
+        {
+          "text": "Передать доступные действия для rFBS возвратов",
+          "link": "/ru/seller/rfbsreturnsapi/post-v1-returns-rfbs-action-set"
+        }
+      ]
+    },
+    {
+      "text": "📌 CancellationAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить список заявок на отмену rFBS",
+          "link": "/ru/seller/cancellationapi/post-v2-conditional-cancellation-list"
+        },
+        {
+          "text": "Подтвердить заявку на отмену rFBS",
+          "link": "/ru/seller/cancellationapi/post-v2-conditional-cancellation-approve"
+        },
+        {
+          "text": "Отклонить заявку на отмену rFBS",
+          "link": "/ru/seller/cancellationapi/post-v2-conditional-cancellation-reject"
+        }
+      ]
+    },
+    {
+      "text": "↩️ Возвраты покупателей",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Информация о возвратах FBO и FBS",
+          "link": "/ru/seller/returnsapi/post-v1-returns-list"
+        },
+        {
+          "text": "Получить историю изменений автоутилизации",
+          "link": "/ru/seller/returnsapi/post-v1-returns-settings-utilization-history"
+        },
+        {
+          "text": "Получить настройки автоутилизации",
+          "link": "/ru/seller/returnsapi/post-v1-returns-settings-utilization-info"
+        },
+        {
+          "text": "Обновить настройки автоутилизации",
+          "link": "/ru/seller/returnsapi/post-v1-returns-settings-utilization-update"
+        }
+      ]
+    },
+    {
+      "text": "📌 ReturnAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Количество возвратов FBS",
+          "link": "/ru/seller/returnapi/post-v1-returns-company-fbs-info"
+        },
+        {
+          "text": "Проверить возможность получения возвратных отгрузок по штрихкоду",
+          "link": "/ru/seller/returnapi/post-v1-return-giveout-is-enabled"
+        },
+        {
+          "text": "Список возвратных отгрузок",
+          "link": "/ru/seller/returnapi/post-v1-return-giveout-list"
+        },
+        {
+          "text": "Информация о возвратной отгрузке",
+          "link": "/ru/seller/returnapi/post-v1-return-giveout-info"
+        },
+        {
+          "text": "Значение штрихкода для возвратных отгрузок",
+          "link": "/ru/seller/returnapi/post-v1-return-giveout-barcode"
+        },
+        {
+          "text": "Штрихкод для получения возвратной отгрузки в формате PDF",
+          "link": "/ru/seller/returnapi/post-v1-return-giveout-get-pdf"
+        },
+        {
+          "text": "Штрихкод для получения возвратной отгрузки в формате PNG",
+          "link": "/ru/seller/returnapi/post-v1-return-giveout-get-png"
+        },
+        {
+          "text": "Сгенерировать новый штрихкод",
+          "link": "/ru/seller/returnapi/post-v1-return-giveout-barcode-reset"
+        }
+      ]
+    },
+    {
+      "text": "🗨️ Чаты с покупателями",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отправить файл",
+          "link": "/ru/seller/chatapi/post-v1-chat-send-file"
+        },
+        {
+          "text": "Список чатов",
+          "link": "/ru/seller/chatapi/post-v3-chat-list"
+        },
+        {
+          "text": "История чата",
+          "link": "/ru/seller/chatapi/post-v3-chat-history"
+        }
+      ]
+    },
+    {
+      "text": "📌 SupplierAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать или изменить счёт-фактуру",
+          "link": "/ru/seller/supplierapi/post-v2-invoice-create-or-update"
+        },
+        {
+          "text": "Загрузка счёта-фактуры",
+          "link": "/ru/seller/supplierapi/post-v1-invoice-file-upload"
+        },
+        {
+          "text": "Получить информацию о счёте-фактуре",
+          "link": "/ru/seller/supplierapi/post-v2-invoice-get"
+        },
+        {
+          "text": "Удалить ссылку на счёт-фактуру",
+          "link": "/ru/seller/supplierapi/post-v1-invoice-delete"
+        }
+      ]
+    },
+    {
+      "text": "📌 ReportAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Информация об отчёте",
+          "link": "/ru/seller/reportapi/post-v1-report-info"
+        },
+        {
+          "text": "Список отчётов",
+          "link": "/ru/seller/reportapi/post-v1-report-list"
+        },
+        {
+          "text": "Отчёт по товарам",
+          "link": "/ru/seller/reportapi/post-v1-report-products-create"
+        },
+        {
+          "text": "Отчёт о возвратах",
+          "link": "/ru/seller/reportapi/post-v2-report-returns-create"
+        },
+        {
+          "text": "Отчёт об отправлениях",
+          "link": "/ru/seller/reportapi/post-v1-report-postings-create"
+        },
+        {
+          "text": "Финансовый отчёт",
+          "link": "/ru/seller/reportapi/post-v1-finance-cash-flow-statement-list"
+        },
+        {
+          "text": "Отчёт об уценённых товарах",
+          "link": "/ru/seller/reportapi/post-v1-report-discounted-create"
+        },
+        {
+          "text": "Отчёт об остатках на FBS-складе",
+          "link": "/ru/seller/reportapi/post-v1-report-warehouse-stock"
+        },
+        {
+          "text": "Получить отчёт о стоимости размещения по товарам",
+          "link": "/ru/seller/reportapi/post-v1-report-placement-by-products-create"
+        },
+        {
+          "text": "Получить отчёт о стоимости размещения по поставкам",
+          "link": "/ru/seller/reportapi/post-v1-report-placement-by-supplies-create"
+        },
+        {
+          "text": "Сгенерировать отчёт по продажам товаров с маркировкой",
+          "link": "/ru/seller/reportapi/post-v1-report-marked-products-sales-create"
+        }
+      ]
+    },
+    {
+      "text": "📈 Аналитика продаж",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отчёт по остаткам и товарам",
+          "link": "/ru/seller/analyticsapi/post-v2-analytics-stock-on-warehouses"
+        },
+        {
+          "text": "Оборачиваемость товара",
+          "link": "/ru/seller/analyticsapi/post-v1-analytics-turnover-stocks"
+        },
+        {
+          "text": "Получить аналитику по остаткам",
+          "link": "/ru/seller/analyticsapi/post-v1-analytics-stocks"
+        }
+      ]
+    },
+    {
+      "text": "📊 Финансы и отчёты",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отчёт о реализации товаров (версия 2)",
+          "link": "/ru/seller/financeapi/post-v2-finance-realization"
+        },
+        {
+          "text": "Позаказный отчёт о реализации товаров",
+          "link": "/ru/seller/financeapi/post-v1-finance-realization-posting"
+        },
+        {
+          "text": "Список транзакций",
+          "link": "/ru/seller/financeapi/post-v3-finance-transaction-list"
+        },
+        {
+          "text": "Суммы транзакций",
+          "link": "/ru/seller/financeapi/post-v3-finance-transaction-totals"
+        },
+        {
+          "text": "Реестр продаж юридическим лицам",
+          "link": "/ru/seller/financeapi/post-v1-finance-document-b2b-sales"
+        },
+        {
+          "text": "Реестр продаж юридическим лицам в JSON-формате",
+          "link": "/ru/seller/financeapi/post-v1-finance-document-b2b-sales-json"
+        },
+        {
+          "text": "Отчёт о взаиморасчётах",
+          "link": "/ru/seller/financeapi/post-v1-finance-mutual-settlement"
+        },
+        {
+          "text": "Отчёт о выкупленных товарах",
+          "link": "/ru/seller/financeapi/post-v1-finance-products-buyout"
+        },
+        {
+          "text": "Отчёт о компенсациях",
+          "link": "/ru/seller/financeapi/post-v1-finance-compensation"
+        },
+        {
+          "text": "Отчёт о декомпенсациях",
+          "link": "/ru/seller/financeapi/post-v1-finance-decompensation"
+        }
+      ]
+    },
+    {
+      "text": "📌 Receipt",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить чек в формате PDF",
+          "link": "/ru/seller/receipt/post-v1-receipts-get"
+        },
+        {
+          "text": "Получить список чеков продавца",
+          "link": "/ru/seller/receipt/post-v1-receipts-seller-list"
+        },
+        {
+          "text": "Загрузить чек",
+          "link": "/ru/seller/receipt/post-v1-receipts-upload"
+        }
+      ]
+    },
+    {
+      "text": "📌 SellerRating",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить информацию о текущих рейтингах продавца",
+          "link": "/ru/seller/sellerrating/post-v1-rating-summary"
+        },
+        {
+          "text": "Получить информацию о рейтингах продавца за период",
+          "link": "/ru/seller/sellerrating/post-v1-rating-history"
+        },
+        {
+          "text": "Получить индекс ошибок FBS и rFBS",
+          "link": "/ru/seller/sellerrating/post-v1-rating-index-fbs-info"
+        },
+        {
+          "text": "Список отправлений, которые повлияли на индекс ошибок FBS и rFBS",
+          "link": "/ru/seller/sellerrating/post-v1-rating-index-fbs-posting-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 Digital",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Загрузить коды цифровых товаров для отправления",
+          "link": "/ru/seller/digital/post-v1-posting-digital-codes-upload"
+        },
+        {
+          "text": "Получить список отправлений",
+          "link": "/ru/seller/digital/post-v1-posting-digital-list"
+        },
+        {
+          "text": "Обновить количество цифровых товаров",
+          "link": "/ru/seller/digital/post-v1-product-digital-stocks-import"
+        }
+      ]
+    },
+    {
+      "text": "💬 Отзывы и вопросы покупателей",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Оставить комментарий на отзыв",
+          "link": "/ru/seller/reviewapi/post-v1-review-comment-create"
+        },
+        {
+          "text": "Удалить комментарий на отзыв",
+          "link": "/ru/seller/reviewapi/post-v1-review-comment-delete"
+        },
+        {
+          "text": "Удалить комментарий на отзыв",
+          "link": "/ru/seller/reviewapi/post-v2-review-comment-delete"
+        },
+        {
+          "text": "Получить список комментариев на отзыв",
+          "link": "/ru/seller/reviewapi/post-v1-review-comment-list"
+        },
+        {
+          "text": "Изменить статус отзывов",
+          "link": "/ru/seller/reviewapi/post-v1-review-change-status"
+        },
+        {
+          "text": "Изменить статус отзывов",
+          "link": "/ru/seller/reviewapi/post-v2-review-change-status"
+        },
+        {
+          "text": "Количество отзывов по статусам",
+          "link": "/ru/seller/reviewapi/post-v1-review-count"
+        },
+        {
+          "text": "Получить количество отзывов по статусам",
+          "link": "/ru/seller/reviewapi/post-v2-review-count"
+        },
+        {
+          "text": "Получить информацию об отзыве",
+          "link": "/ru/seller/reviewapi/post-v1-review-info"
+        },
+        {
+          "text": "Получить информацию по отзыву",
+          "link": "/ru/seller/reviewapi/post-v2-review-info"
+        },
+        {
+          "text": "Получить список отзывов",
+          "link": "/ru/seller/reviewapi/post-v1-review-list"
+        },
+        {
+          "text": "Получить список отзывов",
+          "link": "/ru/seller/reviewapi/post-v2-review-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 Questions&Answers",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать ответ на вопрос",
+          "link": "/ru/seller/questionsanswers/post-v1-question-answer-create"
+        },
+        {
+          "text": "Удалить ответ на вопрос",
+          "link": "/ru/seller/questionsanswers/post-v1-question-answer-delete"
+        },
+        {
+          "text": "Список ответов на вопрос",
+          "link": "/ru/seller/questionsanswers/post-v1-question-answer-list"
+        },
+        {
+          "text": "Изменить статус вопросов",
+          "link": "/ru/seller/questionsanswers/post-v1-question-change-status"
+        },
+        {
+          "text": "Количество вопросов по статусам",
+          "link": "/ru/seller/questionsanswers/post-v1-question-count"
+        },
+        {
+          "text": "Информация о вопросе",
+          "link": "/ru/seller/questionsanswers/post-v1-question-info"
+        },
+        {
+          "text": "Список вопросов",
+          "link": "/ru/seller/questionsanswers/post-v1-question-list"
+        },
+        {
+          "text": "Товары с наибольшим количеством вопросов",
+          "link": "/ru/seller/questionsanswers/post-v1-question-top-sku"
+        }
+      ]
+    },
+    {
+      "text": "📌 BetaMethod",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Управление остатками",
+          "link": "/ru/seller/betamethod/post-v1-analytics-manage-stocks"
+        },
+        {
+          "text": "Получить отчёт о списанных товарах",
+          "link": "/ru/seller/betamethod/post-v1-analytics-decommissioned-goods"
+        },
+        {
+          "text": "Получить информацию о сравнении категорий",
+          "link": "/ru/seller/betamethod/post-v1-analytics-category-comparison"
+        },
+        {
+          "text": "Отчёт по вывозу и утилизации с поставки FBO",
+          "link": "/ru/seller/betamethod/post-v1-removal-from-supply-list"
+        },
+        {
+          "text": "Отчёт по вывозу и утилизации со стока FBO",
+          "link": "/ru/seller/betamethod/post-v1-removal-from-stock-list"
+        },
+        {
+          "text": "Управлять скидкой от количества",
+          "link": "/ru/seller/betamethod/post-v1-product-stairway-discount-by-quantity-set"
+        },
+        {
+          "text": "Получить информацию о скидке от количества",
+          "link": "/ru/seller/betamethod/post-v1-product-stairway-discount-by-quantity-get"
+        },
+        {
+          "text": "Получить отчёт о балансе",
+          "link": "/ru/seller/betamethod/post-v1-finance-balance"
+        },
+        {
+          "text": "Получить список заявок на скидку",
+          "link": "/ru/seller/betamethod/post-v2-actions-discounts-task-list"
+        },
+        {
+          "text": "Настроить видимость товара на витрине Ozon и Ozon Селект",
+          "link": "/ru/seller/betamethod/post-v1-product-visibility-set"
+        },
+        {
+          "text": "Получить список отправлений",
+          "link": "/ru/seller/betamethod/post-v2-posting-digital-list"
+        },
+        {
+          "text": "Получить начисления по отправлениям",
+          "link": "/ru/seller/betamethod/post-v1-finance-accrual-postings"
+        },
+        {
+          "text": "Получить справочник начислений",
+          "link": "/ru/seller/betamethod/post-v1-finance-accrual-types"
+        },
+        {
+          "text": "Получить начисления за день",
+          "link": "/ru/seller/betamethod/post-v1-finance-accrual-by-day"
+        },
+        {
+          "text": "Получить информацию о видимости товара",
+          "link": "/ru/seller/betamethod/post-v1-product-visibility-info"
+        },
+        {
+          "text": "Получить информацию об отправлении по идентификатору",
+          "link": "/ru/seller/betamethod/post-v1-posting-fbp-get"
+        },
+        {
+          "text": "Получить позаказный отчёт о реализации товаров",
+          "link": "/ru/seller/betamethod/post-v1-report-realization-posting-create"
+        },
+        {
+          "text": "Получить зависимые характеристики",
+          "link": "/ru/seller/betamethod/post-v1-description-category-dependent-attributes"
+        },
+        {
+          "text": "Получить возможные значения дочерней характеристики",
+          "link": "/ru/seller/betamethod/post-v1-description-category-dependent-attributes-values"
+        },
+        {
+          "text": "Получить общую информацию о локальности продаж",
+          "link": "/ru/seller/betamethod/post-v1-analytics-local-sale-total"
+        },
+        {
+          "text": "Получить информацию о локальности продаж по кластерам",
+          "link": "/ru/seller/betamethod/post-v1-analytics-local-sale-clusters-items-info"
+        },
+        {
+          "text": "Получить информацию о локальности продаж товара по кластерам",
+          "link": "/ru/seller/betamethod/post-v1-analytics-local-sale-items-clusters-info"
+        },
+        {
+          "text": "Получить список пунктов возврата для склада rFBS",
+          "link": "/ru/seller/betamethod/post-v1-warehouse-rfbs-return-point-list"
+        },
+        {
+          "text": "Получить информацию о выполнении плана отгрузок",
+          "link": "/ru/seller/betamethod/post-v1-supply-order-shipment-plan-compliance-get"
+        }
+      ]
+    },
+    {
+      "text": "📌 SupplyOrderAPI",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить информацию об акте",
+          "link": "/ru/seller/supplyorderapi/post-v1-supply-order-act-summary-get"
+        },
+        {
+          "text": "Получить информацию о товарах в акте",
+          "link": "/ru/seller/supplyorderapi/post-v1-supply-order-act-product-get"
+        },
+        {
+          "text": "Согласовать акт",
+          "link": "/ru/seller/supplyorderapi/post-v1-supply-order-act-accept"
+        },
+        {
+          "text": "Получить статус согласования акта",
+          "link": "/ru/seller/supplyorderapi/post-v1-supply-order-act-accept-status"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBSWarehouseSetup",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить список drop-off пунктов для создания склада",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-create-drop-off-list"
+        },
+        {
+          "text": "Получить список drop-off пунктов для изменения информации склада",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-update-drop-off-list"
+        },
+        {
+          "text": "Получить список таймслотов для создания склада с отгрузкой drop-off",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-create-drop-off-timeslot-list"
+        },
+        {
+          "text": "Получить список таймслотов для обновления склада с отгрузкой drop-off",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-update-drop-off-timeslot-list"
+        },
+        {
+          "text": "Получить список таймслотов для создания склада с отгрузкой pick-up",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-create-pick-up-timeslot-list"
+        },
+        {
+          "text": "Получить список таймслотов для обновления склада с отгрузкой pick-up",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-update-pick-up-timeslot-list"
+        },
+        {
+          "text": "Создать склад",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-create"
+        },
+        {
+          "text": "Обновить склад",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-update"
+        },
+        {
+          "text": "Обновить первую милю",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-first-mile-update"
+        },
+        {
+          "text": "Получить список пунктов возврата для создания склада",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-create-return-point-list"
+        },
+        {
+          "text": "Получить список пунктов возврата для обновления склада",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-update-return-point-list"
+        },
+        {
+          "text": "Получить информацию о возвратной миле",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-return-mile-info"
+        },
+        {
+          "text": "Проверить необходимость установки возвратной мили на склад",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-return-mile-check"
+        },
+        {
+          "text": "Создать вызов курьера на забор отгрузки pick-up",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-pickup-courier-create"
+        },
+        {
+          "text": "Отменить вызов курьера на забор отгрузки pick-up",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-pickup-courier-cancel"
+        },
+        {
+          "text": "Получить историю отгрузок курьерам",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-pickup-history-list"
+        },
+        {
+          "text": "Получить список складов для планирования отгрузок курьеру",
+          "link": "/ru/seller/fbswarehousesetup/post-v1-warehouse-fbs-pickup-planning-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 rFBSWarehouseSetup",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать склад с методом доставки «Партнёры Ozon»",
+          "link": "/ru/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-aggregator-create"
+        },
+        {
+          "text": "Обновить склад",
+          "link": "/ru/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-update"
+        },
+        {
+          "text": "Обновить метод доставки «Партнёры Ozon»",
+          "link": "/ru/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-aggregator-delivery-method-update"
+        },
+        {
+          "text": "Создать склад с методом доставки «Вы или сторонняя служба»",
+          "link": "/ru/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-non-integrated-create"
+        },
+        {
+          "text": "Обновить метод доставки «Вы или сторонняя служба»",
+          "link": "/ru/seller/rfbswarehousesetup/post-v1-warehouse-erfbs-non-integrated-delivery-method-update"
+        },
+        {
+          "text": "Поставить rFBS-склад на паузу",
+          "link": "/ru/seller/rfbswarehousesetup/post-v1-warehouse-rfbs-pause"
+        },
+        {
+          "text": "Снять rFBS-склад с паузы",
+          "link": "/ru/seller/rfbswarehousesetup/post-v1-warehouse-rfbs-unpause"
+        }
+      ]
+    },
+    {
+      "text": "📌 SellerActions",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать акцию с механикой «Скидка»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-create-discount"
+        },
+        {
+          "text": "Создать акцию с механикой «Скидка от суммы заказа»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-create-discount-with-condition"
+        },
+        {
+          "text": "Создать акцию с механикой «Беспроцентная рассрочка»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-create-installment"
+        },
+        {
+          "text": "Создать акцию с механикой «Многоуровневая скидка от суммы»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-create-multi-level-discount"
+        },
+        {
+          "text": "Создать акцию с механикой «Скидка по промокоду»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-create-voucher"
+        },
+        {
+          "text": "Обновить акцию с механикой «Скидка»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-update-discount"
+        },
+        {
+          "text": "Обновить акцию с механикой «Скидка от суммы заказа»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-update-discount-with-condition"
+        },
+        {
+          "text": "Обновить акцию с механикой «Беспроцентная рассрочка»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-update-installment"
+        },
+        {
+          "text": "Обновить акцию с механикой «Многоуровневая скидка от суммы»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-update-multi-level-discount"
+        },
+        {
+          "text": "Обновить акцию с механикой «Скидка по промокоду»",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-update-voucher"
+        },
+        {
+          "text": "Добавить товары в акцию",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-products-add"
+        },
+        {
+          "text": "Получить список доступных для акции товаров",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-products-candidates"
+        },
+        {
+          "text": "Удалить товары из акции",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-products-delete"
+        },
+        {
+          "text": "Получить список участвующих в акции товаров",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-products-list"
+        },
+        {
+          "text": "Перенести акцию в архив",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-archive"
+        },
+        {
+          "text": "Включить или выключить акцию",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-change-activity"
+        },
+        {
+          "text": "Получить список акций",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-list"
+        },
+        {
+          "text": "Получить файл с промокодами в формате CSV",
+          "link": "/ru/seller/selleractions/post-v1-seller-actions-voucher-get"
+        }
+      ]
+    },
+    {
+      "text": "📌 PromosBeta",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить список товаров из автодобавления в акцию",
+          "link": "/ru/seller/promosbeta/post-v1-actions-auto-add-products-list"
+        },
+        {
+          "text": "Получить список доступных товаров для автодобавления в акцию",
+          "link": "/ru/seller/promosbeta/post-v1-actions-auto-add-products-candidates"
+        },
+        {
+          "text": "Удалить товары из автодобавления в акцию",
+          "link": "/ru/seller/promosbeta/post-v1-actions-auto-add-products-delete"
+        },
+        {
+          "text": "Добавить или обновить товары в автодобавлении в акцию",
+          "link": "/ru/seller/promosbeta/post-v1-actions-auto-add-products-update"
+        }
+      ]
+    },
+    {
+      "text": "📌 Notification",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Подключить URL-адрес для уведомлений",
+          "link": "/ru/seller/notification/post-v1-notification-set"
+        },
+        {
+          "text": "Изменить URL-адрес для уведомлений",
+          "link": "/ru/seller/notification/post-v1-notification-update"
+        },
+        {
+          "text": "Удалить URL-адрес для уведомлений",
+          "link": "/ru/seller/notification/post-v1-notification-delete"
+        },
+        {
+          "text": "Проверить URL-адрес для уведомлений",
+          "link": "/ru/seller/notification/post-v1-notification-check"
+        },
+        {
+          "text": "Включить или выключить уведомления на URL-адрес",
+          "link": "/ru/seller/notification/post-v1-notification-enable"
+        },
+        {
+          "text": "Получить информацию по подключённым URL-адресам",
+          "link": "/ru/seller/notification/post-v1-notification-list"
+        },
+        {
+          "text": "Получить типы пуш-уведомлений",
+          "link": "/ru/seller/notification/post-v1-notification-push-type-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 FBOTransport",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить информацию о грузоместах",
+          "link": "/ru/seller/fbotransport/post-v2-cargoes-get"
+        },
+        {
+          "text": "Удалить грузоместа и транспортные грузоместа в заявке на поставку",
+          "link": "/ru/seller/fbotransport/post-v2-cargoes-delete"
+        },
+        {
+          "text": "Получить информацию о статусе удаления грузомест и транспортных грузомест",
+          "link": "/ru/seller/fbotransport/post-v2-cargoes-delete-status"
+        },
+        {
+          "text": "Включить или отключить транспортные грузоместа в поставке",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-transport-activate"
+        },
+        {
+          "text": "Получить статус включения или отключения транспортных грузомест",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-transport-activate-status"
+        },
+        {
+          "text": "Создать транспортное грузоместо",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-transport-create"
+        },
+        {
+          "text": "Получить статус создания транспортного грузоместа",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-transport-create-status"
+        },
+        {
+          "text": "Связать или отвязать грузоместа и транспортные грузоместа",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-transport-bind"
+        },
+        {
+          "text": "Получить статус связывания или отвязывания грузомест и транспортных грузомест",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-transport-bind-status"
+        },
+        {
+          "text": "Получить информацию о грузоместах в поставках",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-supplies-get"
+        },
+        {
+          "text": "Сгенерировать этикетки для транспортных грузомест по идентификатору поставки",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-label-transport-by-order-create"
+        },
+        {
+          "text": "Получить статус генерации этикеток для транспортных грузомеcт по идентификатору поставки",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-label-transport-by-order-status"
+        },
+        {
+          "text": "Сгенерировать этикетки транспортных грузомест по идентификатору грузоместа",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-label-transport-create"
+        },
+        {
+          "text": "Получить статус генерации этикеток транспортных грузомест по идентификатору грузоместа",
+          "link": "/ru/seller/fbotransport/post-v1-cargoes-label-transport-status"
+        }
+      ]
+    },
+    {
+      "text": "📌 DraftDirectFBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать черновик с доставкой силами продавца",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-seller-dlv-create"
+        },
+        {
+          "text": "Обновить информацию о доставке силами продавца в черновике",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-seller-dlv-edit"
+        },
+        {
+          "text": "Отредактировать таймслот в черновике",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-timeslot-edit"
+        },
+        {
+          "text": "Получить список таймслотов для прямой поставки",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-timeslot-get"
+        },
+        {
+          "text": "Создать черновик заявки на поставку без указания способа доставки",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-create"
+        },
+        {
+          "text": "Удалить черновик заявки на поставку",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-delete"
+        },
+        {
+          "text": "Проверить список товаров для склада партнёра",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-product-validate"
+        },
+        {
+          "text": "Перевести черновик в действующую поставку",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-registrate"
+        },
+        {
+          "text": "Создать черновик заявки на доставку сторонней транспортной компанией",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-tpl-dlv-create"
+        },
+        {
+          "text": "Редактировать черновик поставки со способом доставки сторонней транспортной компанией",
+          "link": "/ru/seller/draftdirectfbp/post-v1-fbp-draft-direct-tpl-dlv-edit"
+        }
+      ]
+    },
+    {
+      "text": "📌 DraftDropOffFBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать черновик для доставки в drop-off пункт",
+          "link": "/ru/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-create"
+        },
+        {
+          "text": "Удалить черновик для доставки в drop-off пункт",
+          "link": "/ru/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-delete"
+        },
+        {
+          "text": "Отредактировать детали доставки для drop-off черновика",
+          "link": "/ru/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-dlv-edit"
+        },
+        {
+          "text": "Перевести черновик в действующую поставку",
+          "link": "/ru/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-registrate"
+        },
+        {
+          "text": "Получить список провинций",
+          "link": "/ru/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-province-list"
+        },
+        {
+          "text": "Получить список drop-off пунктов в провинции",
+          "link": "/ru/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-point-list"
+        },
+        {
+          "text": "Получить расписание работы drop-off пункта",
+          "link": "/ru/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-point-timetable"
+        },
+        {
+          "text": "Проверить список товаров, которые склад партнёра может принять",
+          "link": "/ru/seller/draftdropofffbp/post-v1-fbp-draft-drop-off-product-validate"
+        }
+      ]
+    },
+    {
+      "text": "📌 OrderDirectFBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отменить поставку",
+          "link": "/ru/seller/orderdirectfbp/post-v1-fbp-order-direct-cancel"
+        },
+        {
+          "text": "Обновить информацию о доставке силами продавца",
+          "link": "/ru/seller/orderdirectfbp/post-v1-fbp-order-direct-seller-dlv-edit"
+        },
+        {
+          "text": "Обновить информацию о доставке сторонней транспортной компанией",
+          "link": "/ru/seller/orderdirectfbp/post-v1-fbp-order-direct-tpl-dlv-edit"
+        },
+        {
+          "text": "Отредактировать таймслот в заявке на поставку",
+          "link": "/ru/seller/orderdirectfbp/post-v1-fbp-order-direct-timeslot-edit"
+        },
+        {
+          "text": "Получить список таймслотов для поставки",
+          "link": "/ru/seller/orderdirectfbp/post-v1-fbp-order-direct-timeslot-list"
+        }
+      ]
+    },
+    {
+      "text": "📌 DeliveryFBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Сгенерировать акт приёмки",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-act-from-create"
+        },
+        {
+          "text": "Получить статус генерации акта приёмки",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-act-from-get"
+        },
+        {
+          "text": "Сгенерировать транспортную накладную",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-act-to-create"
+        },
+        {
+          "text": "Получить статус генерации транспортной накладной",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-act-to-get"
+        },
+        {
+          "text": "Получить информацию о завершённой поставке",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-archive-get"
+        },
+        {
+          "text": "Получить список завершённых поставок",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-archive-list"
+        },
+        {
+          "text": "Cоздать задание на генерацию этикеток",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-label-create"
+        },
+        {
+          "text": "Получить статус задания на генерацию этикеток",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-label-get"
+        },
+        {
+          "text": "Получить информацию о конкретной поставке",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-order-get"
+        },
+        {
+          "text": "Получить список поставок",
+          "link": "/ru/seller/deliveryfbp/post-v1-fbp-order-list"
+        },
+        {
+          "text": "Получить список отправлений",
+          "link": "/ru/seller/deliveryfbp/post-v1-posting-fbp-list"
+        }
+      ]
+    },
+    {
+      "text": "📝 Черновики FBP pick-up",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать черновик заявки на pick-up поставку",
+          "link": "/ru/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-create"
+        },
+        {
+          "text": "Отменить черновик заявки на pick-up поставку",
+          "link": "/ru/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-delete"
+        },
+        {
+          "text": "Изменить черновик заявки на pick-up поставку",
+          "link": "/ru/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-dlv-edit"
+        },
+        {
+          "text": "Провалидировать список товаров для pick-up поставки",
+          "link": "/ru/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-product-validate"
+        },
+        {
+          "text": "Перевести черновик в действующую поставку",
+          "link": "/ru/seller/draftpickupfbp/post-v1-fbp-draft-pick-up-registrate"
+        }
+      ]
+    },
+    {
+      "text": "📄 Черновики FBP",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Получить список партнёрских складов",
+          "link": "/ru/seller/deliveryfbpdraft/post-v1-fbp-warehouse-list"
+        },
+        {
+          "text": "Получить информацию о черновике поставки",
+          "link": "/ru/seller/deliveryfbpdraft/post-v1-fbp-draft-get"
+        },
+        {
+          "text": "Список черновиков поставки",
+          "link": "/ru/seller/deliveryfbpdraft/post-v1-fbp-draft-list"
+        }
+      ]
+    },
+    {
+      "text": "🏬 Поставки FBP drop-off",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отменить поставку drop-off",
+          "link": "/ru/seller/orderdropofffbp/post-v1-fbp-order-drop-off-cancel"
+        },
+        {
+          "text": "Отредактировать информацию о поставке на drop-off пункт",
+          "link": "/ru/seller/orderdropofffbp/post-v1-fbp-order-drop-off-dlv-edit"
+        },
+        {
+          "text": "Получить график работы drop-off пункта",
+          "link": "/ru/seller/orderdropofffbp/post-v1-fbp-order-drop-off-timetable"
+        }
+      ]
+    },
+    {
+      "text": "📦 Поставки FBP pick-up",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отменить pick-up поставку",
+          "link": "/ru/seller/orderpickupfbp/post-v1-fbp-order-pick-up-cancel"
+        },
+        {
+          "text": "Изменить данные о точке забора",
+          "link": "/ru/seller/orderpickupfbp/post-v1-fbp-order-pick-up-dlv-edit"
+        }
+      ]
+    },
+    {
+      "text": "🚛 Работа с грузоместами FBS",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать грузоместо",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-create"
+        },
+        {
+          "text": "Наполнить грузоместо отправлениями",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-fill"
+        },
+        {
+          "text": "Подтвердить состав грузоместа",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-approve"
+        },
+        {
+          "text": "Разместить коробки на палете",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-place-into"
+        },
+        {
+          "text": "Убрать отправления из грузоместа",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-remove-postings"
+        },
+        {
+          "text": "Убрать коробки с палеты",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-remove-from"
+        },
+        {
+          "text": "Отменить грузоместо",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-cancel"
+        },
+        {
+          "text": "Получить список грузомест",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-list"
+        },
+        {
+          "text": "Получить информацию о грузоместах",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-get"
+        },
+        {
+          "text": "Получить статус грузомест FBS",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-status-get"
+        },
+        {
+          "text": "Получить статус задачи грузового места",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-task-info"
+        },
+        {
+          "text": "Получить документы по грузоместам — ТрН и лист отгрузки",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-document-get"
+        },
+        {
+          "text": "Получить этикетку по грузоместам",
+          "link": "/ru/seller/carriageapi/post-v1-carriage-container-label-get"
+        }
+      ]
+    },
+    {
+      "text": "💎 Premium-функционал",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отправить сообщение",
+          "link": "/ru/seller/premium/post-v1-chat-send-message"
+        },
+        {
+          "text": "Создать новый чат",
+          "link": "/ru/seller/premium/post-v1-chat-start"
+        },
+        {
+          "text": "Отметить сообщения как прочитанные",
+          "link": "/ru/seller/premium/post-v2-chat-read"
+        },
+        {
+          "text": "Данные аналитики",
+          "link": "/ru/seller/premium/post-v1-analytics-data"
+        },
+        {
+          "text": "Получить информацию о запросах моих товаров",
+          "link": "/ru/seller/premium/post-v1-analytics-product-queries"
+        },
+        {
+          "text": "Получить детализацию запросов по товару",
+          "link": "/ru/seller/premium/post-v1-analytics-product-queries-details"
+        },
+        {
+          "text": "Отчёт о реализации товаров за день",
+          "link": "/ru/seller/premium/post-v1-finance-realization-by-day"
+        },
+        {
+          "text": "Получить список поисковых запросов по тексту",
+          "link": "/ru/seller/premium/post-v1-search-queries-text"
+        },
+        {
+          "text": "Получить список популярных поисковых запросов",
+          "link": "/ru/seller/premium/post-v1-search-queries-top"
+        },
+        {
+          "text": "Получить подробную информацию о ценах товаров",
+          "link": "/ru/seller/premium/post-v1-product-prices-details"
+        }
+      ]
+    },
+    {
+      "text": "❌ Причины отмены заказов",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Причины отмены отправлений",
+          "link": "/ru/seller/cancelreasonapi/post-v1-cancel-reason-list"
+        },
+        {
+          "text": "Причины отмены заказа",
+          "link": "/ru/seller/cancelreasonapi/post-v1-cancel-reason-list-by-order"
+        },
+        {
+          "text": "Причины отмены отправления",
+          "link": "/ru/seller/cancelreasonapi/post-v1-cancel-reason-list-by-posting"
+        }
+      ]
+    },
+    {
+      "text": "🛣️ Доставка и логистика",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Проверить доступность доставки для покупателя",
+          "link": "/ru/seller/deliveryapi/post-v1-delivery-check"
+        },
+        {
+          "text": "Получить доступные варианты доставки",
+          "link": "/ru/seller/deliveryapi/post-v2-delivery-checkout"
+        },
+        {
+          "text": "Отрисовать точки на карте",
+          "link": "/ru/seller/deliveryapi/post-v1-delivery-map"
+        },
+        {
+          "text": "Получить информацию о точке самовывоза",
+          "link": "/ru/seller/deliveryapi/post-v1-delivery-point-info"
+        },
+        {
+          "text": "Получить список точек самовывоза",
+          "link": "/ru/seller/deliveryapi/post-v1-delivery-point-list"
+        }
+      ]
+    },
+    {
+      "text": "📋 Управление заказами",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отменить заказ",
+          "link": "/ru/seller/orderapi/post-v1-order-cancel"
+        },
+        {
+          "text": "Проверить возможность отмены заказа",
+          "link": "/ru/seller/orderapi/post-v1-order-cancel-check"
+        },
+        {
+          "text": "Получить статус отмены заказа",
+          "link": "/ru/seller/orderapi/post-v1-order-cancel-status"
+        },
+        {
+          "text": "Создать заказ",
+          "link": "/ru/seller/orderapi/post-v2-order-create"
+        }
+      ]
+    },
+    {
+      "text": "📦 Заказы FBO",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отменить отправление из заказа",
+          "link": "/ru/seller/fbopostingapi/post-v1-posting-cancel"
+        },
+        {
+          "text": "Проверить статус отмены отправления",
+          "link": "/ru/seller/fbopostingapi/post-v1-posting-cancel-status"
+        },
+        {
+          "text": "Получить маркировки экземпляров из отправления",
+          "link": "/ru/seller/fbopostingapi/post-v1-posting-marks"
+        }
+      ]
+    }
+  ],
+  "/ru/performance/": [
+    {
+      "text": "📖 Обзор Performance API",
+      "link": "/ru/performance/"
+    },
+    {
+      "text": "📢 Кампании и рекламируемые объекты",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список кампаний",
+          "link": "/ru/performance/campaign/get-api-client-campaign"
+        },
+        {
+          "text": "Список продвигаемых объектов в кампании",
+          "link": "/ru/performance/campaign/get-api-client-campaign-campaignid-objects"
+        },
+        {
+          "text": "Лимиты ставок для инструментов продвижения",
+          "link": "/ru/performance/campaign/get-api-client-limits-list"
+        },
+        {
+          "text": "Минимальная ставка для товаров по SKU",
+          "link": "/ru/performance/campaign/post-api-client-min-sku"
+        },
+        {
+          "text": "Список товаров с бонусами",
+          "link": "/ru/performance/campaign/get-api-client-products-with-bonuses"
+        }
+      ]
+    },
+    {
+      "text": "📊 Статистика рекламы",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Статистика по кампании",
+          "link": "/ru/performance/statistics/post-api-client-statistics"
+        },
+        {
+          "text": "Статистика по показам видеобаннера",
+          "link": "/ru/performance/statistics/post-api-client-statistics-video"
+        },
+        {
+          "text": "Отчёт по заказам",
+          "link": "/ru/performance/statistics/post-api-client-statistics-attribution"
+        },
+        {
+          "text": "Cтатус отчёта",
+          "link": "/ru/performance/statistics/get-api-client-statistics-uuid"
+        },
+        {
+          "text": "Список отчётов, сгенерированных через интерфейс",
+          "link": "/ru/performance/statistics/get-api-client-statistics-list"
+        },
+        {
+          "text": "Список отчётов, сгенерированных через API",
+          "link": "/ru/performance/statistics/get-api-client-statistics-externallist"
+        },
+        {
+          "text": "Получить отчёты",
+          "link": "/ru/performance/statistics/get-api-client-statistics-report"
+        },
+        {
+          "text": "Статистика по медийным кампаниям",
+          "link": "/ru/performance/statistics/get-api-client-statistics-campaign-media"
+        },
+        {
+          "text": "Статистика по кампании Оплата за клик",
+          "link": "/ru/performance/statistics/get-api-client-statistics-campaign-product"
+        },
+        {
+          "text": "Статистика по расходу кампаний",
+          "link": "/ru/performance/statistics/get-api-client-statistics-expense"
+        },
+        {
+          "text": "Дневная статистика по кампаниям",
+          "link": "/ru/performance/statistics/get-api-client-statistics-daily"
+        },
+        {
+          "text": "Получить отчёт по заказам в оплате за заказ — выбранные товары",
+          "link": "/ru/performance/statistics/post-api-client-statistic-orders-generate"
+        },
+        {
+          "text": "Получить отчёт по товарам в оплате за заказ — выбранные товары",
+          "link": "/ru/performance/statistics/post-api-client-statistic-products-generate"
+        },
+        {
+          "text": "Получить отчёт по заказам в оплате за заказ — все товары",
+          "link": "/ru/performance/statistics/get-api-client-statistics-all-sku-promo-orders-generate"
+        },
+        {
+          "text": "Получить отчёт по товарам в оплате за заказ — все товары",
+          "link": "/ru/performance/statistics/get-api-client-statistics-all-sku-promo-products-generate"
+        },
+        {
+          "text": "Отчёт по поисковым запросам",
+          "link": "/ru/performance/statistics/post-api-client-statistics-phrases"
+        },
+        {
+          "text": "Получить статистику по товарам в оплате за клик",
+          "link": "/ru/performance/statistics/post-api-client-statistics-products-sku"
+        }
+      ]
+    },
+    {
+      "text": "🖱️ Оплата за клик (CPC)",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Создать кампанию с оплатой за клики",
+          "link": "/ru/performance/ad/post-api-client-campaign-cpc-v2-product"
+        },
+        {
+          "text": "Рассчитать минимальный бюджет кампании",
+          "link": "/ru/performance/ad/post-external-api-dynamic-budget"
+        },
+        {
+          "text": "Активировать кампанию",
+          "link": "/ru/performance/ad/post-api-client-campaign-campaignid-activate"
+        },
+        {
+          "text": "Выключить кампанию",
+          "link": "/ru/performance/ad/post-api-client-campaign-campaignid-deactivate"
+        },
+        {
+          "text": "Параметры кампании",
+          "link": "/ru/performance/ad/patch-api-client-campaign-campaignid"
+        }
+      ]
+    },
+    {
+      "text": "🛒 Товары в Оплате за клик",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Добавить товары в кампанию",
+          "link": "/ru/performance/product/post-api-client-campaign-campaignid-products"
+        },
+        {
+          "text": "Обновить ставки товаров",
+          "link": "/ru/performance/product/put-api-client-campaign-campaignid-products"
+        },
+        {
+          "text": "Список товаров кампании",
+          "link": "/ru/performance/product/get-api-client-campaign-campaignid-v2-products"
+        },
+        {
+          "text": "Удалить товары из кампании",
+          "link": "/ru/performance/product/post-api-client-campaign-campaignid-products-delete"
+        },
+        {
+          "text": "Конкурентные ставки для товара",
+          "link": "/ru/performance/product/get-api-client-campaign-campaignid-products-bids-competitive"
+        }
+      ]
+    },
+    {
+      "text": "🔍 Оплата за заказ",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Список товаров в продвижении в оплате за заказ",
+          "link": "/ru/performance/search-promo/post-api-client-campaign-search-promo-v2-products"
+        },
+        {
+          "text": "Рекомендованные ставки для товаров",
+          "link": "/ru/performance/search-promo/post-api-client-search-promo-bids-recommendation"
+        },
+        {
+          "text": "Установить ставку на товар",
+          "link": "/ru/performance/search-promo/post-api-client-campaign-search-promo-v2-bids-set"
+        },
+        {
+          "text": "Получить фиксированные ставки для товаров",
+          "link": "/ru/performance/search-promo/post-api-client-search-promo-get-cpo-min-bids"
+        },
+        {
+          "text": "Включить продвижение товара в оплате за заказ",
+          "link": "/ru/performance/search-promo/post-api-client-search-promo-product-enable"
+        },
+        {
+          "text": "Отключить продвижение товара в оплате за заказ",
+          "link": "/ru/performance/search-promo/post-api-client-search-promo-product-disable"
+        },
+        {
+          "text": "Удалить товар из продвижения в оплате за заказ",
+          "link": "/ru/performance/search-promo/post-api-client-campaign-search-promo-v2-bids-delete"
+        },
+        {
+          "text": "Включить продвижение в оплате за заказ — все товары",
+          "link": "/ru/performance/search-promo/get-api-client-campaign-all-sku-promo-activate"
+        },
+        {
+          "text": "Выключить продвижение в оплате за заказ — все товары",
+          "link": "/ru/performance/search-promo/get-api-client-campaign-all-sku-promo-deactivate"
+        },
+        {
+          "text": "Установить ставку для продвижения в Оплате за заказ — все товары",
+          "link": "/ru/performance/search-promo/get-api-client-campaign-all-sku-promo-set-bid"
+        },
+        {
+          "text": "Включить продвижение товаров в акции «Морковск»",
+          "link": "/ru/performance/search-promo/post-api-client-campaign-search-promo-carrots-enable"
+        },
+        {
+          "text": "Отключить продвижение товаров в акции «Морковск»",
+          "link": "/ru/performance/search-promo/post-api-client-campaign-search-promo-carrots-disable"
+        }
+      ]
+    },
+    {
+      "text": "🌐 Аналитика внешнего трафика",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Отчёт с аналитикой внешнего трафика",
+          "link": "/ru/performance/vendor/post-api-client-vendors-statistics"
+        },
+        {
+          "text": "Список запрошенных отчётов с аналитикой внешнего трафика",
+          "link": "/ru/performance/vendor/get-api-client-vendors-statistics-list"
+        },
+        {
+          "text": "Информация об отчёте по UUID",
+          "link": "/ru/performance/vendor/get-api-client-vendors-statistics-uuid"
+        },
+        {
+          "text": "Метка организации для внешних рекламных кампаний",
+          "link": "/ru/performance/vendor/get-api-client-organisation-vendor-tag"
+        }
+      ]
+    }
+  ]
+}

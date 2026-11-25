@@ -1,16 +1,15 @@
 {
   "name": "ozon-api-doc",
   "version": "1.0.0",
-  "description": "Ozon 官方 API (Seller & Performance) OpenAPI 规范镜像与交互式文档站",
+  "description": "Ozon 官方 API (Seller & Performance) OpenAPI 规范纯 VitePress 原生矩阵镜像站",
   "type": "module",
   "scripts": {
-    "build:specs": "node node_modules/@redocly/cli/bin/cli.js build-docs specs/ozon-seller-openapi.json --output docs/public/standalone-seller.html && node node_modules/@redocly/cli/bin/cli.js build-docs specs/ozon-performance-openapi.json --output docs/public/standalone-performance.html",
+    "generate": "node scripts/generate-docs.mjs",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:build": "node scripts/generate-docs.mjs && vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@redocly/cli": "^1.25.12",
     "vitepress": "^1.6.3",
     "vue": "^3.5.13"
   }

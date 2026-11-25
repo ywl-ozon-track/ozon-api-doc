@@ -1,0 +1,146 @@
+---
+title: "Изменить статус на «Последняя миля»"
+description: "Изменить статус на «Последняя миля»"
+---
+
+# Изменить статус на «Последняя миля»
+
+<Badge type="tip" text="POST" /> `/v2/fbs/posting/last-mile`
+
+## 接口概览
+
+- **所属模块**：📌 DeliveryrFBS
+- **请求方法**：`POST`
+- **接口地址**：`https://api-seller.ozon.ru/v2/fbs/posting/last-mile`
+- **详细说明**：
+
+> <aside class="warning">Перед изменением статуса проверьте текущий статус отправления методом <a href="#operation/PostingAPI_GetFbsPostingV3">/v3/posting/fbs/get</a>. Изменение статуса происходит асинхронно.</aside>
+> 
+> Перевести отправление в статус «Последняя миля», если используется сторонняя служба доставки.
+> 
+
+
+## 请求参数 (Parameters)
+
+| 参数名 | 位置 (In) | 必填 | 说明 |
+| :--- | :--- | :--- | :--- |
+| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
+| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+
+## 请求体 (Request Body)
+
+Content-Type: `application/json`
+
+```json
+{
+  "posting_number": [
+    "48173252-0033-2"
+  ]
+}
+```
+
+## 返回响应 (Responses)
+
+### HTTP 200 - Статус изменён
+
+```json
+{
+  "result": [
+    {
+      "error": [],
+      "posting_number": "48173252-0033-2",
+      "result": true
+    }
+  ]
+}
+```
+
+### HTTP 400 - Invalid parameter
+
+::: details 查看 Response Schema 定义
+```json
+{
+  "$ref": "#/components/schemas/rpcStatus"
+}
+```
+:::
+
+### HTTP 403 - Access denied
+
+::: details 查看 Response Schema 定义
+```json
+{
+  "$ref": "#/components/schemas/rpcStatus"
+}
+```
+:::
+
+### HTTP 404 - Response not found
+
+::: details 查看 Response Schema 定义
+```json
+{
+  "$ref": "#/components/schemas/rpcStatus"
+}
+```
+:::
+
+### HTTP 409 - Request conflict
+
+::: details 查看 Response Schema 定义
+```json
+{
+  "$ref": "#/components/schemas/rpcStatus"
+}
+```
+:::
+
+### HTTP 500 - Internal server error
+
+::: details 查看 Response Schema 定义
+```json
+{
+  "$ref": "#/components/schemas/rpcStatus"
+}
+```
+:::
+
+## 调用示例代码
+
+::: code-group
+```bash [cURL]
+curl -X POST "https://api-seller.ozon.ru/v2/fbs/posting/last-mile" \
+  -H "Client-Id: YOUR_CLIENT_ID" \
+  -H "Api-Key: YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{}'
+```
+
+```python [Python]
+import requests
+
+url = "https://api-seller.ozon.ru/v2/fbs/posting/last-mile"
+headers = {
+    "Client-Id": "YOUR_CLIENT_ID",
+    "Api-Key": "YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.post(url, headers=headers, json={})
+print(response.status_code, response.json())
+```
+
+```javascript [Node.js]
+const response = await fetch("https://api-seller.ozon.ru/v2/fbs/posting/last-mile", {
+  method: "POST",
+  headers: {
+    "Client-Id": "YOUR_CLIENT_ID",
+    "Api-Key": "YOUR_API_KEY",
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({})
+});
+const data = await response.json();
+console.log(data);
+```
+:::

@@ -1,22 +1,65 @@
-/* 针对 API 文档页面的全屏布局优化 */
-.api-fullscreen-page .VPDoc {
-  padding: 0 !important;
+/* ============================================================
+   Ozon API 镜像交互文档 - 现代纯原生主题视觉样式增强
+   ============================================================ */
+
+/* HTTP Method Badge 颜色微调 */
+.VPBadge.tip {
+  background-color: #16a34a !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 4px;
 }
 
-.api-fullscreen-page .VPDoc .container {
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+.VPBadge.info {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 4px;
 }
 
-.api-fullscreen-page .VPDoc .content {
-  padding: 0 !important;
+.VPBadge.warning {
+  background-color: #d97706 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 4px;
 }
 
-.api-fullscreen-page .VPDocFooter {
-  display: none !important;
+.VPBadge.danger {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 4px;
 }
 
-.api-fullscreen-page .aside {
-  display: none !important;
+/* API 文档内表格展示优化 */
+.vp-doc table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.vp-doc th, .vp-doc td {
+  padding: 8px 12px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+/* Schema 折叠块微调 */
+.vp-doc details {
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 12px 0;
+}
+
+.vp-doc details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
 }
