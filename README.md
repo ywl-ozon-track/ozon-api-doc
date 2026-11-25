@@ -2,7 +2,11 @@
 
 [![GitHub Pages Deployment](https://github.com/ywl-ozon-track/ozon-api-doc/actions/workflows/deploy-pages.yml/badge.svg)](https://ywl-ozon-track.github.io/ozon-api-doc/)
 [![API Sync & PR Bot](https://github.com/ywl-ozon-track/ozon-api-doc/actions/workflows/cron-sync-pr.yml/badge.svg)](https://github.com/ywl-ozon-track/ozon-api-doc/actions/workflows/cron-sync-pr.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/Node.js-%3E%3D20-green?logo=node.js)](https://nodejs.org/)
+[![VitePress](https://img.shields.io/badge/VitePress-v1.6-646CFF?logo=vitepress)](https://vitepress.dev/)
+[![Vue 3](https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vue.js)](https://vuejs.org/)
+[![OpenAPI 3.0](https://img.shields.io/badge/OpenAPI-3.0-6BA539?logo=openapi-initiative)](https://www.openapis.org/)
+[![Redocly Engine](https://img.shields.io/badge/Engine-Redocly-red)](https://redocly.com/)
 
 > 🚀 **在线镜像访问入口**: [https://ywl-ozon-track.github.io/ozon-api-doc/](https://ywl-ozon-track.github.io/ozon-api-doc/)
 
@@ -47,6 +51,6 @@ npm run docs:build
 
 ---
 
-## ⚖️ 免责声明与开源协议
+## ⚖️ 免责声明
 
-本项目提供的规范数据来源于 Ozon 官方公开技术文档，仅供跨国跨境电商开发者学习、接口调试与对接参考。所有商标与官方接口版权归 Ozon 所有。本项目采用 [MIT License](LICENSE) 开源协议。
+本项目提供的规范数据来源于 Ozon 官方公开技术文档，仅供跨国跨境电商开发者学习、接口调试与对接参考。所有商标与官方接口版权归 Ozon 官方所有。
