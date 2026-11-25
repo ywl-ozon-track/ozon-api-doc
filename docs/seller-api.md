@@ -4,5 +4,9 @@ outline: false
 ---
 
 <ClientOnly>
-  <RedocViewer spec-url="/ozon-api-doc/ozon-seller-openapi.json" />
+  <RedocViewer
+    src="/ozon-api-doc/standalone-seller.html"
+    spec-url="/ozon-api-doc/ozon-seller-openapi.json"
+    title="Seller API (卖家核心 OpenAPI 规范)"
+  />
 </ClientOnly>

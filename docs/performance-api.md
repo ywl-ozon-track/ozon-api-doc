@@ -4,5 +4,9 @@ outline: false
 ---
 
 <ClientOnly>
-  <RedocViewer spec-url="/ozon-api-doc/ozon-performance-openapi.json" />
+  <RedocViewer
+    src="/ozon-api-doc/standalone-performance.html"
+    spec-url="/ozon-api-doc/ozon-performance-openapi.json"
+    title="Performance API (广告营销 OpenAPI 规范)"
+  />
 </ClientOnly>
