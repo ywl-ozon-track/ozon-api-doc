@@ -2,7 +2,8 @@ name: Daily OpenAPI Sync & PR Bot
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    # 每天北京时间中午 12:00 (对应 UTC 04:00) 自动触发巡检与对账
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
 permissions:
