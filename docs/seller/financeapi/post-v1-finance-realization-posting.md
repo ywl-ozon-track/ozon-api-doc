@@ -12,24 +12,24 @@ description: "Позаказный отчёт о реализации товар
 - **所属模块**：📊 财务流水与结算报表
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v1/finance/realization/posting`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > <aside class="warning">
 > Метод недоступен для продавцов, которые заключили договор с ТОО «ОЗОН Маркетплейс Казахстан».
 > </aside>
 > 
 > Отчёт о реализации доставленных и возвращённых товаров с детализацией по каждому заказу. Отмены и невыкупы не включаются. Отчёт доступен с настоящего времени по август 2023 года включительно.
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | 否 | 卖家后台唯一识别码 |
+| `Api-Key` | `header` | 否 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
@@ -40,11 +40,11 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Позаказный отчёт о реализации
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1GetRealizationReportPostingResponse"
@@ -62,7 +62,7 @@ Content-Type: `application/json`
 
 ### HTTP 403 - Доступ запрещён
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -72,7 +72,7 @@ Content-Type: `application/json`
 
 ### HTTP 404 - Ответ не найден
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -82,7 +82,7 @@ Content-Type: `application/json`
 
 ### HTTP 409 - Конфликт запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -92,7 +92,7 @@ Content-Type: `application/json`
 
 ### HTTP 500 - Внутренняя ошибка сервера
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

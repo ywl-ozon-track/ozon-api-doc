@@ -1,39 +1,39 @@
 ---
-title: "Отчёт по поисковым запросам"
+title: "ExternalStatistics StatisticsPhrasesSubmitRequest2"
 description: "Отчёт по поисковым запросам"
 ---
 
-# Отчёт по поисковым запросам
+# ExternalStatistics StatisticsPhrasesSubmitRequest2
 
 <Badge type="tip" text="POST" /> `/api/client/statistics/phrases`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📊 Advertising Statistics
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/phrases`
-- **详细说明**：
+- **Category**：📊 Advertising Statistics
+- **Method**：`POST`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/statistics/phrases`
 
+::: details View Official Description (Russian)
 > Метод находится на стадии тестирования.<br><br>
 > Отчёт можно сформировать только для кампаний с оплатой за клик с признаком `placement = PLACEMENT_TOP_PROMOTION`.<br><br>
 > Чтобы запросить отчёт в формате JSON, добавьте в адрес метода `/json` и отправьте запрос по адресу `/api/client/statistics/phrases/json`.
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Yes | Bearer format OAuth 2.0 Access Token |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Отчёт по поисковым запросам
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extstatisticsStatisticsRequestID"
@@ -43,7 +43,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -51,7 +51,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

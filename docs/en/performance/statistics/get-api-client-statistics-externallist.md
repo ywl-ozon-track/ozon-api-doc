@@ -1,36 +1,36 @@
 ---
-title: "Список отчётов, сгенерированных через API"
+title: "ListReportsExternal"
 description: "Список отчётов, сгенерированных через API"
 ---
 
-# Список отчётов, сгенерированных через API
+# ListReportsExternal
 
 <Badge type="info" text="GET" /> `/api/client/statistics/externallist`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📊 Advertising Statistics
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/externallist`
-- **详细说明**：
+- **Category**：📊 Advertising Statistics
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/statistics/externallist`
 
+::: details View Official Description (Russian)
 > 
 > Метод для получения списка отчётов, которые сгенерированы через API сервисными аккаунтами.
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `page` | `query` | 否 (No) | - |
-| `pageSize` | `query` | 否 (No) | - |
+| `page` | `query` | No | - |
+| `pageSize` | `query` | No | - |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список отчётов
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsReportsList"
@@ -40,7 +40,7 @@ description: "Список отчётов, сгенерированных чер
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -48,7 +48,7 @@ description: "Список отчётов, сгенерированных чер
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

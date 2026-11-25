@@ -1,34 +1,34 @@
 ---
-title: "Причины отмены отправления"
+title: "CancelReasonAPI CancelReasonListByPosting"
 description: "Причины отмены отправления"
 ---
 
-# Причины отмены отправления
+# CancelReasonAPI CancelReasonListByPosting
 
 <Badge type="tip" text="POST" /> `/v1/cancel-reason/list-by-posting`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：❌ Cancellation Reasons
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/cancel-reason/list-by-posting`
-- **详细说明**：
+- **Category**：❌ Cancellation Reasons
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/cancel-reason/list-by-posting`
 
+::: details View Official Description (Russian)
 > Возвращает возможные причины отмены для отправления.
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1CancelReasonListByPostingRequest"
@@ -36,11 +36,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Причины отмены отправления
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1CancelReasonListByPostingResponse"
@@ -50,7 +50,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -58,7 +58,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

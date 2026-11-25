@@ -1,31 +1,31 @@
 ---
-title: "Установить ставку для продвижения в Оплате за заказ — все товары"
+title: "SetAllSkuPromoCampaignBid2"
 description: "Установить ставку для продвижения в Оплате за заказ — все товары"
 ---
 
-# Установить ставку для продвижения в Оплате за заказ — все товары
+# SetAllSkuPromoCampaignBid2
 
 <Badge type="info" text="GET" /> `/api/client/campaign/all_sku_promo/set_bid`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🔍 Search Promotion (CPO)
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/all_sku_promo/set_bid`
+- **Category**：🔍 Search Promotion (CPO)
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/all_sku_promo/set_bid`
 
-## 请求参数 (Parameters)
+## Parameters
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `bid` | `query` | 否 (No) | - |
+| `bid` | `query` | No | - |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Ставка установлена
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -33,7 +33,7 @@ description: "Установить ставку для продвижения в
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

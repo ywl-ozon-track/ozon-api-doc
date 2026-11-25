@@ -1,30 +1,30 @@
 ---
-title: "Получить список заявок на отмену rFBS"
+title: "CancellationAPI GetConditionalCancellationListV2"
 description: "Получить список заявок на отмену rFBS"
 ---
 
-# Получить список заявок на отмену rFBS
+# CancellationAPI GetConditionalCancellationListV2
 
 <Badge type="tip" text="POST" /> `/v2/conditional-cancellation/list`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 CancellationAPI
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v2/conditional-cancellation/list`
-- **详细说明**：
+- **Category**：📌 CancellationAPI
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v2/conditional-cancellation/list`
 
+::: details View Official Description (Russian)
 > Метод для получения списка заявок на отмену rFBS-заказов.
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
@@ -47,7 +47,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список заявок на отмену
 
@@ -83,7 +83,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -91,7 +91,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

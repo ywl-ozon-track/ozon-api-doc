@@ -1,34 +1,34 @@
 ---
-title: "Получить информацию об акте"
+title: "SupplyOrderActSummaryGet"
 description: "Получить информацию об акте"
 ---
 
-# Получить информацию об акте
+# SupplyOrderActSummaryGet
 
 <Badge type="tip" text="POST" /> `/v1/supply-order/act/summary/get`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 SupplyOrderAPI
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/supply-order/act/summary/get`
-- **详细说明**：
+- **Category**：📌 SupplyOrderAPI
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/supply-order/act/summary/get`
 
+::: details View Official Description (Russian)
 > Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2294-Novye-beta-metody-dlia-raboty-s-aktami-FBO/) в сообществе разработчиков Ozon for dev.
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | No | Unique Client ID from seller cabinet |
+| `Api-Key` | `header` | No | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/supply_order.v1.SupplyOrderActSummaryGetRequest"
@@ -36,11 +36,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Информация об акте
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/supply_order.v1.SupplyOrderActSummaryGetResponse"
@@ -50,7 +50,7 @@ Content-Type: `application/json`
 
 ### HTTP 400 - Неверный параметр
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -60,7 +60,7 @@ Content-Type: `application/json`
 
 ### HTTP 403 - Доступ запрещён
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -70,7 +70,7 @@ Content-Type: `application/json`
 
 ### HTTP 404 - Ответ не найден
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -80,7 +80,7 @@ Content-Type: `application/json`
 
 ### HTTP 409 - Конфликт запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -90,7 +90,7 @@ Content-Type: `application/json`
 
 ### HTTP 500 - Внутренняя ошибка сервера
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -98,7 +98,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

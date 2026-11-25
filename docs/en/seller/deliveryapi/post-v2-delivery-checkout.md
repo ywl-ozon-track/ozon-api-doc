@@ -1,37 +1,37 @@
 ---
-title: "Получить доступные варианты доставки"
+title: "DeliveryCheckout"
 description: "Получить доступные варианты доставки"
 ---
 
-# Получить доступные варианты доставки
+# DeliveryCheckout
 
 <Badge type="tip" text="POST" /> `/v2/delivery/checkout`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🛣️ Delivery & Logistics
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v2/delivery/checkout`
-- **详细说明**：
+- **Category**：🛣️ Delivery & Logistics
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v2/delivery/checkout`
 
+::: details View Official Description (Russian)
 > Проверяет доступность доставки товаров на указанный адрес или в точку выдачи и отображает сроки доставки.
 > 
 > Проверяйте наличие товаров и маршруты во время оформления заказа, чтобы точно рассчитать сроки доставки.
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1DeliveryCheckoutRequest"
@@ -39,11 +39,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Успешно
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1DeliveryCheckoutResponse"
@@ -67,7 +67,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

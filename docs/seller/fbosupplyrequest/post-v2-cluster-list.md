@@ -1,6 +1,6 @@
 ---
 title: "获取информацию о макролокальных кластерах"
-description: "获取информацию о макролокальных кластерах"
+description: "Получить информацию о макролокальных кластерах"
 ---
 
 # 获取информацию о макролокальных кластерах
@@ -13,18 +13,18 @@ description: "获取информацию о макролокальных кла�
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v2/cluster/list`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | 否 | 卖家后台唯一识别码 |
+| `Api-Key` | `header` | 否 | 卖家后台生成的 API 访问令牌 |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Макролокальные кластеры
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v2DraftClusterListResponse"
@@ -34,7 +34,7 @@ description: "获取информацию о макролокальных кла�
 
 ### HTTP 400 - Неверный параметр
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -44,7 +44,7 @@ description: "获取информацию о макролокальных кла�
 
 ### HTTP 403 - Доступ запрещён
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -54,7 +54,7 @@ description: "获取информацию о макролокальных кла�
 
 ### HTTP 404 - Ответ не найден
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -64,7 +64,7 @@ description: "获取информацию о макролокальных кла�
 
 ### HTTP 409 - Конфликт запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -74,7 +74,7 @@ description: "获取информацию о макролокальных кла�
 
 ### HTTP 500 - Внутренняя ошибка сервера
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

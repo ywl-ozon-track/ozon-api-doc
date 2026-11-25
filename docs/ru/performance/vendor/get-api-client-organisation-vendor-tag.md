@@ -7,12 +7,12 @@ description: "Метка организации для внешних рекла
 
 <Badge type="info" text="GET" /> `/api/client/organisation/vendor_tag`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：🌐 Аналитика внешнего трафика
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/organisation/vendor_tag`
-- **详细说明**：
+- **Категория**：🌐 Аналитика внешнего трафика
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/organisation/vendor_tag`
+- **Описание**：
 
 > 
 > Метод возвращает [префикс для метки UTM_CAMPAIGN](https://docs.ozon.ru/performance/analytics/#как-создать-ссылку-с-utm-метками) по идентификатору организации.
@@ -20,14 +20,13 @@ description: "Метка организации для внешних рекла
 > [Подробнее о ссылках для внешних рекламных кампаний](https://docs.ozon.ru/performance/analytics/)
 > 
 
+## Параметры запроса
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `orgId` | `query` | 是 (Yes) | - |
+| `orgId` | `query` | Да | - |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Метка организации
 
@@ -39,7 +38,7 @@ description: "Метка организации для внешних рекла
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -47,7 +46,7 @@ description: "Метка организации для внешних рекла
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

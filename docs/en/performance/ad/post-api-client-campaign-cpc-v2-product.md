@@ -1,40 +1,40 @@
 ---
-title: "Создать кампанию с оплатой за клики"
+title: "CreateProductCampaignCPCV2"
 description: "Создать кампанию с оплатой за клики"
 ---
 
-# Создать кампанию с оплатой за клики
+# CreateProductCampaignCPCV2
 
 <Badge type="tip" text="POST" /> `/api/client/campaign/cpc/v2/product`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🖱️ Cost-Per-Click (CPC) Ads
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/cpc/v2/product`
-- **详细说明**：
+- **Category**：🖱️ Cost-Per-Click (CPC) Ads
+- **Method**：`POST`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/cpc/v2/product`
 
+::: details View Official Description (Russian)
 > Метод для создания товарной рекламной кампании с оплатой за клики.
 > 
 > При успешном выполнении запроса в поле `campaignId` ответа будет идентификатор созданной кампании.
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Yes | Bearer format OAuth 2.0 Access Token |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Кампания создана
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignCampaignID"
@@ -44,7 +44,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -52,7 +52,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

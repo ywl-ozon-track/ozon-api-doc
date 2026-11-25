@@ -7,12 +7,12 @@ description: "Статистика по расходу кампаний"
 
 <Badge type="info" text="GET" /> `/api/client/statistics/expense`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📊 Статистика рекламы
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/expense`
-- **详细说明**：
+- **Категория**：📊 Статистика рекламы
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/statistics/expense`
+- **Описание**：
 
 > 
 > Если в запросе не указаны значения полей `dateFrom` и `dateTo`, то в ответе будет статистика за последние 7 дней.
@@ -30,20 +30,19 @@ description: "Статистика по расходу кампаний"
 > - расход бонусов.
 > 
 
+## Параметры запроса
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | - |
-| `dateFrom` | `query` | 否 (No) | - |
-| `dateTo` | `query` | 否 (No) | - |
+| `campaignIds` | `query` | Нет | - |
+| `dateFrom` | `query` | Нет | - |
+| `dateTo` | `query` | Нет | - |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Статистика по расходу кампаний
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsReport"
@@ -53,7 +52,7 @@ description: "Статистика по расходу кампаний"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -61,7 +60,7 @@ description: "Статистика по расходу кампаний"
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

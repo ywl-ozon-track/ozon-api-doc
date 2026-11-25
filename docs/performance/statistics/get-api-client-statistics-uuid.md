@@ -13,13 +13,13 @@ description: "Cтатус отчёта"
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/{UUID}`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `UUID` | `path` | 是 (Yes) | Уникальный идентификатор запроса. |
+| `UUID` | `path` | 是 | Уникальный идентификатор запроса. |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Cтатус отчёта
 
@@ -49,7 +49,7 @@ description: "Cтатус отчёта"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

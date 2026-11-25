@@ -1,6 +1,6 @@
 ---
 title: "查询 Ozon 官方物流（Ozon Delivery）开通与签约状态"
-description: "查询 Ozon 官方物流（Ozon Delivery）开通与签约状态"
+description: "Информация о подключении Ozon Доставки"
 ---
 
 # 查询 Ozon 官方物流（Ozon Delivery）开通与签约状态
@@ -13,14 +13,14 @@ description: "查询 Ozon 官方物流（Ozon Delivery）开通与签约状态"
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v1/seller/ozon-logistics/info`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | 否 | 卖家后台唯一识别码 |
+| `Api-Key` | `header` | 否 | 卖家后台生成的 API 访问令牌 |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Информация о подключении Ozon Доставки
 
@@ -35,7 +35,7 @@ description: "查询 Ozon 官方物流（Ozon Delivery）开通与签约状态"
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"

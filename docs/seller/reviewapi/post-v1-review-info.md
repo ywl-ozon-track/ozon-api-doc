@@ -1,6 +1,6 @@
 ---
 title: "获取информацию об отзыве"
-description: "获取информацию об отзыве"
+description: "Получить информацию об отзыве"
 ---
 
 # 获取информацию об отзыве
@@ -12,28 +12,28 @@ description: "获取информацию об отзыве"
 - **所属模块**：💬 商品买家评价与问答
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v1/review/info`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > <aside class="warning">
 >   Метод устаревает. Переключитесь на <a href="#operation/ReviewInfoV2">/v2/review/info</a>.
 > </aside>
 > 
 > Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Client-Id` | 是 | 卖家后台唯一识别码 |
 | `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1ReviewInfoRequest"
@@ -41,11 +41,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Информация об отзыве
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1ReviewInfoResponse"
@@ -55,7 +55,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

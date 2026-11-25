@@ -1,6 +1,6 @@
 ---
 title: "删除товары из кампании"
-description: "删除товары из кампании"
+description: "Удалить товары из кампании"
 ---
 
 # 删除товары из кампании
@@ -13,17 +13,17 @@ description: "删除товары из кампании"
 - **请求方法**：`POST`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products/delete`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | - |
+| `campaignId` | `path` | 是 | - |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignDeleteProductsRequest"
@@ -31,13 +31,13 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Товар удалён из кампании
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

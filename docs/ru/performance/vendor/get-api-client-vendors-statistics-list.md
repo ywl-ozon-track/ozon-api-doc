@@ -7,24 +7,24 @@ description: "Список запрошенных отчётов с аналит
 
 <Badge type="info" text="GET" /> `/api/client/vendors/statistics/list`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：🌐 Аналитика внешнего трафика
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/vendors/statistics/list`
+- **Категория**：🌐 Аналитика внешнего трафика
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/vendors/statistics/list`
 
-## 请求参数 (Parameters)
+## Параметры запроса
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `page` | `query` | 否 (No) | - |
-| `pageSize` | `query` | 否 (No) | - |
+| `page` | `query` | Нет | - |
+| `pageSize` | `query` | Нет | - |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Отчёты
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatVendorStatisticsReportsList"
@@ -34,7 +34,7 @@ description: "Список запрошенных отчётов с аналит
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -42,7 +42,7 @@ description: "Список запрошенных отчётов с аналит
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

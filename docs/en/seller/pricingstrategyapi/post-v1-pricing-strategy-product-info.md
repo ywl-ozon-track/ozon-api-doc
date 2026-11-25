@@ -1,30 +1,30 @@
 ---
-title: "Цена товара у конкурента"
+title: "pricing items-info"
 description: "Цена товара у конкурента"
 ---
 
-# Цена товара у конкурента
+# pricing items-info
 
 <Badge type="tip" text="POST" /> `/v1/pricing-strategy/product/info`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🎯 Pricing Strategies & Buybox
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/pricing-strategy/product/info`
-- **详细说明**：
+- **Category**：🎯 Pricing Strategies & Buybox
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/pricing-strategy/product/info`
 
+::: details View Official Description (Russian)
 > Если вы добавили товар в стратегию ценообразования, метод вернёт цену и ссылку на товар у конкурента.
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | No | Unique Client ID from seller cabinet |
+| `Api-Key` | `header` | No | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
@@ -34,7 +34,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Цена товара у конкурента
 
@@ -53,7 +53,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -61,7 +61,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

@@ -1,19 +1,19 @@
 ---
-title: "Дневная статистика по кампаниям"
+title: "GetCampaignDailyStats"
 description: "Дневная статистика по кампаниям"
 ---
 
-# Дневная статистика по кампаниям
+# GetCampaignDailyStats
 
 <Badge type="info" text="GET" /> `/api/client/statistics/daily`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📊 Advertising Statistics
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/daily`
-- **详细说明**：
+- **Category**：📊 Advertising Statistics
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/statistics/daily`
 
+::: details View Official Description (Russian)
 > 
 > Если в запросе не указаны значения полей `dateFrom` и `dateTo`, то в ответе будет статистика за последние 7 дней.
 > 
@@ -31,21 +31,21 @@ description: "Дневная статистика по кампаниям"
 > - заказы в штуках,
 > - заказы в рублях.
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | - |
-| `dateFrom` | `query` | 否 (No) | - |
-| `dateTo` | `query` | 否 (No) | - |
+| `campaignIds` | `query` | No | - |
+| `dateFrom` | `query` | No | - |
+| `dateTo` | `query` | No | - |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Дневная статистика по кампаниям
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsReport"
@@ -55,7 +55,7 @@ description: "Дневная статистика по кампаниям"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -63,7 +63,7 @@ description: "Дневная статистика по кампаниям"
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

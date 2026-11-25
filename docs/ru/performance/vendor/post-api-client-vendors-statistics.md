@@ -7,12 +7,12 @@ description: "Отчёт с аналитикой внешнего трафика
 
 <Badge type="tip" text="POST" /> `/api/client/vendors/statistics`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：🌐 Аналитика внешнего трафика
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/vendors/statistics`
-- **详细说明**：
+- **Категория**：🌐 Аналитика внешнего трафика
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/vendors/statistics`
+- **Описание**：
 
 > 
 > Метод для запуска формирования отчёта с аналитикой внешнего трафика.
@@ -21,22 +21,21 @@ description: "Отчёт с аналитикой внешнего трафика
 > отчёт сформируется за 3 месяца с даты, указанной в `dateFrom`.
 > 
 
+## Заголовки авторизации
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Параметр | Обязательный | Описание |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Да | OAuth 2.0 токен доступа в формате Bearer |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Успешно
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsRequestID"
@@ -46,7 +45,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -54,7 +53,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

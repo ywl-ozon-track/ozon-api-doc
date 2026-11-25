@@ -1,33 +1,33 @@
 ---
-title: "Метка организации для внешних рекламных кампаний"
+title: "GetVendorTag"
 description: "Метка организации для внешних рекламных кампаний"
 ---
 
-# Метка организации для внешних рекламных кампаний
+# GetVendorTag
 
 <Badge type="info" text="GET" /> `/api/client/organisation/vendor_tag`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🌐 External Traffic Analytics
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/organisation/vendor_tag`
-- **详细说明**：
+- **Category**：🌐 External Traffic Analytics
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/organisation/vendor_tag`
 
+::: details View Official Description (Russian)
 > 
 > Метод возвращает [префикс для метки UTM_CAMPAIGN](https://docs.ozon.ru/performance/analytics/#как-создать-ссылку-с-utm-метками) по идентификатору организации.
 > 
 > [Подробнее о ссылках для внешних рекламных кампаний](https://docs.ozon.ru/performance/analytics/)
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `orgId` | `query` | 是 (Yes) | - |
+| `orgId` | `query` | Yes | - |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Метка организации
 
@@ -39,7 +39,7 @@ description: "Метка организации для внешних рекла
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -47,7 +47,7 @@ description: "Метка организации для внешних рекла
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

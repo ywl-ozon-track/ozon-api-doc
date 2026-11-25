@@ -12,22 +12,22 @@ description: "Изменить статус на «Последняя миля»
 - **所属模块**：📌 DeliveryrFBS
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v2/fbs/posting/last-mile`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > <aside class="warning">Перед изменением статуса проверьте текущий статус отправления методом <a href="#operation/PostingAPI_GetFbsPostingV3">/v3/posting/fbs/get</a>. Изменение статуса происходит асинхронно.</aside>
 > 
 > Перевести отправление в статус «Последняя миля», если используется сторонняя служба доставки.
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | 否 | 卖家后台唯一识别码 |
+| `Api-Key` | `header` | 否 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
@@ -39,7 +39,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Статус изменён
 
@@ -57,7 +57,7 @@ Content-Type: `application/json`
 
 ### HTTP 400 - Invalid parameter
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -67,7 +67,7 @@ Content-Type: `application/json`
 
 ### HTTP 403 - Access denied
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -77,7 +77,7 @@ Content-Type: `application/json`
 
 ### HTTP 404 - Response not found
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -87,7 +87,7 @@ Content-Type: `application/json`
 
 ### HTTP 409 - Request conflict
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -97,7 +97,7 @@ Content-Type: `application/json`
 
 ### HTTP 500 - Internal server error
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

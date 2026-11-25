@@ -1,34 +1,34 @@
 ---
-title: "Удалить черновик для доставки в drop-off пункт"
+title: "FbpDraftDropOffDelete"
 description: "Удалить черновик для доставки в drop-off пункт"
 ---
 
-# Удалить черновик для доставки в drop-off пункт
+# FbpDraftDropOffDelete
 
 <Badge type="tip" text="POST" /> `/v1/fbp/draft/drop-off/delete`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 DraftDropOffFBP
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/fbp/draft/drop-off/delete`
-- **详细说明**：
+- **Category**：📌 DraftDropOffFBP
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/fbp/draft/drop-off/delete`
 
+::: details View Official Description (Russian)
 > Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1700-FBP-metody/) в сообществе разработчиков Ozon for dev.
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | No | Unique Client ID from seller cabinet |
+| `Api-Key` | `header` | No | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1FbpDraftDropOffDeleteRequest"
@@ -36,7 +36,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Черновик удалён
 
@@ -55,7 +55,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"
@@ -63,7 +63,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

@@ -1,30 +1,30 @@
 ---
-title: "Добавить информацию о стране-изготовителе товара"
+title: "PostingAPI SetCountryProductFbsPostingV2"
 description: "Добавить информацию о стране-изготовителе товара"
 ---
 
-# Добавить информацию о стране-изготовителе товара
+# PostingAPI SetCountryProductFbsPostingV2
 
 <Badge type="tip" text="POST" /> `/v2/posting/fbs/product/country/set`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 FBS
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v2/posting/fbs/product/country/set`
-- **详细说明**：
+- **Category**：📌 FBS
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v2/posting/fbs/product/country/set`
 
+::: details View Official Description (Russian)
 > Метод для добавления на продукт атрибута «Страна-изготовитель», если он не был указан.
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
@@ -36,7 +36,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Страна-изготовитель добавлена
 
@@ -49,7 +49,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"
@@ -57,7 +57,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

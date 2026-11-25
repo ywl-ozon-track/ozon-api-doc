@@ -1,26 +1,26 @@
 ---
-title: "Список типов соответствия требованиям (версия 2)"
+title: "CertificateAccordanceTypes"
 description: "Список типов соответствия требованиям (версия 2)"
 ---
 
-# Список типов соответствия требованиям (версия 2)
+# CertificateAccordanceTypes
 
 <Badge type="info" text="GET" /> `/v2/product/certificate/accordance-types/list`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📜 Quality Certificates
-- **请求方法**：`GET`
-- **接口地址**：`https://api-seller.ozon.ru/v2/product/certificate/accordance-types/list`
+- **Category**：📜 Quality Certificates
+- **Method**：`GET`
+- **Request URL**：`https://api-seller.ozon.ru/v2/product/certificate/accordance-types/list`
 
-## 请求参数 (Parameters)
+## Parameters
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | No | Unique Client ID from seller cabinet |
+| `Api-Key` | `header` | No | API Key generated in seller cabinet |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список типов соответствия требованиям
 
@@ -61,7 +61,7 @@ description: "Список типов соответствия требован�
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"
@@ -69,7 +69,7 @@ description: "Список типов соответствия требован�
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

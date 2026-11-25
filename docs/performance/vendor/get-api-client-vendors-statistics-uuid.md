@@ -13,18 +13,18 @@ description: "Информация об отчёте по UUID"
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/vendors/statistics/{UUID}`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `UUID` | `path` | 是 (Yes) | - |
-| `vendor` | `query` | 是 (Yes) | - |
+| `UUID` | `path` | 是 | - |
+| `vendor` | `query` | 是 | - |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Информация об отчёте
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatVendorStatisticsResponse"
@@ -34,7 +34,7 @@ description: "Информация об отчёте по UUID"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

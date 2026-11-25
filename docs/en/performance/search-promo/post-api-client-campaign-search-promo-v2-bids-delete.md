@@ -1,35 +1,35 @@
 ---
-title: "Удалить товар из продвижения в оплате за заказ"
+title: "ExternalCampaign DeleteSearchPromoBidsV2"
 description: "Удалить товар из продвижения в оплате за заказ"
 ---
 
-# Удалить товар из продвижения в оплате за заказ
+# ExternalCampaign DeleteSearchPromoBidsV2
 
 <Badge type="tip" text="POST" /> `/api/client/campaign/search_promo/v2/bids/delete`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🔍 Search Promotion (CPO)
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/search_promo/v2/bids/delete`
-- **详细说明**：
+- **Category**：🔍 Search Promotion (CPO)
+- **Method**：`POST`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/search_promo/v2/bids/delete`
 
+::: details View Official Description (Russian)
 > 
 > В одном запросе можно передать максимум 1000 товаров.
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Yes | Bearer format OAuth 2.0 Access Token |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignDeleteSearchPromoBidsRequestV2"
@@ -37,11 +37,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Товар удалён
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "type": "object"
@@ -51,7 +51,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -59,7 +59,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

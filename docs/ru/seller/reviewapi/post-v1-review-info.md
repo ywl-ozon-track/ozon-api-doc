@@ -7,12 +7,12 @@ description: "Получить информацию об отзыве"
 
 <Badge type="tip" text="POST" /> `/v1/review/info`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：💬 Отзывы и вопросы покупателей
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/review/info`
-- **详细说明**：
+- **Категория**：💬 Отзывы и вопросы покупателей
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-seller.ozon.ru/v1/review/info`
+- **Описание**：
 
 > <aside class="warning">
 >   Метод устаревает. Переключитесь на <a href="#operation/ReviewInfoV2">/v2/review/info</a>.
@@ -21,19 +21,18 @@ description: "Получить информацию об отзыве"
 > Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 > 
 
+## Заголовки авторизации
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Параметр | Обязательный | Описание |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Да | Идентификатор клиента (Client ID) |
+| `Api-Key` | Да | API-ключ продавца (API Key) |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1ReviewInfoRequest"
@@ -41,11 +40,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Информация об отзыве
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1ReviewInfoResponse"
@@ -55,7 +54,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -63,7 +62,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

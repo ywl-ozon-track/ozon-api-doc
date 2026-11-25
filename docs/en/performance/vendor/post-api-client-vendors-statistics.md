@@ -1,42 +1,42 @@
 ---
-title: "Отчёт с аналитикой внешнего трафика"
+title: "VendorStatisticsSubmitRequest"
 description: "Отчёт с аналитикой внешнего трафика"
 ---
 
-# Отчёт с аналитикой внешнего трафика
+# VendorStatisticsSubmitRequest
 
 <Badge type="tip" text="POST" /> `/api/client/vendors/statistics`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🌐 External Traffic Analytics
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/vendors/statistics`
-- **详细说明**：
+- **Category**：🌐 External Traffic Analytics
+- **Method**：`POST`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/vendors/statistics`
 
+::: details View Official Description (Russian)
 > 
 > Метод для запуска формирования отчёта с аналитикой внешнего трафика.
 > 
 > Разница между `dateFrom` и `dateTo` должна быть не больше трёх месяцев. Если разница больше, 
 > отчёт сформируется за 3 месяца с даты, указанной в `dateFrom`.
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Yes | Bearer format OAuth 2.0 Access Token |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Успешно
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsRequestID"
@@ -46,7 +46,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -54,7 +54,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

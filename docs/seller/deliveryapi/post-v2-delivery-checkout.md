@@ -1,6 +1,6 @@
 ---
 title: "获取доступные варианты доставки"
-description: "获取доступные варианты доставки"
+description: "Получить доступные варианты доставки"
 ---
 
 # 获取доступные варианты доставки
@@ -12,26 +12,26 @@ description: "获取доступные варианты доставки"
 - **所属模块**：🛣️ 物流服务与配送规则
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v2/delivery/checkout`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > Проверяет доступность доставки товаров на указанный адрес или в точку выдачи и отображает сроки доставки.
 > 
 > Проверяйте наличие товаров и маршруты во время оформления заказа, чтобы точно рассчитать сроки доставки.
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Client-Id` | 是 | 卖家后台唯一识别码 |
 | `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1DeliveryCheckoutRequest"
@@ -39,11 +39,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Успешно
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1DeliveryCheckoutResponse"

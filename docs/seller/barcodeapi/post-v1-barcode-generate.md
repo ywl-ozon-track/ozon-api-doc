@@ -1,9 +1,9 @@
 ---
-title: "创建商品"
-description: "创建商品"
+title: "为商品生成条形码"
+description: "Создать штрихкод для товара"
 ---
 
-# 创建商品
+# 为商品生成条形码
 
 <Badge type="tip" text="POST" /> `/v1/barcode/generate`
 
@@ -12,24 +12,24 @@ description: "创建商品"
 - **所属模块**：🏷️ 商品条形码管理
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v1/barcode/generate`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > Если у товара нет штрихкода, вы можете создать его с помощью этого метода.
 > Если штрихкод уже есть, но он не указан в системе Ozon, вы можете привязать его через метод [/v1/barcode/add](#operation/add-barcode).
 > 
 > За один запрос вы можете создать штрихкоды не больше чем для 100 товаров.
 > С одного аккаунта продавца можно использовать метод не больше 20 раз в минуту.
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Client-Id` | 是 | 卖家后台唯一识别码 |
 | `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
@@ -41,7 +41,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Штрихкод создан
 
@@ -60,7 +60,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

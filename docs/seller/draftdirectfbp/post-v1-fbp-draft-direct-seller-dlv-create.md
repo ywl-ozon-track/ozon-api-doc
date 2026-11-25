@@ -1,6 +1,6 @@
 ---
 title: "创建черновик с доставкой силами продавца"
-description: "创建черновик с доставкой силами продавца"
+description: "Создать черновик с доставкой силами продавца"
 ---
 
 # 创建черновик с доставкой силами продавца
@@ -12,24 +12,24 @@ description: "创建черновик с доставкой силами прод
 - **所属模块**：📌 DraftDirectFBP
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v1/fbp/draft/direct/seller-dlv/create`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1700-FBP-metody/) в сообществе разработчиков Ozon for dev.
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Client-Id` | 是 | 卖家后台唯一识别码 |
 | `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1FbpDraftDirectSellerDlvCreateRequest"
@@ -37,11 +37,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Черновик создан
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1FbpDraftDirectSellerDlvCreateResponse"
@@ -51,7 +51,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"

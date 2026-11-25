@@ -7,12 +7,12 @@ description: "Установить ставку на товар"
 
 <Badge type="tip" text="POST" /> `/api/client/campaign/search_promo/v2/bids/set`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：🔍 Оплата за заказ
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/search_promo/v2/bids/set`
-- **详细说明**：
+- **Категория**：🔍 Оплата за заказ
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/campaign/search_promo/v2/bids/set`
+- **Описание**：
 
 > 
 > Если товар ещё не добавлен в продвижение, система добавит его автоматически.
@@ -20,18 +20,17 @@ description: "Установить ставку на товар"
 > В одном запросе можно передать максимум 1000 товаров.
 > 
 
+## Заголовки авторизации
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Параметр | Обязательный | Описание |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Да | OAuth 2.0 токен доступа в формате Bearer |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignSetSearchPromoBidsRequestV2"
@@ -39,11 +38,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Ставка установлена
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignSetSearchPromoBidsResponseV2extcampaignSetSearchPromoBidsResponseV2"
@@ -53,7 +52,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -61,7 +60,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

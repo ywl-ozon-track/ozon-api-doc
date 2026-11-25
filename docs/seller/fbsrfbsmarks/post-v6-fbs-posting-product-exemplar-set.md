@@ -1,6 +1,6 @@
 ---
 title: "检查与验证и сохранить данные экземпляров"
-description: "检查与验证и сохранить данные экземпляров"
+description: "Проверить и сохранить данные экземпляров"
 ---
 
 # 检查与验证и сохранить данные экземпляров
@@ -12,8 +12,8 @@ description: "检查与验证и сохранить данные экземпля
 - **所属模块**：📌 FBS&rFBSMarks
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v6/fbs/posting/product/exemplar/set`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > Асинхронный метод:
 > - для проверки наличия экземпляров в обороте в системе «Честный ЗНАК»;
 > - для сохранения данных экземпляров. 
@@ -34,20 +34,20 @@ description: "检查与验证и сохранить данные экземпля
 > Он указывает, что создана задача для добавления информации. 
 > Чтобы проверить статус задачи, используйте метод [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5).
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | 否 | 卖家后台唯一识别码 |
+| `Api-Key` | `header` | 否 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v6FbsPostingProductExemplarSetV6Request"
@@ -55,13 +55,13 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Запрос обработан
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

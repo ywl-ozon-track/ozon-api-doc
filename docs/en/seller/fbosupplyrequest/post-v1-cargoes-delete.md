@@ -1,33 +1,33 @@
 ---
-title: "Удалить грузоместо в заявке на поставку"
+title: "CargoesAPI CargoesDelete"
 description: "Удалить грузоместо в заявке на поставку"
 ---
 
-# Удалить грузоместо в заявке на поставку
+# CargoesAPI CargoesDelete
 
 <Badge type="tip" text="POST" /> `/v1/cargoes/delete`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 FboSupplyRequest
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/cargoes/delete`
-- **详细说明**：
+- **Category**：📌 FboSupplyRequest
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/cargoes/delete`
 
+::: details View Official Description (Russian)
 > Метод для удаления грузомест в заявке на поставку.
 > 
 > Чтобы проверить статус удаления, используйте метод [/v1/cargoes/delete/status](#operation/CargoesAPI_CargoesDeleteStatus).
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
@@ -40,11 +40,11 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Грузоместо удалено
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1CargoesDeleteResponse"
@@ -54,7 +54,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"
@@ -62,7 +62,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

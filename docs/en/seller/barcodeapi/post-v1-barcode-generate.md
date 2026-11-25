@@ -1,35 +1,35 @@
 ---
-title: "Создать штрихкод для товара"
+title: "generate-barcode"
 description: "Создать штрихкод для товара"
 ---
 
-# Создать штрихкод для товара
+# generate-barcode
 
 <Badge type="tip" text="POST" /> `/v1/barcode/generate`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🏷️ Product Barcodes
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/barcode/generate`
-- **详细说明**：
+- **Category**：🏷️ Product Barcodes
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/barcode/generate`
 
+::: details View Official Description (Russian)
 > Если у товара нет штрихкода, вы можете создать его с помощью этого метода.
 > Если штрихкод уже есть, но он не указан в системе Ozon, вы можете привязать его через метод [/v1/barcode/add](#operation/add-barcode).
 > 
 > За один запрос вы можете создать штрихкоды не больше чем для 100 товаров.
 > С одного аккаунта продавца можно использовать метод не больше 20 раз в минуту.
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
@@ -41,7 +41,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Штрихкод создан
 
@@ -60,7 +60,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -68,7 +68,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

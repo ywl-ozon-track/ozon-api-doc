@@ -1,6 +1,6 @@
 ---
 title: "获取начисления за день"
-description: "获取начисления за день"
+description: "Получить начисления за день"
 ---
 
 # 获取начисления за день
@@ -12,26 +12,26 @@ description: "获取начисления за день"
 - **所属模块**：📌 BetaMethod
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v1/finance/accrual/by-day`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > Если укажете `last_id` в запросе, передайте значение `date` из предыдущего запроса, иначе вернётся ошибка `400 Bad Request`.
 > 
 > Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2008-Novye-beta-metody-dlia-polucheniia-nachislenii/) в сообществе разработчиков Ozon for dev.
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | 否 | 卖家后台唯一识别码 |
+| `Api-Key` | `header` | 否 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/finance.v1.GetFinanceAccrualByDayRequest"
@@ -39,11 +39,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Начисления за день
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/finance.v1.GetFinanceAccrualByDayResponse"
@@ -53,7 +53,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"

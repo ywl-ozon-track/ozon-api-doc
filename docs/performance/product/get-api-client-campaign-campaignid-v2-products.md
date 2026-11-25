@@ -1,6 +1,6 @@
 ---
 title: "获取商品列表"
-description: "获取商品列表"
+description: "Список товаров кампании"
 ---
 
 # 获取商品列表
@@ -13,19 +13,19 @@ description: "获取商品列表"
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/v2/products`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | Идентификатор кампании. |
-| `page` | `query` | 否 (No) | Номер страницы. |
-| `pageSize` | `query` | 否 (No) | Размер страницы. |
+| `campaignId` | `path` | 是 | Идентификатор кампании. |
+| `page` | `query` | 否 | Номер страницы. |
+| `pageSize` | `query` | 否 | Размер страницы. |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Список товаров кампании
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignGetProductsResponseV2"
@@ -35,7 +35,7 @@ description: "获取商品列表"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

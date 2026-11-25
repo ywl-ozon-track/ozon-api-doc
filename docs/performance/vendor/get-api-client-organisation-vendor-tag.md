@@ -12,22 +12,22 @@ description: "Метка организации для внешних рекла
 - **所属模块**：🌐 外部流量与品牌方分析
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/organisation/vendor_tag`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > 
 > Метод возвращает [префикс для метки UTM_CAMPAIGN](https://docs.ozon.ru/performance/analytics/#как-создать-ссылку-с-utm-метками) по идентификатору организации.
 > 
 > [Подробнее о ссылках для внешних рекламных кампаний](https://docs.ozon.ru/performance/analytics/)
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `orgId` | `query` | 是 (Yes) | - |
+| `orgId` | `query` | 是 | - |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Метка организации
 
@@ -39,7 +39,7 @@ description: "Метка организации для внешних рекла
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

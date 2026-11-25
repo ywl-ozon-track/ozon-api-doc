@@ -1,6 +1,6 @@
 ---
 title: "获取商品"
-description: "获取商品"
+description: "Получить фиксированные ставки для товаров"
 ---
 
 # 获取商品
@@ -12,24 +12,24 @@ description: "获取商品"
 - **所属模块**：🔍 按成效订单付费广告 (CPO)
 - **请求方法**：`POST`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/search_promo/get_cpo_min_bids`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > 
 > За один запрос вы можете передать до 200 SKU.
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignGetProductsRecommendedBidsRequest"
@@ -37,7 +37,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Фиксированные ставки получены
 
@@ -54,7 +54,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

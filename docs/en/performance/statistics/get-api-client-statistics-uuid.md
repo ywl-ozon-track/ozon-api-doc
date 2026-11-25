@@ -1,25 +1,25 @@
 ---
-title: "Cтатус отчёта"
+title: "StatisticsCheck"
 description: "Cтатус отчёта"
 ---
 
-# Cтатус отчёта
+# StatisticsCheck
 
 <Badge type="info" text="GET" /> `/api/client/statistics/{UUID}`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📊 Advertising Statistics
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/{UUID}`
+- **Category**：📊 Advertising Statistics
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/statistics/{UUID}`
 
-## 请求参数 (Parameters)
+## Parameters
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `UUID` | `path` | 是 (Yes) | Уникальный идентификатор запроса. |
+| `UUID` | `path` | Yes | Уникальный идентификатор запроса. |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Cтатус отчёта
 
@@ -49,7 +49,7 @@ description: "Cтатус отчёта"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -57,7 +57,7 @@ description: "Cтатус отчёта"
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

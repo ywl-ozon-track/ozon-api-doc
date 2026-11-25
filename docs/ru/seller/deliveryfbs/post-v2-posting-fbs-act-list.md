@@ -7,24 +7,23 @@ description: "Список актов по отгрузкам"
 
 <Badge type="tip" text="POST" /> `/v2/posting/fbs/act/list`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📌 DeliveryFBS
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v2/posting/fbs/act/list`
-- **详细说明**：
+- **Категория**：📌 DeliveryFBS
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-seller.ozon.ru/v2/posting/fbs/act/list`
+- **Описание**：
 
 > Возвращает список актов по отгрузкам с возможностью отфильтровать отгрузки по периоду, статусу и типу интеграции.
 
+## Параметры запроса
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | Нет | Идентификатор клиента (Client ID) |
+| `Api-Key` | `header` | Нет | API-ключ продавца (API Key) |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
@@ -42,11 +41,11 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Список актов
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v2PostingFBSActListResponse"
@@ -56,7 +55,7 @@ Content-Type: `application/json`
 
 ### HTTP 400 - Неверный параметр
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -66,7 +65,7 @@ Content-Type: `application/json`
 
 ### HTTP 403 - Доступ запрещён
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -76,7 +75,7 @@ Content-Type: `application/json`
 
 ### HTTP 404 - Ответ не найден
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -86,7 +85,7 @@ Content-Type: `application/json`
 
 ### HTTP 409 - Конфликт запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -96,7 +95,7 @@ Content-Type: `application/json`
 
 ### HTTP 500 - Внутренняя ошибка сервера
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -104,7 +103,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

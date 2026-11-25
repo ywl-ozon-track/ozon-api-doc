@@ -1,6 +1,6 @@
 ---
 title: "获取商品"
-description: "获取商品"
+description: "Получить информацию о запросах моих товаров"
 ---
 
 # 获取商品
@@ -12,24 +12,24 @@ description: "获取商品"
 - **所属模块**：💎 Premium买家高级客服
 - **请求方法**：`POST`
 - **接口地址**：`https://api-seller.ozon.ru/v1/analytics/product-queries`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > Используйте метод, чтобы получить данные о запросах ваших товаров. Полная аналитика доступна с подпиской [Premium](https://seller-edu.ozon.ru/seller-rating/about-rating/premium-program), [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro). Без подписки вы можете посмотреть часть показателей. Метод аналогичен вкладке **Товары в поиске → Запросы моего товара** в личном кабинете.
 > 
 > Аналитику по запросам можно проверить за определённые даты. Для этого укажите интервал в полях `date_from` и `date_to`. Данные за последний месяц доступны в любом интервале, кроме текущей даты — расчёт происходит в течение 1–2 дней. Аналитика за даты раньше месяца назад доступна только с подпиской [Premium](https://seller-edu.ozon.ru/seller-rating/about-rating/premium-program), [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro) и только по неделям — в запросе укажите параметр `date_from`.
 > 
 > [Подробнее о работе с запросами товара в Базе знаний продавца](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/analitika-po-zaprosu)
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | 否 | 卖家后台唯一识别码 |
+| `Api-Key` | `header` | 否 | 卖家后台生成的 API 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
@@ -47,11 +47,11 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Информация о запросах моих товаров
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1AnalyticsProductQueriesResponse"
@@ -61,7 +61,7 @@ Content-Type: `application/json`
 
 ### HTTP 400 - Неверный параметр
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -71,7 +71,7 @@ Content-Type: `application/json`
 
 ### HTTP 403 - Доступ запрещён
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -81,7 +81,7 @@ Content-Type: `application/json`
 
 ### HTTP 404 - Ответ не найден
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -91,7 +91,7 @@ Content-Type: `application/json`
 
 ### HTTP 409 - Конфликт запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -101,7 +101,7 @@ Content-Type: `application/json`
 
 ### HTTP 500 - Внутренняя ошибка сервера
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

@@ -7,22 +7,22 @@ description: "Список кампаний"
 
 <Badge type="info" text="GET" /> `/api/client/campaign`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📢 Кампании и рекламируемые объекты
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign`
+- **Категория**：📢 Кампании и рекламируемые объекты
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/campaign`
 
-## 请求参数 (Parameters)
+## Параметры запроса
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | Список идентификаторов кампаний, для которых необходимо вывести информацию.
+| `campaignIds` | `query` | Нет | Список идентификаторов кампаний, для которых необходимо вывести информацию.
 
 Если передать значение, то в ответе будет информация по кампаниям, которые указаны
 в поле `campaigns`. Если поле пустое, информация будет отдана по всем кампаниям.
  |
-| `advObjectType` | `query` | 否 (No) | Тип рекламируемой кампании:
+| `advObjectType` | `query` | Нет | Тип рекламируемой кампании:
 - `SKU` — Оплата за клик;
 - `BANNER` — Баннерная рекламная кампания;
 - `SEARCH_PROMO` — Оплата за заказ;
@@ -30,7 +30,7 @@ description: "Список кампаний"
 
 [Подробнее о типах рекламных кампаний](https://seller-edu.ozon.ru/docs/advertising/reklamnye-kampanii.html)
  |
-| `state` | `query` | 否 (No) | Состояние кампании.
+| `state` | `query` | Нет | Состояние кампании.
 
 Возможные значения:
 - `CAMPAIGN_STATE_RUNNING` — активная кампания;
@@ -44,14 +44,14 @@ description: "Список кампаний"
 - `CAMPAIGN_STATE_FINISHED` — кампания завершена, дата окончания в прошлом, такую кампанию нельзя изменить, можно
 только клонировать или создать новую.
  |
-| `page` | `query` | 否 (No) | Номер страницы. Пагинация начинается с единицы. |
-| `pageSize` | `query` | 否 (No) | Размер страницы. |
+| `page` | `query` | Нет | Номер страницы. Пагинация начинается с единицы. |
+| `pageSize` | `query` | Нет | Размер страницы. |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Список всех кампаний
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignCampaignsList"
@@ -61,7 +61,7 @@ description: "Список кампаний"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -69,7 +69,7 @@ description: "Список кампаний"
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

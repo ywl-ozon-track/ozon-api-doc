@@ -7,20 +7,20 @@ description: "Список типов соответствия требован�
 
 <Badge type="info" text="GET" /> `/v1/product/certificate/accordance-types`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📜 Сертификаты качества
-- **请求方法**：`GET`
-- **接口地址**：`https://api-seller.ozon.ru/v1/product/certificate/accordance-types`
+- **Категория**：📜 Сертификаты качества
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-seller.ozon.ru/v1/product/certificate/accordance-types`
 
-## 请求参数 (Parameters)
+## Параметры запроса
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | Нет | Идентификатор клиента (Client ID) |
+| `Api-Key` | `header` | Нет | API-ключ продавца (API Key) |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Cправочник типов соответствия требованиям
 
@@ -45,7 +45,7 @@ description: "Список типов соответствия требован�
 
 ### HTTP 400 - Неверный параметр
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -55,7 +55,7 @@ description: "Список типов соответствия требован�
 
 ### HTTP 403 - Доступ запрещён
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -65,7 +65,7 @@ description: "Список типов соответствия требован�
 
 ### HTTP 404 - Ответ не найден
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -75,7 +75,7 @@ description: "Список типов соответствия требован�
 
 ### HTTP 409 - Конфликт запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -85,7 +85,7 @@ description: "Список типов соответствия требован�
 
 ### HTTP 500 - Внутренняя ошибка сервера
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -93,7 +93,7 @@ description: "Список типов соответствия требован�
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

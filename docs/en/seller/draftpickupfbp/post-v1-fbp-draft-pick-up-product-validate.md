@@ -1,34 +1,34 @@
 ---
-title: "Провалидировать список товаров для pick-up поставки"
+title: "FbpAPI FbpDraftPickUpProductValidate"
 description: "Провалидировать список товаров для pick-up поставки"
 ---
 
-# Провалидировать список товаров для pick-up поставки
+# FbpAPI FbpDraftPickUpProductValidate
 
 <Badge type="tip" text="POST" /> `/v1/fbp/draft/pick-up/product/validate`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📝 FBP Pick-up Drafts
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/fbp/draft/pick-up/product/validate`
-- **详细说明**：
+- **Category**：📝 FBP Pick-up Drafts
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/fbp/draft/pick-up/product/validate`
 
+::: details View Official Description (Russian)
 > Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/1700-FBP-metody/) в сообществе разработчиков Ozon for dev.
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1FbpDraftPickUpProductValidateRequest"
@@ -36,7 +36,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список провалидирован
 
@@ -74,7 +74,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"
@@ -82,7 +82,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

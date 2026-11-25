@@ -1,19 +1,19 @@
 ---
-title: "Лимиты на ассортимент, создание и обновление товаров"
+title: "ProductAPI GetUploadQuota"
 description: "Лимиты на ассортимент, создание и обновление товаров"
 ---
 
-# Лимиты на ассортимент, создание и обновление товаров
+# ProductAPI GetUploadQuota
 
 <Badge type="tip" text="POST" /> `/v4/product/info/limit`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📦 Products & Uploads
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v4/product/info/limit`
-- **详细说明**：
+- **Category**：📦 Products & Uploads
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v4/product/info/limit`
 
+::: details View Official Description (Russian)
 > Метод для получения информации о лимитах:
 > - На ассортимент — сколько всего товаров можно создать в вашем личном кабинете.
 > - На создание товаров — сколько товаров можно создать в сутки.
@@ -25,20 +25,20 @@ description: "Лимиты на ассортимент, создание и об
 > 
 > [Подробнее о лимитах в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/limit)
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | No | Unique Client ID from seller cabinet |
+| `Api-Key` | `header` | No | API Key generated in seller cabinet |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Лимиты на ассортмент, создание и обновление товаров
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v4GetUploadQuotaResponse"
@@ -48,7 +48,7 @@ description: "Лимиты на ассортимент, создание и об
 
 ### HTTP 400 - Неверный параметр
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -58,7 +58,7 @@ description: "Лимиты на ассортимент, создание и об
 
 ### HTTP 403 - Доступ запрещён
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -68,7 +68,7 @@ description: "Лимиты на ассортимент, создание и об
 
 ### HTTP 404 - Ответ не найден
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -78,7 +78,7 @@ description: "Лимиты на ассортимент, создание и об
 
 ### HTTP 409 - Конфликт запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -88,7 +88,7 @@ description: "Лимиты на ассортимент, создание и об
 
 ### HTTP 500 - Внутренняя ошибка сервера
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -96,7 +96,7 @@ description: "Лимиты на ассортимент, создание и об
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

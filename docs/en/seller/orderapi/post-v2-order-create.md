@@ -1,19 +1,19 @@
 ---
-title: "Создать заказ"
+title: "OrderAPI OrderCreate"
 description: "Создать заказ"
 ---
 
-# Создать заказ
+# OrderAPI OrderCreate
 
 <Badge type="tip" text="POST" /> `/v2/order/create`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📋 Order Management
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v2/order/create`
-- **详细说明**：
+- **Category**：📋 Order Management
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v2/order/create`
 
+::: details View Official Description (Russian)
 > Создаёт заказ для покупателя и получателя в системе Ozon. Передайте вариант доставки из ответа метода [/v2/delivery/checkout](#operation/DeliveryCheckout).
 > 
 > В ответе могут быть не все отправления. Получите список всех отправлений по номеру заказа `order_number` методом:
@@ -22,20 +22,20 @@ description: "Создать заказ"
 > 
 > Значение параметра `delivery_schema` должно совпадать с тем, что вы передали в [/v2/delivery/checkout](#operation/DeliveryCheckout).
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1OrderCreateRequest"
@@ -43,11 +43,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Заказ создан
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1OrderCreateResponse"
@@ -57,7 +57,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -65,7 +65,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

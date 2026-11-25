@@ -1,37 +1,37 @@
 ---
-title: "Минимальная ставка для товаров по SKU"
+title: "ExternalCampaign BidBySKU"
 description: "Минимальная ставка для товаров по SKU"
 ---
 
-# Минимальная ставка для товаров по SKU
+# ExternalCampaign BidBySKU
 
 <Badge type="tip" text="POST" /> `/api/client/min/sku`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📢 Campaigns & Objects
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/min/sku`
-- **详细说明**：
+- **Category**：📢 Campaigns & Objects
+- **Method**：`POST`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/min/sku`
 
+::: details View Official Description (Russian)
 > Используйте метод, чтобы узнать минимальную ставку для одного или нескольких товаров по SKU.
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Yes | Bearer format OAuth 2.0 Access Token |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Размер минимальной ставки
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignBidBySKUResponse"
@@ -41,7 +41,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -49,7 +49,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

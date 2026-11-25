@@ -7,12 +7,12 @@ description: "Статистика по кампании Оплата за кл�
 
 <Badge type="info" text="GET" /> `/api/client/statistics/campaign/product`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📊 Статистика рекламы
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/campaign/product`
-- **详细说明**：
+- **Категория**：📊 Статистика рекламы
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/statistics/campaign/product`
+- **Описание**：
 
 > <aside class="notice">
 > Не расходует лимиты Performance API.
@@ -45,22 +45,21 @@ description: "Статистика по кампании Оплата за кл�
 > - места размещения для спецразмещения.
 > 
 
+## Параметры запроса
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | - |
-| `from` | `query` | 否 (No) | - |
-| `to` | `query` | 否 (No) | - |
-| `dateFrom` | `query` | 否 (No) | - |
-| `dateTo` | `query` | 否 (No) | - |
+| `campaignIds` | `query` | Нет | - |
+| `from` | `query` | Нет | - |
+| `to` | `query` | Нет | - |
+| `dateFrom` | `query` | Нет | - |
+| `dateTo` | `query` | Нет | - |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Статистика по продуктовым кампаниям
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsReport"
@@ -70,7 +69,7 @@ description: "Статистика по кампании Оплата за кл�
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -78,7 +77,7 @@ description: "Статистика по кампании Оплата за кл�
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

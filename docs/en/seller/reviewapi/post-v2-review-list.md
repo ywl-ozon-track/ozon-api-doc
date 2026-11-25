@@ -1,31 +1,31 @@
 ---
-title: "Получить список отзывов"
+title: "ReviewListV2"
 description: "Получить список отзывов"
 ---
 
-# Получить список отзывов
+# ReviewListV2
 
 <Badge type="tip" text="POST" /> `/v2/review/list`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：💬 Reviews & Questions
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v2/review/list`
-- **详细说明**：
+- **Category**：💬 Reviews & Questions
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v2/review/list`
 
+::: details View Official Description (Russian)
 > Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | No | Unique Client ID from seller cabinet |
+| `Api-Key` | `header` | No | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
@@ -46,7 +46,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список отзывов
 
@@ -74,7 +74,7 @@ Content-Type: `application/json`
 
 ### HTTP 400 - Неверный параметр
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -84,7 +84,7 @@ Content-Type: `application/json`
 
 ### HTTP 403 - Доступ запрещён
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -94,7 +94,7 @@ Content-Type: `application/json`
 
 ### HTTP 404 - Ответ не найден
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -104,7 +104,7 @@ Content-Type: `application/json`
 
 ### HTTP 409 - Конфликт запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -114,7 +114,7 @@ Content-Type: `application/json`
 
 ### HTTP 500 - Внутренняя ошибка сервера
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -122,7 +122,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

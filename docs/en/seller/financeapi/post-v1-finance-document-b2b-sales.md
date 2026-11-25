@@ -1,34 +1,34 @@
 ---
-title: "Реестр продаж юридическим лицам"
+title: "ReportAPI CreateDocumentB2BSalesReport"
 description: "Реестр продаж юридическим лицам"
 ---
 
-# Реестр продаж юридическим лицам
+# ReportAPI CreateDocumentB2BSalesReport
 
 <Badge type="tip" text="POST" /> `/v1/finance/document-b2b-sales`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📊 Finance & Settlements
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/finance/document-b2b-sales`
-- **详细说明**：
+- **Category**：📊 Finance & Settlements
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/finance/document-b2b-sales`
 
+::: details View Official Description (Russian)
 > Используйте метод, чтобы получить отчёт по продажам юридическим лицам. Соответствует разделу **Финансы → Документы → Реестр продаж юр. лицам** в личном кабинете.
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1CreateDocumentB2BSalesReportRequest"
@@ -36,11 +36,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Результат запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/commonCreateReportResponse"
@@ -50,7 +50,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -58,7 +58,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

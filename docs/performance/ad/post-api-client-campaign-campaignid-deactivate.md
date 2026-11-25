@@ -13,21 +13,21 @@ description: "Выключить кампанию"
 - **请求方法**：`POST`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/deactivate`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | - |
+| `campaignId` | `path` | 是 | - |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Кампания деактивирована
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignCampaign"
@@ -37,7 +37,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

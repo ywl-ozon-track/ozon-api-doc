@@ -1,31 +1,31 @@
 ---
-title: "Список товаров кампании"
+title: "GetProductsV2"
 description: "Список товаров кампании"
 ---
 
-# Список товаров кампании
+# GetProductsV2
 
 <Badge type="info" text="GET" /> `/api/client/campaign/{campaignId}/v2/products`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🛒 CPC Promoted Products
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/v2/products`
+- **Category**：🛒 CPC Promoted Products
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/v2/products`
 
-## 请求参数 (Parameters)
+## Parameters
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | Идентификатор кампании. |
-| `page` | `query` | 否 (No) | Номер страницы. |
-| `pageSize` | `query` | 否 (No) | Размер страницы. |
+| `campaignId` | `path` | Yes | Идентификатор кампании. |
+| `page` | `query` | No | Номер страницы. |
+| `pageSize` | `query` | No | Размер страницы. |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список товаров кампании
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignGetProductsResponseV2"
@@ -35,7 +35,7 @@ description: "Список товаров кампании"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -43,7 +43,7 @@ description: "Список товаров кампании"
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

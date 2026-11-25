@@ -7,12 +7,12 @@ description: "Получить отчёт по заказам в оплате з
 
 <Badge type="info" text="GET" /> `/api/client/statistics/all_sku_promo/orders/generate`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📊 Статистика рекламы
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/all_sku_promo/orders/generate`
-- **详细说明**：
+- **Категория**：📊 Статистика рекламы
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/statistics/all_sku_promo/orders/generate`
+- **Описание**：
 
 > В параметрах запроса `timeBounds.from` и `timeBounds.to` укажите промежуток времени.
 > 
@@ -38,19 +38,18 @@ description: "Получить отчёт по заказам в оплате з
 > - расход, ₽.
 > 
 
+## Параметры запроса
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `timeBounds.from` | `query` | 否 (No) | Начальная дата периода отчёта в формате RFC 3339. |
-| `timeBounds.to` | `query` | 否 (No) | Конечная дата периода отчёта в формате RFC 3339. |
+| `timeBounds.from` | `query` | Нет | Начальная дата периода отчёта в формате RFC 3339. |
+| `timeBounds.to` | `query` | Нет | Конечная дата периода отчёта в формате RFC 3339. |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Статистика по кампании
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatisticsGenerateAllSkuPromoOrdersReportResponse"
@@ -60,7 +59,7 @@ description: "Получить отчёт по заказам в оплате з
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -68,7 +67,7 @@ description: "Получить отчёт по заказам в оплате з
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

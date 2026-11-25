@@ -1,6 +1,6 @@
 ---
 title: "获取广告推广营销活动列表"
-description: "获取广告推广营销活动列表"
+description: "Список кампаний"
 ---
 
 # 获取广告推广营销活动列表
@@ -13,16 +13,16 @@ description: "获取广告推广营销活动列表"
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/campaign`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | Список идентификаторов кампаний, для которых необходимо вывести информацию.
+| `campaignIds` | `query` | 否 | Список идентификаторов кампаний, для которых необходимо вывести информацию.
 
 Если передать значение, то в ответе будет информация по кампаниям, которые указаны
 в поле `campaigns`. Если поле пустое, информация будет отдана по всем кампаниям.
  |
-| `advObjectType` | `query` | 否 (No) | Тип рекламируемой кампании:
+| `advObjectType` | `query` | 否 | Тип рекламируемой кампании:
 - `SKU` — Оплата за клик;
 - `BANNER` — Баннерная рекламная кампания;
 - `SEARCH_PROMO` — Оплата за заказ;
@@ -30,7 +30,7 @@ description: "获取广告推广营销活动列表"
 
 [Подробнее о типах рекламных кампаний](https://seller-edu.ozon.ru/docs/advertising/reklamnye-kampanii.html)
  |
-| `state` | `query` | 否 (No) | Состояние кампании.
+| `state` | `query` | 否 | Состояние кампании.
 
 Возможные значения:
 - `CAMPAIGN_STATE_RUNNING` — активная кампания;
@@ -44,14 +44,14 @@ description: "获取广告推广营销活动列表"
 - `CAMPAIGN_STATE_FINISHED` — кампания завершена, дата окончания в прошлом, такую кампанию нельзя изменить, можно
 только клонировать или создать новую.
  |
-| `page` | `query` | 否 (No) | Номер страницы. Пагинация начинается с единицы. |
-| `pageSize` | `query` | 否 (No) | Размер страницы. |
+| `page` | `query` | 否 | Номер страницы. Пагинация начинается с единицы. |
+| `pageSize` | `query` | 否 | Размер страницы. |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Список всех кампаний
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignCampaignsList"
@@ -61,7 +61,7 @@ description: "获取广告推广营销活动列表"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

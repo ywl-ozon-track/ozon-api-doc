@@ -7,25 +7,25 @@ description: "Список товаров кампании"
 
 <Badge type="info" text="GET" /> `/api/client/campaign/{campaignId}/v2/products`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：🛒 Товары в Оплате за клик
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/v2/products`
+- **Категория**：🛒 Товары в Оплате за клик
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/v2/products`
 
-## 请求参数 (Parameters)
+## Параметры запроса
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | Идентификатор кампании. |
-| `page` | `query` | 否 (No) | Номер страницы. |
-| `pageSize` | `query` | 否 (No) | Размер страницы. |
+| `campaignId` | `path` | Да | Идентификатор кампании. |
+| `page` | `query` | Нет | Номер страницы. |
+| `pageSize` | `query` | Нет | Размер страницы. |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Список товаров кампании
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignGetProductsResponseV2"
@@ -35,7 +35,7 @@ description: "Список товаров кампании"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -43,7 +43,7 @@ description: "Список товаров кампании"
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

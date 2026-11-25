@@ -12,8 +12,8 @@ description: "Статистика по медийным кампаниям"
 - **所属模块**：📊 广告效果与转化统计
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/campaign/media`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > 
 > В запросе укажите временной промежуток с помощью полей `from` и `to` или `dateFrom` и `dateTo`. Если заполнены все
 > четыре поля, в ответе будет статистика по временному промежутку из полей `dateFrom` и `dateTo`.
@@ -43,23 +43,23 @@ description: "Статистика по медийным кампаниям"
 > - тип оплаты,
 > - тип бюджета.
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | - |
-| `from` | `query` | 否 (No) | - |
-| `to` | `query` | 否 (No) | - |
-| `dateFrom` | `query` | 否 (No) | - |
-| `dateTo` | `query` | 否 (No) | - |
+| `campaignIds` | `query` | 否 | - |
+| `from` | `query` | 否 | - |
+| `to` | `query` | 否 | - |
+| `dateFrom` | `query` | 否 | - |
+| `dateTo` | `query` | 否 | - |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Статистика по медийным кампаниям
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsReport"
@@ -69,7 +69,7 @@ description: "Статистика по медийным кампаниям"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

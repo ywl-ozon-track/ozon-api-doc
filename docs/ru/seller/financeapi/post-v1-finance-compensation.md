@@ -7,25 +7,24 @@ description: "Отчёт о компенсациях"
 
 <Badge type="tip" text="POST" /> `/v1/finance/compensation`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📊 Финансы и отчёты
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/finance/compensation`
-- **详细说明**：
+- **Категория**：📊 Финансы и отчёты
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-seller.ozon.ru/v1/finance/compensation`
+- **Описание**：
 
 > Метод для получения отчёта о компенсациях. Соответствует отчёту из раздела **Финансы → Документы → Компенсации и прочие начисления** в личном кабинете.
 > 
 
+## Заголовки авторизации
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Параметр | Обязательный | Описание |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Да | Идентификатор клиента (Client ID) |
+| `Api-Key` | Да | API-ключ продавца (API Key) |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
@@ -36,11 +35,11 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Отчёт о компенсациях
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/CreateReportResponse"
@@ -50,7 +49,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -58,7 +57,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

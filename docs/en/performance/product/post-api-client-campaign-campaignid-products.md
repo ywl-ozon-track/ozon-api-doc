@@ -1,19 +1,19 @@
 ---
-title: "Добавить товары в кампанию"
+title: "AddProducts"
 description: "Добавить товары в кампанию"
 ---
 
-# Добавить товары в кампанию
+# AddProducts
 
 <Badge type="tip" text="POST" /> `/api/client/campaign/{campaignId}/products`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🛒 CPC Promoted Products
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products`
-- **详细说明**：
+- **Category**：🛒 CPC Promoted Products
+- **Method**：`POST`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products`
 
+::: details View Official Description (Russian)
 > 
 > В кампанию можно добавить не более 500 товаров.
 > 
@@ -26,25 +26,25 @@ description: "Добавить товары в кампанию"
 > 
 > - Для кампании с включённой стратегией можно добавлять товары только из категории `autopilot.categoryId`.
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | - |
+| `campaignId` | `path` | Yes | - |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Товары добавлены в кампанию
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -52,7 +52,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

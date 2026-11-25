@@ -7,25 +7,25 @@ description: "Установить ставку для продвижения в
 
 <Badge type="info" text="GET" /> `/api/client/campaign/all_sku_promo/set_bid`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：🔍 Оплата за заказ
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/all_sku_promo/set_bid`
+- **Категория**：🔍 Оплата за заказ
+- **HTTP-метод**：`GET`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/campaign/all_sku_promo/set_bid`
 
-## 请求参数 (Parameters)
+## Параметры запроса
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `bid` | `query` | 否 (No) | - |
+| `bid` | `query` | Нет | - |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Ставка установлена
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -33,7 +33,7 @@ description: "Установить ставку для продвижения в
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

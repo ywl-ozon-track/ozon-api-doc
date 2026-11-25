@@ -1,33 +1,33 @@
 ---
-title: "Список акций"
+title: "Promos"
 description: "Список акций"
 ---
 
-# Список акций
+# Promos
 
 <Badge type="info" text="GET" /> `/v1/actions`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🎁 Promotions & Discounts
-- **请求方法**：`GET`
-- **接口地址**：`https://api-seller.ozon.ru/v1/actions`
-- **详细说明**：
+- **Category**：🎁 Promotions & Discounts
+- **Method**：`GET`
+- **Request URL**：`https://api-seller.ozon.ru/v1/actions`
 
+::: details View Official Description (Russian)
 > Метод для получения списка акций Ozon, в которых можно участвовать.
 > 
 > [Подробнее об акциях Ozon](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/promo)
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список акций
 
@@ -61,7 +61,7 @@ description: "Список акций"
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -69,7 +69,7 @@ description: "Список акций"
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

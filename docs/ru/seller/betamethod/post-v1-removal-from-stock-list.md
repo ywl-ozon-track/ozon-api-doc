@@ -7,27 +7,26 @@ description: "Отчёт по вывозу и утилизации со сток
 
 <Badge type="tip" text="POST" /> `/v1/removal/from-stock/list`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📌 BetaMethod
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/removal/from-stock/list`
-- **详细说明**：
+- **Категория**：📌 BetaMethod
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-seller.ozon.ru/v1/removal/from-stock/list`
+- **Описание**：
 
 > Метод соответствует разделу [**FBO → Вывоз и утилизация**](https://seller.ozon.ru/app/fbo-operations/returns) в личном кабинете.
 > 
 > Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/1608-Novye-metody-po-vyvozu-i-utilizatsii) в сообществе разработчиков Ozon for dev.
 > 
 
+## Параметры запроса
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | Нет | Идентификатор клиента (Client ID) |
+| `Api-Key` | `header` | Нет | API-ключ продавца (API Key) |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
@@ -40,7 +39,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Отчёт по вывозу и утилизации со стока FBO
 
@@ -82,7 +81,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -90,7 +89,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

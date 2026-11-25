@@ -1,6 +1,6 @@
 ---
 title: "获取商品列表"
-description: "获取商品列表"
+description: "Список товаров с бонусами"
 ---
 
 # 获取商品列表
@@ -12,25 +12,25 @@ description: "获取商品列表"
 - **所属模块**：📢 广告推广计划与对象
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/products_with_bonuses`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > Возвращает список SKU товаров, на которые начислены бонусы. 
 > 
 > За клик на товар в первую очередь тратятся начисленные на него бонусы. Если бонусы кончились, тратится общий бюджет кампании.
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Список товаров с бонусами
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignListProductsWithBonusesResponse"
@@ -40,7 +40,7 @@ description: "获取商品列表"
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

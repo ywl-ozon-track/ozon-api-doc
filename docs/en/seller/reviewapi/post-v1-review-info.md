@@ -1,39 +1,39 @@
 ---
-title: "Получить информацию об отзыве"
+title: "ReviewAPI ReviewInfo"
 description: "Получить информацию об отзыве"
 ---
 
-# Получить информацию об отзыве
+# ReviewAPI ReviewInfo
 
 <Badge type="tip" text="POST" /> `/v1/review/info`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：💬 Reviews & Questions
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/review/info`
-- **详细说明**：
+- **Category**：💬 Reviews & Questions
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/review/info`
 
+::: details View Official Description (Russian)
 > <aside class="warning">
 >   Метод устаревает. Переключитесь на <a href="#operation/ReviewInfoV2">/v2/review/info</a>.
 > </aside>
 > 
 > Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1ReviewInfoRequest"
@@ -41,11 +41,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Информация об отзыве
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1ReviewInfoResponse"
@@ -55,7 +55,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -63,7 +63,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

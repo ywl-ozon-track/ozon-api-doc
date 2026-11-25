@@ -1,19 +1,19 @@
 ---
-title: "Статистика по кампании Оплата за клик"
+title: "ProductCampaignList"
 description: "Статистика по кампании Оплата за клик"
 ---
 
-# Статистика по кампании Оплата за клик
+# ProductCampaignList
 
 <Badge type="info" text="GET" /> `/api/client/statistics/campaign/product`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📊 Advertising Statistics
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/campaign/product`
-- **详细说明**：
+- **Category**：📊 Advertising Statistics
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/statistics/campaign/product`
 
+::: details View Official Description (Russian)
 > <aside class="notice">
 > Не расходует лимиты Performance API.
 > </aside>
@@ -44,23 +44,23 @@ description: "Статистика по кампании Оплата за кл�
 > - тип продвижения,
 > - места размещения для спецразмещения.
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | - |
-| `from` | `query` | 否 (No) | - |
-| `to` | `query` | 否 (No) | - |
-| `dateFrom` | `query` | 否 (No) | - |
-| `dateTo` | `query` | 否 (No) | - |
+| `campaignIds` | `query` | No | - |
+| `from` | `query` | No | - |
+| `to` | `query` | No | - |
+| `dateFrom` | `query` | No | - |
+| `dateTo` | `query` | No | - |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Статистика по продуктовым кампаниям
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsReport"
@@ -70,7 +70,7 @@ description: "Статистика по кампании Оплата за кл�
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -78,7 +78,7 @@ description: "Статистика по кампании Оплата за кл�
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

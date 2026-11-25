@@ -12,24 +12,24 @@ description: "Отключить продвижение товаров в акц
 - **所属模块**：🔍 按成效订单付费广告 (CPO)
 - **请求方法**：`POST`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/search_promo/carrots/disable`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > Удаляет товары из акции «Морковск».<br>
 > [Подробнее об акции](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/morkovsk)
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Продвижение отключено
 
@@ -50,7 +50,7 @@ Content-Type: `application/json`
 
 ### HTTP default - An unexpected error response.
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

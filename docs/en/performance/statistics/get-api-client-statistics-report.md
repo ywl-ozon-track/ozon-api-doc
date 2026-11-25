@@ -1,34 +1,34 @@
 ---
-title: "Получить отчёты"
+title: "DownloadStatistics"
 description: "Получить отчёты"
 ---
 
-# Получить отчёты
+# DownloadStatistics
 
 <Badge type="info" text="GET" /> `/api/client/statistics/report`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📊 Advertising Statistics
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/report`
-- **详细说明**：
+- **Category**：📊 Advertising Statistics
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/statistics/report`
 
+::: details View Official Description (Russian)
 > При успешном запросе ссылка на скачивание отчёта в формате CSV или ZIP появится в поле `link` при использовании метода [«Статус отчета»](#operation/StatisticsCheck).
 > 
 > Формат отчёта в заголовке ответа указан в поле `content-type`. Формат зависит от того, сколько кампаний в поле `campaigns` исходного запроса:
 > - CSV — если в списке одна кампания.
 > - ZIP-архив — если в списке несколько кампаний. Каждый файл соответствует одной кампании из списка. Имя файла вида `<идентификатор кампании>.csv`.
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `UUID` | `query` | 否 (No) | - |
+| `UUID` | `query` | No | - |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Отчёт
 
@@ -42,7 +42,7 @@ description: "Получить отчёты"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -50,7 +50,7 @@ description: "Получить отчёты"
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

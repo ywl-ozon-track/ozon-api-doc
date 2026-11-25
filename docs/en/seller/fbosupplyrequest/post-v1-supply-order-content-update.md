@@ -1,37 +1,37 @@
 ---
-title: "Редактирование товарного состава"
+title: "SupplyOrderAPI SupplyOrderContentUpdate"
 description: "Редактирование товарного состава"
 ---
 
-# Редактирование товарного состава
+# SupplyOrderAPI SupplyOrderContentUpdate
 
 <Badge type="tip" text="POST" /> `/v1/supply-order/content/update`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 FboSupplyRequest
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/supply-order/content/update`
-- **详细说明**：
+- **Category**：📌 FboSupplyRequest
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/supply-order/content/update`
 
+::: details View Official Description (Russian)
 > Метод для редактирования товарного состава в заявке на поставку.
 > 
 > Чтобы проверить статус редактирования, используйте метод [/v1/supply-order/content/update/status](#operation/SupplyOrderAPI_SupplyOrderContentUpdateStatus).
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1SupplyOrderContentUpdateRequest"
@@ -39,11 +39,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Товарный состав обновлён
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1SupplyOrderContentUpdateResponse"
@@ -53,7 +53,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"
@@ -61,7 +61,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

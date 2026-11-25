@@ -13,19 +13,19 @@ description: "Установить ставку для продвижения в
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/all_sku_promo/set_bid`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `bid` | `query` | 否 (No) | - |
+| `bid` | `query` | 否 | - |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Ставка установлена
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

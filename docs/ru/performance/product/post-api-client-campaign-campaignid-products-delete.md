@@ -7,23 +7,23 @@ description: "Удалить товары из кампании"
 
 <Badge type="tip" text="POST" /> `/api/client/campaign/{campaignId}/products/delete`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：🛒 Товары в Оплате за клик
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products/delete`
+- **Категория**：🛒 Товары в Оплате за клик
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products/delete`
 
-## 请求参数 (Parameters)
+## Параметры запроса
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | - |
+| `campaignId` | `path` | Да | - |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignDeleteProductsRequest"
@@ -31,13 +31,13 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Товар удалён из кампании
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -45,7 +45,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

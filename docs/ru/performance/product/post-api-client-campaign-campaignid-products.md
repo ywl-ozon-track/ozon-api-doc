@@ -7,12 +7,12 @@ description: "Добавить товары в кампанию"
 
 <Badge type="tip" text="POST" /> `/api/client/campaign/{campaignId}/products`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：🛒 Товары в Оплате за клик
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products`
-- **详细说明**：
+- **Категория**：🛒 Товары в Оплате за клик
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products`
+- **Описание**：
 
 > 
 > В кампанию можно добавить не более 500 товаров.
@@ -27,24 +27,23 @@ description: "Добавить товары в кампанию"
 > - Для кампании с включённой стратегией можно добавлять товары только из категории `autopilot.categoryId`.
 > 
 
+## Параметры запроса
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | - |
+| `campaignId` | `path` | Да | - |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Товары добавлены в кампанию
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -52,7 +51,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

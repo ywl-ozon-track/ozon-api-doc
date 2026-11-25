@@ -1,29 +1,29 @@
 ---
-title: "Включить продвижение в оплате за заказ — все товары"
+title: "ActivateAllSkuPromoCampaign"
 description: "Включить продвижение в оплате за заказ — все товары"
 ---
 
-# Включить продвижение в оплате за заказ — все товары
+# ActivateAllSkuPromoCampaign
 
 <Badge type="info" text="GET" /> `/api/client/campaign/all_sku_promo/activate`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🔍 Search Promotion (CPO)
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/all_sku_promo/activate`
+- **Category**：🔍 Search Promotion (CPO)
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/all_sku_promo/activate`
 
-## 鉴权请求头 (Headers)
+## Authentication Headers
 
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Yes | Bearer format OAuth 2.0 Access Token |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Продвижение включено
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignActivateAllSkuPromoCampaignResponse"
@@ -33,7 +33,7 @@ description: "Включить продвижение в оплате за за�
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -41,7 +41,7 @@ description: "Включить продвижение в оплате за за�
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

@@ -7,24 +7,23 @@ description: "Список возможных статусов товаров"
 
 <Badge type="tip" text="POST" /> `/v1/product/certificate/product_status/list`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📜 Сертификаты качества
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/product/certificate/product_status/list`
-- **详细说明**：
+- **Категория**：📜 Сертификаты качества
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-seller.ozon.ru/v1/product/certificate/product_status/list`
+- **Описание**：
 
 > Метод для получения списка возможных статусов товаров при их привязке к сертификату.
 
+## Параметры запроса
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Параметр | Расположение | Обязательный | Описание |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | Нет | Идентификатор клиента (Client ID) |
+| `Api-Key` | `header` | Нет | API-ключ продавца (API Key) |
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Список статусов товаров
 
@@ -49,7 +48,7 @@ description: "Список возможных статусов товаров"
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -57,7 +56,7 @@ description: "Список возможных статусов товаров"
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

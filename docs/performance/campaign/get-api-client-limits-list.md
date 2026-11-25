@@ -12,8 +12,8 @@ description: "Лимиты ставок для инструментов прод
 - **所属模块**：📢 广告推广计划与对象
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/limits/list`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > 
 > Вы можете получить лимиты ставок по инструментам:
 > - Оплата за заказ:
@@ -23,19 +23,19 @@ description: "Лимиты ставок для инструментов прод
 >   - Минимальная и максимальная ставка за клик.
 >   - Минимальные ставки за клик для некоторых категорий товаров.
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Лимиты ставок
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extcampaignListLimitsResponse"
@@ -45,7 +45,7 @@ description: "Лимиты ставок для инструментов прод
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

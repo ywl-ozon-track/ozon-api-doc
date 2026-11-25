@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-// 安全读取动态生成的侧边栏配置
 function loadSidebar(lang: string) {
   const filePath = path.join(__dirname, `sidebar-${lang}.json`)
   if (fs.existsSync(filePath)) {
@@ -31,7 +30,6 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#0284c7' }]
   ],
   themeConfig: {
-    siteTitle: 'Ozon API 镜像站',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ywl-ozon-track/ozon-api-doc' }
     ],
@@ -74,13 +72,14 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-CN',
       themeConfig: {
+        siteTitle: 'Ozon API 镜像站',
         nav: [
           { text: '首页', link: '/' },
           { text: '📦 Seller API (卖家核心)', link: '/seller/' },
           { text: '🚀 Performance API (广告营销)', link: '/performance/' },
           { text: '📝 对账流水', link: '/changelog' },
           {
-            text: '🔗 官方官方入口',
+            text: '🔗 官方入口',
             items: [
               { text: 'Seller API 官方文档', link: 'https://docs.ozon.ru/api/seller/' },
               { text: 'Performance API 官方文档', link: 'https://docs.ozon.ru/api/performance/' },
@@ -101,6 +100,7 @@ export default defineConfig({
       lang: 'ru-RU',
       link: '/ru/',
       themeConfig: {
+        siteTitle: 'Ozon API Документация',
         nav: [
           { text: 'Главная', link: '/ru/' },
           { text: '📦 Seller API', link: '/ru/seller/' },
@@ -128,6 +128,7 @@ export default defineConfig({
       lang: 'en-US',
       link: '/en/',
       themeConfig: {
+        siteTitle: 'Ozon API Docs',
         nav: [
           { text: 'Home', link: '/en/' },
           { text: '📦 Seller API', link: '/en/seller/' },

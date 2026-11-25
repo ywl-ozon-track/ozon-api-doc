@@ -1,33 +1,33 @@
 ---
-title: "Получить отчёт о балансе"
+title: "GetFinanceBalanceV1"
 description: "Получить отчёт о балансе"
 ---
 
-# Получить отчёт о балансе
+# GetFinanceBalanceV1
 
 <Badge type="tip" text="POST" /> `/v1/finance/balance`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 BetaMethod
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/finance/balance`
-- **详细说明**：
+- **Category**：📌 BetaMethod
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/finance/balance`
 
+::: details View Official Description (Russian)
 > Соответствует разделу **Финансы → Баланс** в личном кабинете.
 > 
 > Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/1732-Novyi-metod-polucheniia-dannykh-po-balansu/) в сообществе разработчиков Ozon for dev.
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
@@ -38,11 +38,11 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Отчёт о балансе
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1GetFinanceBalanceV1Response"
@@ -52,7 +52,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -60,7 +60,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

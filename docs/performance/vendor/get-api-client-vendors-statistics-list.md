@@ -1,6 +1,6 @@
 ---
 title: "获取数据报表列表"
-description: "获取数据报表列表"
+description: "Список запрошенных отчётов с аналитикой внешнего трафика"
 ---
 
 # 获取数据报表列表
@@ -13,18 +13,18 @@ description: "获取数据报表列表"
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/vendors/statistics/list`
 
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `page` | `query` | 否 (No) | - |
-| `pageSize` | `query` | 否 (No) | - |
+| `page` | `query` | 否 | - |
+| `pageSize` | `query` | 否 | - |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Отчёты
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatVendorStatisticsReportsList"
@@ -34,7 +34,7 @@ description: "获取数据报表列表"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

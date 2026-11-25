@@ -1,6 +1,6 @@
 ---
 title: "获取订单"
-description: "获取订单"
+description: "Получить отчёт по заказам в оплате за заказ — все товары"
 ---
 
 # 获取订单
@@ -12,8 +12,8 @@ description: "获取订单"
 - **所属模块**：📊 广告效果与转化统计
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/all_sku_promo/orders/generate`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > В параметрах запроса `timeBounds.from` и `timeBounds.to` укажите промежуток времени.
 > 
 > Performance API асинхронный.
@@ -37,20 +37,20 @@ description: "获取订单"
 > - ставку, ₽;
 > - расход, ₽.
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `timeBounds.from` | `query` | 否 (No) | Начальная дата периода отчёта в формате RFC 3339. |
-| `timeBounds.to` | `query` | 否 (No) | Конечная дата периода отчёта в формате RFC 3339. |
+| `timeBounds.from` | `query` | 否 | Начальная дата периода отчёта в формате RFC 3339. |
+| `timeBounds.to` | `query` | 否 | Конечная дата периода отчёта в формате RFC 3339. |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Статистика по кампании
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatisticsGenerateAllSkuPromoOrdersReportResponse"
@@ -60,7 +60,7 @@ description: "获取订单"
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

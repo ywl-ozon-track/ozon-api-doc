@@ -1,38 +1,38 @@
 ---
-title: "Сгенерировать новый штрихкод"
+title: "ReturnAPI GiveoutBarcodeReset"
 description: "Сгенерировать новый штрихкод"
 ---
 
-# Сгенерировать новый штрихкод
+# ReturnAPI GiveoutBarcodeReset
 
 <Badge type="tip" text="POST" /> `/v1/return/giveout/barcode-reset`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 ReturnAPI
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/return/giveout/barcode-reset`
-- **详细说明**：
+- **Category**：📌 ReturnAPI
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/return/giveout/barcode-reset`
 
+::: details View Official Description (Russian)
 > Используйте метод, если ваш штрихкод попал в посторонние руки.
 > 
 > Метод возвращает PNG-файл с новым штрихкодом. После использования метода вы не сможете получить возвратную отгрузку по старым штрихкодам.
 > Чтобы получить новый штрихкод в PDF-формате, запросите его методом [/v1/return/giveout/get-pdf](#operation/ReturnAPI_GiveoutGetPDF).
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | No | Unique Client ID from seller cabinet |
+| `Api-Key` | `header` | No | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v1Empty"
@@ -40,13 +40,13 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Новый штрихкод
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -54,7 +54,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

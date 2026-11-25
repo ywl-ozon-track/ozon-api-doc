@@ -1,37 +1,37 @@
 ---
-title: "Конкурентные ставки для товара"
+title: "GetProductsCompetitiveBids"
 description: "Конкурентные ставки для товара"
 ---
 
-# Конкурентные ставки для товара
+# GetProductsCompetitiveBids
 
 <Badge type="info" text="GET" /> `/api/client/campaign/{campaignId}/products/bids/competitive`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🛒 CPC Promoted Products
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products/bids/competitive`
-- **详细说明**：
+- **Category**：🛒 CPC Promoted Products
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products/bids/competitive`
 
+::: details View Official Description (Russian)
 > 
 > Если товар не добавлен в кампанию, в параметре `bid` будет значение `0`.
 > В одном запросе вы можете передать до 200 товаров.
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | Идентификатор кампании. |
-| `skus` | `query` | 否 (No) | Список SKU товаров. |
+| `campaignId` | `path` | Yes | Идентификатор кампании. |
+| `skus` | `query` | No | Список SKU товаров. |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Конкурентные ставки
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignGetProductsCompetitiveBidsResponse"
@@ -41,7 +41,7 @@ description: "Конкурентные ставки для товара"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -49,7 +49,7 @@ description: "Конкурентные ставки для товара"
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

@@ -1,36 +1,36 @@
 ---
-title: "Список товаров с бонусами"
+title: "ExternalCampaign ListProductsWithBonuses2"
 description: "Список товаров с бонусами"
 ---
 
-# Список товаров с бонусами
+# ExternalCampaign ListProductsWithBonuses2
 
 <Badge type="info" text="GET" /> `/api/client/products_with_bonuses`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📢 Campaigns & Objects
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/products_with_bonuses`
-- **详细说明**：
+- **Category**：📢 Campaigns & Objects
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/products_with_bonuses`
 
+::: details View Official Description (Russian)
 > Возвращает список SKU товаров, на которые начислены бонусы. 
 > 
 > За клик на товар в первую очередь тратятся начисленные на него бонусы. Если бонусы кончились, тратится общий бюджет кампании.
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Yes | Bearer format OAuth 2.0 Access Token |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список товаров с бонусами
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignListProductsWithBonusesResponse"
@@ -40,7 +40,7 @@ description: "Список товаров с бонусами"
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -48,7 +48,7 @@ description: "Список товаров с бонусами"
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

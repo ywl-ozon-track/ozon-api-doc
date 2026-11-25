@@ -1,33 +1,33 @@
 ---
-title: "Параметры кампании"
+title: "PatchProductCampaign"
 description: "Параметры кампании"
 ---
 
-# Параметры кампании
+# PatchProductCampaign
 
 <Badge text="PATCH" /> `/api/client/campaign/{campaignId}`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🖱️ Cost-Per-Click (CPC) Ads
-- **请求方法**：`PATCH`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}`
-- **详细说明**：
+- **Category**：🖱️ Cost-Per-Click (CPC) Ads
+- **Method**：`PATCH`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}`
 
+::: details View Official Description (Russian)
 > Метод для изменения параметров кампании.
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | - |
+| `campaignId` | `path` | Yes | - |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignPatchProductCampaignRequest"
@@ -35,11 +35,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Параметры кампании обновлены
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignCampaignID"
@@ -49,7 +49,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -57,7 +57,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

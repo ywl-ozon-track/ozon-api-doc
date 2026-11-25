@@ -1,19 +1,19 @@
 ---
-title: "Создать заявку на поставку по черновику"
+title: "DraftSupplyCreate"
 description: "Создать заявку на поставку по черновику"
 ---
 
-# Создать заявку на поставку по черновику
+# DraftSupplyCreate
 
 <Badge type="tip" text="POST" /> `/v2/draft/supply/create`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📌 FboSupplyRequest
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v2/draft/supply/create`
-- **详细说明**：
+- **Category**：📌 FboSupplyRequest
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v2/draft/supply/create`
 
+::: details View Official Description (Russian)
 > Вы можете создавать заявку на поставку по черновику:
 > - 2 раза в минуту;
 > - 50 раз в час;
@@ -21,20 +21,20 @@ description: "Создать заявку на поставку по черно�
 > 
 > Если превысите лимит, вернётся ошибка 429.
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `Client-Id` | `header` | 否 (No) | Ozon 卖家唯一 Client ID |
-| `Api-Key` | `header` | 否 (No) | Ozon 开发者 API Key |
+| `Client-Id` | `header` | No | Unique Client ID from seller cabinet |
+| `Api-Key` | `header` | No | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v2DraftSupplyCreateRequest"
@@ -42,11 +42,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Заявка создана
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/v2DraftSupplyCreateResponse"
@@ -56,7 +56,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/googlerpcStatus"
@@ -64,7 +64,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

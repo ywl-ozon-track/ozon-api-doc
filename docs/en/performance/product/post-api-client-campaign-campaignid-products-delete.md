@@ -1,29 +1,29 @@
 ---
-title: "Удалить товары из кампании"
+title: "DeleteProducts"
 description: "Удалить товары из кампании"
 ---
 
-# Удалить товары из кампании
+# DeleteProducts
 
 <Badge type="tip" text="POST" /> `/api/client/campaign/{campaignId}/products/delete`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🛒 CPC Promoted Products
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products/delete`
+- **Category**：🛒 CPC Promoted Products
+- **Method**：`POST`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/products/delete`
 
-## 请求参数 (Parameters)
+## Parameters
 
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | - |
+| `campaignId` | `path` | Yes | - |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignDeleteProductsRequest"
@@ -31,13 +31,13 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Товар удалён из кампании
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -45,7 +45,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

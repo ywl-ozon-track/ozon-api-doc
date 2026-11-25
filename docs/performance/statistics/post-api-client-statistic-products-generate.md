@@ -1,6 +1,6 @@
 ---
 title: "获取商品"
-description: "获取商品"
+description: "Получить отчёт по товарам в оплате за заказ — выбранные товары"
 ---
 
 # 获取商品
@@ -12,8 +12,8 @@ description: "获取商品"
 - **所属模块**：📊 广告效果与转化统计
 - **请求方法**：`POST`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/statistic/products/generate`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > 
 > В параметрах запроса `from` и `to` укажите промежуток времени.
 > 
@@ -42,23 +42,23 @@ description: "获取商品"
 > - ДРР, %;
 > - последнее изменение.
 > 
+:::
 
+## 鉴权请求头
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| 参数名 | 必填 | 说明 |
 | :--- | :--- | :--- |
 | `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
 
-## 请求体 (Request Body)
+## 请求体
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Статистика по кампании
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsRequestID"
@@ -68,7 +68,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

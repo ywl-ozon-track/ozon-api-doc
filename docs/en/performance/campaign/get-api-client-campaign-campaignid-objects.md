@@ -1,37 +1,37 @@
 ---
-title: "Список продвигаемых объектов в кампании"
+title: "ListCampaignObjects"
 description: "Список продвигаемых объектов в кампании"
 ---
 
-# Список продвигаемых объектов в кампании
+# ListCampaignObjects
 
 <Badge type="info" text="GET" /> `/api/client/campaign/{campaignId}/objects`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📢 Campaigns & Objects
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/objects`
-- **详细说明**：
+- **Category**：📢 Campaigns & Objects
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/campaign/{campaignId}/objects`
 
+::: details View Official Description (Russian)
 > 
 > Метод для получения списка продвигаемых объектов в кампаниях «Оплата за клик», «Баннеры» и «Видеобаннеры».
 > 
 > Чтобы получить товары в кампании «Оплата за заказ», используйте [POST /campaign/search_promo/v2/products](#operation/ExternalCampaign_ListSearchPromoProductsV2).
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignId` | `path` | 是 (Yes) | Идентификатор кампании. |
+| `campaignId` | `path` | Yes | Идентификатор кампании. |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Список рекламируемых объектов в кампании
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extcampaignCampaignObjectsList"
@@ -41,7 +41,7 @@ description: "Список продвигаемых объектов в камп
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -49,7 +49,7 @@ description: "Список продвигаемых объектов в камп
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

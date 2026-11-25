@@ -7,29 +7,28 @@ description: "Отменить отправление из заказа"
 
 <Badge type="tip" text="POST" /> `/v1/posting/cancel`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📦 Заказы FBO
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/posting/cancel`
-- **详细说明**：
+- **Категория**：📦 Заказы FBO
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-seller.ozon.ru/v1/posting/cancel`
+- **Описание**：
 
 > Отменяет отправление из заказа. Используйте идентификатор причины отмены `reasons.id` из метода [/v1/cancel-reason/list-by-posting](#operation/CancelReasonAPI_CancelReasonListByPosting).
 > 
 
+## Заголовки авторизации
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Параметр | Обязательный | Описание |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Да | Идентификатор клиента (Client ID) |
+| `Api-Key` | Да | API-ключ продавца (API Key) |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
-::: details 查看 Request Schema 结构定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1PostingCancelRequest"
@@ -37,11 +36,11 @@ Content-Type: `application/json`
 ```
 :::
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Сообщение со статусом отмены
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/v1PostingCancelResponse"
@@ -51,7 +50,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -59,7 +58,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]

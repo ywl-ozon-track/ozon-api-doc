@@ -149,15 +149,15 @@
       "collapsed": true,
       "items": [
         {
-          "text": "Привязать штрихкод к товару",
+          "text": "为商品绑定条形码",
           "link": "/seller/barcodeapi/post-v1-barcode-add"
         },
         {
-          "text": "Отвязать штрихкод от товара",
+          "text": "解绑商品条形码",
           "link": "/seller/barcodeapi/post-v1-barcode-delete"
         },
         {
-          "text": "创建商品",
+          "text": "为商品生成条形码",
           "link": "/seller/barcodeapi/post-v1-barcode-generate"
         }
       ]

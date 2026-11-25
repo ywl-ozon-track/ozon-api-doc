@@ -1,31 +1,31 @@
 ---
-title: "Согласовать заявку на скидку"
+title: "promos task approve"
 description: "Согласовать заявку на скидку"
 ---
 
-# Согласовать заявку на скидку
+# promos task approve
 
 <Badge type="tip" text="POST" /> `/v1/actions/discounts-task/approve`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：🎁 Promotions & Discounts
-- **请求方法**：`POST`
-- **接口地址**：`https://api-seller.ozon.ru/v1/actions/discounts-task/approve`
-- **详细说明**：
+- **Category**：🎁 Promotions & Discounts
+- **Method**：`POST`
+- **Request URL**：`https://api-seller.ozon.ru/v1/actions/discounts-task/approve`
 
+::: details View Official Description (Russian)
 > Вы можете согласовывать заявки в статусах: `NEW` — новые, `SEEN` — просмотренные.
 > 
+:::
 
+## Authentication Headers
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Parameter | Required | Description |
 | :--- | :--- | :--- |
-| `Client-Id` | 是 | 卖家后台唯一识别码 |
-| `Api-Key` | 是 | 卖家后台生成的 API 访问令牌 |
+| `Client-Id` | Yes | Unique Client ID from seller cabinet |
+| `Api-Key` | Yes | API Key generated in seller cabinet |
 
-## 请求体 (Request Body)
+## Request Body
 
 Content-Type: `application/json`
 
@@ -43,7 +43,7 @@ Content-Type: `application/json`
 }
 ```
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Заявки согласованы
 
@@ -64,7 +64,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -72,7 +72,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

@@ -1,19 +1,19 @@
 ---
-title: "Статистика по медийным кампаниям"
+title: "MediaCampaignList"
 description: "Статистика по медийным кампаниям"
 ---
 
-# Статистика по медийным кампаниям
+# MediaCampaignList
 
 <Badge type="info" text="GET" /> `/api/client/statistics/campaign/media`
 
-## 接口概览
+## Endpoint Overview
 
-- **所属模块**：📊 Advertising Statistics
-- **请求方法**：`GET`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/campaign/media`
-- **详细说明**：
+- **Category**：📊 Advertising Statistics
+- **Method**：`GET`
+- **Request URL**：`https://api-performance.ozon.ru/api/client/statistics/campaign/media`
 
+::: details View Official Description (Russian)
 > 
 > В запросе укажите временной промежуток с помощью полей `from` и `to` или `dateFrom` и `dateTo`. Если заполнены все
 > четыре поля, в ответе будет статистика по временному промежутку из полей `dateFrom` и `dateTo`.
@@ -43,23 +43,23 @@ description: "Статистика по медийным кампаниям"
 > - тип оплаты,
 > - тип бюджета.
 > 
+:::
 
+## Parameters
 
-## 请求参数 (Parameters)
-
-| 参数名 | 位置 (In) | 必填 | 说明 |
+| Parameter | In | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | - |
-| `from` | `query` | 否 (No) | - |
-| `to` | `query` | 否 (No) | - |
-| `dateFrom` | `query` | 否 (No) | - |
-| `dateTo` | `query` | 否 (No) | - |
+| `campaignIds` | `query` | No | - |
+| `from` | `query` | No | - |
+| `to` | `query` | No | - |
+| `dateFrom` | `query` | No | - |
+| `dateTo` | `query` | No | - |
 
-## 返回响应 (Responses)
+## Responses
 
 ### HTTP 200 - Статистика по медийным кампаниям
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsReport"
@@ -69,7 +69,7 @@ description: "Статистика по медийным кампаниям"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details View Schema Definition
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -77,7 +77,7 @@ description: "Статистика по медийным кампаниям"
 ```
 :::
 
-## 调用示例代码
+## Code Examples
 
 ::: code-group
 ```bash [cURL]

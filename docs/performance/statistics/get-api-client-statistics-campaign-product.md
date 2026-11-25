@@ -1,6 +1,6 @@
 ---
 title: "查询指定广告营销计划的曝光、点击与花费报表"
-description: "查询指定广告营销计划的曝光、点击与花费报表"
+description: "Статистика по кампании Оплата за клик"
 ---
 
 # 查询指定广告营销计划的曝光、点击与花费报表
@@ -12,8 +12,8 @@ description: "查询指定广告营销计划的曝光、点击与花费报表"
 - **所属模块**：📊 广告效果与转化统计
 - **请求方法**：`GET`
 - **接口地址**：`https://api-performance.ozon.ru/api/client/statistics/campaign/product`
-- **详细说明**：
 
+::: details 查看官方详细说明 (Официальное описание)
 > <aside class="notice">
 > Не расходует лимиты Performance API.
 > </aside>
@@ -44,23 +44,23 @@ description: "查询指定广告营销计划的曝光、点击与花费报表"
 > - тип продвижения,
 > - места размещения для спецразмещения.
 > 
+:::
 
-
-## 请求参数 (Parameters)
+## 请求参数
 
 | 参数名 | 位置 (In) | 必填 | 说明 |
 | :--- | :--- | :--- | :--- |
-| `campaignIds` | `query` | 否 (No) | - |
-| `from` | `query` | 否 (No) | - |
-| `to` | `query` | 否 (No) | - |
-| `dateFrom` | `query` | 否 (No) | - |
-| `dateTo` | `query` | 否 (No) | - |
+| `campaignIds` | `query` | 否 | - |
+| `from` | `query` | 否 | - |
+| `to` | `query` | 否 | - |
+| `dateFrom` | `query` | 否 | - |
+| `dateTo` | `query` | 否 | - |
 
-## 返回响应 (Responses)
+## 返回响应
 
 ### HTTP 200 - Статистика по продуктовым кампаниям
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsReport"
@@ -70,7 +70,7 @@ description: "查询指定广告营销计划的曝光、点击与花费报表"
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details 查看数据结构定义 (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"

@@ -7,12 +7,12 @@ description: "Получить отчёт по товарам в оплате з
 
 <Badge type="tip" text="POST" /> `/api/client/statistic/products/generate`
 
-## 接口概览
+## Обзор метода
 
-- **所属模块**：📊 Статистика рекламы
-- **请求方法**：`POST`
-- **接口地址**：`https://api-performance.ozon.ru/api/client/statistic/products/generate`
-- **详细说明**：
+- **Категория**：📊 Статистика рекламы
+- **HTTP-метод**：`POST`
+- **URL запроса**：`https://api-performance.ozon.ru/api/client/statistic/products/generate`
+- **Описание**：
 
 > 
 > В параметрах запроса `from` и `to` укажите промежуток времени.
@@ -43,22 +43,21 @@ description: "Получить отчёт по товарам в оплате з
 > - последнее изменение.
 > 
 
+## Заголовки авторизации
 
-## 鉴权请求头 (Headers)
-
-| 参数名 | 必填 | 示例 / 说明 |
+| Параметр | Обязательный | Описание |
 | :--- | :--- | :--- |
-| `Authorization` | 是 | Bearer 格式的 OAuth 2.0 访问令牌 |
+| `Authorization` | Да | OAuth 2.0 токен доступа в формате Bearer |
 
-## 请求体 (Request Body)
+## Тело запроса
 
 Content-Type: `application/json`
 
-## 返回响应 (Responses)
+## Ответы сервера
 
 ### HTTP 200 - Статистика по кампании
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/extstatStatisticsRequestID"
@@ -68,7 +67,7 @@ Content-Type: `application/json`
 
 ### HTTP default - Ошибка запроса
 
-::: details 查看 Response Schema 定义
+::: details Посмотреть схему данных (Schema)
 ```json
 {
   "$ref": "#/components/schemas/rpcStatus"
@@ -76,7 +75,7 @@ Content-Type: `application/json`
 ```
 :::
 
-## 调用示例代码
+## Примеры кода
 
 ::: code-group
 ```bash [cURL]
