@@ -1,0 +1,22 @@
+/* 针对 API 文档页面的全屏布局优化 */
+.api-fullscreen-page .VPDoc {
+  padding: 0 !important;
+}
+
+.api-fullscreen-page .VPDoc .container {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.api-fullscreen-page .VPDoc .content {
+  padding: 0 !important;
+}
+
+.api-fullscreen-page .VPDocFooter {
+  display: none !important;
+}
+
+.api-fullscreen-page .aside {
+  display: none !important;
+}

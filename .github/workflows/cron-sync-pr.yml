@@ -1,0 +1,43 @@
+name: Daily OpenAPI Sync & PR Bot
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-specs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sync upstream specs
+        run: python scripts/sync_specs.py
+
+      - name: Generate diff report
+        id: diff
+        run: |
+          python scripts/diff_analyzer.py > pr_report.md
+          cat pr_report.md
+
+      - name: Create Pull Request (Never commit directly to main)
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(specs): sync latest official Ozon OpenAPI definitions"
+          branch: "bot/sync-ozon-specs"
+          delete-branch: true
+          title: "🤖 [Automated] Sync latest Ozon OpenAPI specifications"
+          body-path: pr_report.md
+          labels: "automated-sync, api-docs"
+          reviewers: "VincentZyu233"

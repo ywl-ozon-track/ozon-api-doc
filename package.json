@@ -1,0 +1,15 @@
+{
+  "name": "ozon-api-doc",
+  "version": "1.0.0",
+  "description": "Ozon 官方 API (Seller & Performance) OpenAPI 规范镜像与交互式文档站",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  }
+}
